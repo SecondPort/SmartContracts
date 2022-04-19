@@ -7,11 +7,11 @@ contract funciones_globales{
     function getSender() public view returns(address){
         return msg.sender;// retorna la direccion del remitente
     }
+
     // funcion now
     function getNow() public view returns(uint256){
         return block.timestamp;// retorna la fecha actual
     }
-
 
     //coinbase
     function getCoinbase() public view returns(address){
@@ -29,7 +29,7 @@ contract funciones_globales{
     }
 
     //msg.sig
-    function getSig() public view returns(bytes4){
+    function Sig() public view returns(bytes4){
         return msg.sig;// devuelve el hash de la transaccion
     }
 
@@ -37,5 +37,4 @@ contract funciones_globales{
     function getGasPrice() public view returns(uint256){
         return tx.gasprice;// devuelve el precio del gas
     }
-    
 }
