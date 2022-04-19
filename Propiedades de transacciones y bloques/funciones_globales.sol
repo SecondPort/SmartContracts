@@ -36,4 +36,5 @@ contract funciones_globales{
     function getGasPrice() public view returns(uint256){
         return tx.gasprice;// devuelve el precio del gas
     }
+    
 }
