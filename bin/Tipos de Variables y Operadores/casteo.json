@@ -1,0 +1,896 @@
+{
+    "contractName": "casteo",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "casteo_1",
+            "outputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "",
+                    "type": "uint64"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "casteo_2",
+            "outputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "",
+                    "type": "uint64"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "casteo_4",
+            "outputs": [
+                {
+                    "internalType": "int256",
+                    "name": "",
+                    "type": "int256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "casteo_5",
+            "outputs": [
+                {
+                    "internalType": "int256",
+                    "name": "",
+                    "type": "int256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "_k",
+                    "type": "uint8"
+                }
+            ],
+            "name": "convertir",
+            "outputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "",
+                    "type": "uint64"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"casteo_1\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_2\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_4\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_5\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_k\",\"type\":\"uint8\"}],\"name\":\"convertir\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol\":\"casteo\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol\":{\"keccak256\":\"0x1e11f6040e3c39996627405e56eb8edab7853695b6ac6ddf0bc95a592bf675d7\",\"urls\":[\"bzz-raw://04ae10b485b497b9ca4db175ffbc46c5a457898e34a744f55cd32ce3486f2a3b\",\"dweb:/ipfs/QmVra9tAyvHPmn3goLYB47Aw7RJWcmsJBwpQ6cbzmv1SSW\"]}},\"version\":1}",
+    "bytecode": "6080604052600080546001600160481b03191662177001179055620186a06001819055600280546001600160901b031916650dbba000000f1790819055624c4b40600355600480546001600160801b0319166a0186a0000000000000000117905563010000009004600e0b60055560065534801561007c57600080fd5b506101318061008c6000396000f3fe6080604052348015600f57600080fd5b506004361060505760003560e01c806302b037a71460555780632b74311b1460865780639fe40a171460a5578063af489aa61460b6578063ed4885e51460cb575b600080fd5b60045460689067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b60045460689068010000000000000000900467ffffffffffffffff1681565b606860b036600460d3565b60ff1690565b60be60065481565b604051908152602001607d565b60be60055481565b60006020828403121560e457600080fd5b813560ff8116811460f457600080fd5b939250505056fea2646970667358221220b2cc3f6575f29a44090e7258425e3277d0b9e9154923fc1990c9eddf714286b964736f6c634300080d0033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060505760003560e01c806302b037a71460555780632b74311b1460865780639fe40a171460a5578063af489aa61460b6578063ed4885e51460cb575b600080fd5b60045460689067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b60045460689068010000000000000000900467ffffffffffffffff1681565b606860b036600460d3565b60ff1690565b60be60065481565b604051908152602001607d565b60be60055481565b60006020828403121560e457600080fd5b813560ff8116811460f457600080fd5b939250505056fea2646970667358221220b2cc3f6575f29a44090e7258425e3277d0b9e9154923fc1990c9eddf714286b964736f6c634300080d0033",
+    "sourceMap": "25:567:0:-:0;;;85:17;;;-1:-1:-1;;;;;;108:22:0;;;;;152:6;-1:-1:-1;136:22:0;;;164:19;;;-1:-1:-1;;;;;;189:25:0;;;;;;;233:7;189:25;220:20;274:40;;;-1:-1:-1;;;;;;320:42:0;;;;;189:25;441:9;;189:25;441:9;415:36;;457;;25:567;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "25:567:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;274:40;;;;;;;;;;;;188:18:1;176:31;;;158:50;;146:2;131:18;274:40:0;;;;;;;;320:42;;;;;;;;;;;;501:89;;;;;;:::i;:::-;573:10;;;501:89;457:36;;;;;;;;;637:25:1;;;625:2;610:18;457:36:0;493:175:1;415:36:0;;;;;;219:269:1;276:6;329:2;317:9;308:7;304:23;300:32;297:52;;;345:1;342;335:12;297:52;384:9;371:23;434:4;427:5;423:16;416:5;413:27;403:55;;454:1;451;444:12;403:55;477:5;219:269;-1:-1:-1;;;219:269:1:o",
+    "sourcePath": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.13+commit.abaa5c0e"
+    },
+    "ast": {
+        "absolutePath": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol",
+        "exportedSymbols": {
+            "casteo": [
+                57
+            ]
+        },
+        "id": 58,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "0.8",
+                    ".13"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "casteo",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 57,
+                "linearizedBaseContracts": [
+                    57
+                ],
+                "name": "casteo",
+                "nameLocation": "34:6:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 4,
+                        "mutability": "mutable",
+                        "name": "entero8",
+                        "nameLocation": "91:7:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "85:17:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "uint8",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "85:5:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint8",
+                                "typeString": "uint8"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "31",
+                            "id": 3,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "101:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_1_by_1",
+                                "typeString": "int_const 1"
+                            },
+                            "value": "1"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 7,
+                        "mutability": "mutable",
+                        "name": "entero64",
+                        "nameLocation": "115:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "108:22:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                        },
+                        "typeName": {
+                            "id": 5,
+                            "name": "uint64",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "108:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "36303030",
+                            "id": 6,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "126:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_6000_by_1",
+                                "typeString": "int_const 6000"
+                            },
+                            "value": "6000"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 10,
+                        "mutability": "mutable",
+                        "name": "entero256",
+                        "nameLocation": "141:9:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "136:22:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 8,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "136:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "313030303030",
+                            "id": 9,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "152:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_100000_by_1",
+                                "typeString": "int_const 100000"
+                            },
+                            "value": "100000"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 13,
+                        "mutability": "mutable",
+                        "name": "entero24",
+                        "nameLocation": "170:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "164:19:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_int24",
+                            "typeString": "int24"
+                        },
+                        "typeName": {
+                            "id": 11,
+                            "name": "int24",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "164:5:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int24",
+                                "typeString": "int24"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "3135",
+                            "id": 12,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "181:2:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_15_by_1",
+                                "typeString": "int_const 15"
+                            },
+                            "value": "15"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 16,
+                        "mutability": "mutable",
+                        "name": "entero120",
+                        "nameLocation": "196:9:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "189:25:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_int120",
+                            "typeString": "int120"
+                        },
+                        "typeName": {
+                            "id": 14,
+                            "name": "int120",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "189:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int120",
+                                "typeString": "int120"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "393030303030",
+                            "id": 15,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "208:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_900000_by_1",
+                                "typeString": "int_const 900000"
+                            },
+                            "value": "900000"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 19,
+                        "mutability": "mutable",
+                        "name": "entero",
+                        "nameLocation": "224:6:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "220:20:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                        },
+                        "typeName": {
+                            "id": 17,
+                            "name": "int",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "220:3:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int256",
+                                "typeString": "int256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "35303030303030",
+                            "id": 18,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "233:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_5000000_by_1",
+                                "typeString": "int_const 5000000"
+                            },
+                            "value": "5000000"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "02b037a7",
+                        "id": 25,
+                        "mutability": "mutable",
+                        "name": "casteo_1",
+                        "nameLocation": "288:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "274:40:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                        },
+                        "typeName": {
+                            "id": 20,
+                            "name": "uint64",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "274:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                            }
+                        },
+                        "value": {
+                            "arguments": [
+                                {
+                                    "id": 23,
+                                    "name": "entero8",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 4,
+                                    "src": "306:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                }
+                            ],
+                            "expression": {
+                                "argumentTypes": [
+                                    {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                ],
+                                "id": 22,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "299:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_uint64_$",
+                                    "typeString": "type(uint64)"
+                                },
+                                "typeName": {
+                                    "id": 21,
+                                    "name": "uint64",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "299:6:0",
+                                    "typeDescriptions": {}
+                                }
+                            },
+                            "id": 24,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "299:15:0",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "2b74311b",
+                        "id": 31,
+                        "mutability": "mutable",
+                        "name": "casteo_2",
+                        "nameLocation": "334:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "320:42:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                        },
+                        "typeName": {
+                            "id": 26,
+                            "name": "uint64",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "320:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                            }
+                        },
+                        "value": {
+                            "arguments": [
+                                {
+                                    "id": 29,
+                                    "name": "entero256",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 10,
+                                    "src": "352:9:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                }
+                            ],
+                            "expression": {
+                                "argumentTypes": [
+                                    {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                ],
+                                "id": 28,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "345:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_uint64_$",
+                                    "typeString": "type(uint64)"
+                                },
+                                "typeName": {
+                                    "id": 27,
+                                    "name": "uint64",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "345:6:0",
+                                    "typeDescriptions": {}
+                                }
+                            },
+                            "id": 30,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "345:17:0",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "ed4885e5",
+                        "id": 37,
+                        "mutability": "mutable",
+                        "name": "casteo_4",
+                        "nameLocation": "426:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "415:36:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                        },
+                        "typeName": {
+                            "id": 32,
+                            "name": "int",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "415:3:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int256",
+                                "typeString": "int256"
+                            }
+                        },
+                        "value": {
+                            "arguments": [
+                                {
+                                    "id": 35,
+                                    "name": "entero120",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 16,
+                                    "src": "441:9:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int120",
+                                        "typeString": "int120"
+                                    }
+                                }
+                            ],
+                            "expression": {
+                                "argumentTypes": [
+                                    {
+                                        "typeIdentifier": "t_int120",
+                                        "typeString": "int120"
+                                    }
+                                ],
+                                "id": 34,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "437:3:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_int256_$",
+                                    "typeString": "type(int256)"
+                                },
+                                "typeName": {
+                                    "id": 33,
+                                    "name": "int",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "437:3:0",
+                                    "typeDescriptions": {}
+                                }
+                            },
+                            "id": 36,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "437:14:0",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int256",
+                                "typeString": "int256"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "af489aa6",
+                        "id": 43,
+                        "mutability": "mutable",
+                        "name": "casteo_5",
+                        "nameLocation": "468:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 57,
+                        "src": "457:36:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                        },
+                        "typeName": {
+                            "id": 38,
+                            "name": "int",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "457:3:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int256",
+                                "typeString": "int256"
+                            }
+                        },
+                        "value": {
+                            "arguments": [
+                                {
+                                    "id": 41,
+                                    "name": "entero256",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 10,
+                                    "src": "483:9:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                }
+                            ],
+                            "expression": {
+                                "argumentTypes": [
+                                    {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                ],
+                                "id": 40,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "479:3:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_int256_$",
+                                    "typeString": "type(int256)"
+                                },
+                                "typeName": {
+                                    "id": 39,
+                                    "name": "int",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "479:3:0",
+                                    "typeDescriptions": {}
+                                }
+                            },
+                            "id": 42,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "479:14:0",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_int256",
+                                "typeString": "int256"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 55,
+                            "nodeType": "Block",
+                            "src": "556:34:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 52,
+                                                "name": "_k",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 45,
+                                                "src": "580:2:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            ],
+                                            "id": 51,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "nodeType": "ElementaryTypeNameExpression",
+                                            "src": "573:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_type$_t_uint64_$",
+                                                "typeString": "type(uint64)"
+                                            },
+                                            "typeName": {
+                                                "id": 50,
+                                                "name": "uint64",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "573:6:0",
+                                                "typeDescriptions": {}
+                                            }
+                                        },
+                                        "id": 53,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "typeConversion",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "573:10:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint64",
+                                            "typeString": "uint64"
+                                        }
+                                    },
+                                    "functionReturnParameters": 49,
+                                    "id": 54,
+                                    "nodeType": "Return",
+                                    "src": "566:17:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "9fe40a17",
+                        "id": 56,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "convertir",
+                        "nameLocation": "510:9:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 46,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 45,
+                                    "mutability": "mutable",
+                                    "name": "_k",
+                                    "nameLocation": "526:2:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 56,
+                                    "src": "520:8:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 44,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "520:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "519:10:0"
+                        },
+                        "returnParameters": {
+                            "id": 49,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 48,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 56,
+                                    "src": "549:6:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint64",
+                                        "typeString": "uint64"
+                                    },
+                                    "typeName": {
+                                        "id": 47,
+                                        "name": "uint64",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "549:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint64",
+                                            "typeString": "uint64"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "548:8:0"
+                        },
+                        "scope": 57,
+                        "src": "501:89:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 58,
+                "src": "25:567:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "0:592:0"
+    },
+    "functionHashes": {
+        "casteo_1()": "02b037a7",
+        "casteo_2()": "2b74311b",
+        "casteo_4()": "ed4885e5",
+        "casteo_5()": "af489aa6",
+        "convertir(uint8)": "9fe40a17"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "61000",
+            "executionCost": "161268",
+            "totalCost": "222268"
+        },
+        "external": {
+            "casteo_1()": "2280",
+            "casteo_2()": "2313",
+            "casteo_4()": "2361",
+            "casteo_5()": "2339",
+            "convertir(uint8)": "329"
+        }
+    }
+}
