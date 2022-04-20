@@ -1,4 +1,4 @@
-pragma solidity >=0.4.4 <0.7.0;
+pragma solidity 0.8.13;
 
 contract casteo{
 
@@ -7,7 +7,7 @@ contract casteo{
     uint8 entero8 = 1;
     uint64 entero64 = 6000;
     uint entero256 =100000;
-    int16 entero16 = 156;
+    int24 entero24 = 15;
     int120 entero120 = 900000;
     int entero = 5000000;
 
@@ -15,7 +15,7 @@ contract casteo{
 
     uint64 public casteo_1 = uint64(entero8);
     uint64 public casteo_2 = uint64(entero256);
-    uint8 public casteo_3 = uint8(entero16);
+    //uint8 public casteo_3 = uint8(entero24);
     int public casteo_4 = int(entero120);
     int public casteo_5 = int(entero256);
 
