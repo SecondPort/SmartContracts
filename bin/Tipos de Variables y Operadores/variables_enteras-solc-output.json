@@ -1,0 +1,673 @@
+{
+    "contracts": {
+        "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol": {
+            "enteros": {
+                "abi": [],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "60806040526003600181905561138860029081558154621b5800610100600160481b031990911617909155600219600555600655600880546001600160f01b031916612328179055348015605257600080fd5b50603f8060606000396000f3fe6080604052600080fdfea2646970667358221220cfcae068f17ddbf7d2f8bf42741e1b10f211ca9fb94bc4e57e3be4e8d8d4948d64736f6c634300080d0033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x3 PUSH1 0x1 DUP2 SWAP1 SSTORE PUSH2 0x1388 PUSH1 0x2 SWAP1 DUP2 SSTORE DUP2 SLOAD PUSH3 0x1B5800 PUSH2 0x100 PUSH1 0x1 PUSH1 0x48 SHL SUB NOT SWAP1 SWAP2 AND OR SWAP1 SWAP2 SSTORE PUSH1 0x2 NOT PUSH1 0x5 SSTORE PUSH1 0x6 SSTORE PUSH1 0x8 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xF0 SHL SUB NOT AND PUSH2 0x2328 OR SWAP1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x52 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x60 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xCF 0xCA 0xE0 PUSH9 0xF17DDBF7D2F8BF4274 0x1E SHL LT CALLCODE GT 0xCA SWAP16 0xB9 0x4B 0xC4 0xE5 PUSH31 0x3BE4E8D8D4948D64736F6C634300080D003300000000000000000000000000 ",
+                        "sourceMap": "57:540:0:-:0;;;155:1;130:26;;;;174:4;162:16;;;;273:24;;;-1:-1:-1;;;;;;273:24:0;;;;;;;-1:-1:-1;;382:32:0;;420:14;;562:31;;;-1:-1:-1;;;;;;562:31:0;589:4;562:31;;;57:540;;;;;;;;;;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "6080604052600080fdfea2646970667358221220cfcae068f17ddbf7d2f8bf42741e1b10f211ca9fb94bc4e57e3be4e8d8d4948d64736f6c634300080d0033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xCF 0xCA 0xE0 PUSH9 0xF17DDBF7D2F8BF4274 0x1E SHL LT CALLCODE GT 0xCA SWAP16 0xB9 0x4B 0xC4 0xE5 PUSH31 0x3BE4E8D8D4948D64736F6C634300080D003300000000000000000000000000 ",
+                        "sourceMap": "57:540:0:-:0;;;;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "12600",
+                            "executionCost": "136980",
+                            "totalCost": "149580"
+                        }
+                    },
+                    "methodIdentifiers": {}
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol\":\"enteros\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol\":{\"keccak256\":\"0xc519e751b5a8ae469d0856fda4a27c2b74c5250a27a2e4f3d2e4ea6097585da5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c8c3ff4d588011a9e2e1d9dbc8e13021df08807525a1921e91ff7b049d1f410c\",\"dweb:/ipfs/Qma8cwNMpFymVNzTSUkkSPTE2Fekq46tmx6a4zSXe69Ys5\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 3,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_uint256"
+                        },
+                        {
+                            "astId": 6,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myIntinIcializado",
+                            "offset": 0,
+                            "slot": "1",
+                            "type": "t_uint256"
+                        },
+                        {
+                            "astId": 9,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "cota",
+                            "offset": 0,
+                            "slot": "2",
+                            "type": "t_uint256"
+                        },
+                        {
+                            "astId": 11,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt8Bit",
+                            "offset": 0,
+                            "slot": "3",
+                            "type": "t_uint8"
+                        },
+                        {
+                            "astId": 14,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt64Bit",
+                            "offset": 1,
+                            "slot": "3",
+                            "type": "t_uint64"
+                        },
+                        {
+                            "astId": 16,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt16Bit",
+                            "offset": 9,
+                            "slot": "3",
+                            "type": "t_uint16"
+                        },
+                        {
+                            "astId": 18,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myIntSigned",
+                            "offset": 0,
+                            "slot": "4",
+                            "type": "t_int256"
+                        },
+                        {
+                            "astId": 22,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myIntSignedInicializado",
+                            "offset": 0,
+                            "slot": "5",
+                            "type": "t_int256"
+                        },
+                        {
+                            "astId": 25,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt2",
+                            "offset": 0,
+                            "slot": "6",
+                            "type": "t_int256"
+                        },
+                        {
+                            "astId": 27,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt8BitSigned",
+                            "offset": 0,
+                            "slot": "7",
+                            "type": "t_int8"
+                        },
+                        {
+                            "astId": 29,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt72BitSigned",
+                            "offset": 1,
+                            "slot": "7",
+                            "type": "t_int72"
+                        },
+                        {
+                            "astId": 32,
+                            "contract": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol:enteros",
+                            "label": "myInt240BitSigned",
+                            "offset": 0,
+                            "slot": "8",
+                            "type": "t_int240"
+                        }
+                    ],
+                    "types": {
+                        "t_int240": {
+                            "encoding": "inplace",
+                            "label": "int240",
+                            "numberOfBytes": "30"
+                        },
+                        "t_int256": {
+                            "encoding": "inplace",
+                            "label": "int256",
+                            "numberOfBytes": "32"
+                        },
+                        "t_int72": {
+                            "encoding": "inplace",
+                            "label": "int72",
+                            "numberOfBytes": "9"
+                        },
+                        "t_int8": {
+                            "encoding": "inplace",
+                            "label": "int8",
+                            "numberOfBytes": "1"
+                        },
+                        "t_uint16": {
+                            "encoding": "inplace",
+                            "label": "uint16",
+                            "numberOfBytes": "2"
+                        },
+                        "t_uint256": {
+                            "encoding": "inplace",
+                            "label": "uint256",
+                            "numberOfBytes": "32"
+                        },
+                        "t_uint64": {
+                            "encoding": "inplace",
+                            "label": "uint64",
+                            "numberOfBytes": "8"
+                        },
+                        "t_uint8": {
+                            "encoding": "inplace",
+                            "label": "uint8",
+                            "numberOfBytes": "1"
+                        }
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol": {
+            "ast": {
+                "absolutePath": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/variables_enteras.sol",
+                "exportedSymbols": {
+                    "enteros": [
+                        33
+                    ]
+                },
+                "id": 34,
+                "license": "MIT",
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "0.8",
+                            ".13"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "32:23:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "canonicalName": "enteros",
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 33,
+                        "linearizedBaseContracts": [
+                            33
+                        ],
+                        "name": "enteros",
+                        "nameLocation": "66:7:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "myInt",
+                                "nameLocation": "119:5:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "114:10:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "114:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 6,
+                                "mutability": "mutable",
+                                "name": "myIntinIcializado",
+                                "nameLocation": "135:17:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "130:26:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "130:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": {
+                                    "hexValue": "33",
+                                    "id": 5,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "number",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "155:1:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_3_by_1",
+                                        "typeString": "int_const 3"
+                                    },
+                                    "value": "3"
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 9,
+                                "mutability": "mutable",
+                                "name": "cota",
+                                "nameLocation": "167:4:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "162:16:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 7,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "162:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": {
+                                    "hexValue": "35303030",
+                                    "id": 8,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "number",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "174:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_5000_by_1",
+                                        "typeString": "int_const 5000"
+                                    },
+                                    "value": "5000"
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 11,
+                                "mutability": "mutable",
+                                "name": "myInt8Bit",
+                                "nameLocation": "258:9:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "252:15:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint8",
+                                    "typeString": "uint8"
+                                },
+                                "typeName": {
+                                    "id": 10,
+                                    "name": "uint8",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "252:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 14,
+                                "mutability": "mutable",
+                                "name": "myInt64Bit",
+                                "nameLocation": "280:10:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "273:24:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint64",
+                                    "typeString": "uint64"
+                                },
+                                "typeName": {
+                                    "id": 12,
+                                    "name": "uint64",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "273:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint64",
+                                        "typeString": "uint64"
+                                    }
+                                },
+                                "value": {
+                                    "hexValue": "37303030",
+                                    "id": 13,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "number",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "293:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_7000_by_1",
+                                        "typeString": "int_const 7000"
+                                    },
+                                    "value": "7000"
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 16,
+                                "mutability": "mutable",
+                                "name": "myInt16Bit",
+                                "nameLocation": "310:10:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "303:17:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint16",
+                                    "typeString": "uint16"
+                                },
+                                "typeName": {
+                                    "id": 15,
+                                    "name": "uint16",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "303:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint16",
+                                        "typeString": "uint16"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 18,
+                                "mutability": "mutable",
+                                "name": "myIntSigned",
+                                "nameLocation": "365:11:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "361:15:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_int256",
+                                    "typeString": "int256"
+                                },
+                                "typeName": {
+                                    "id": 17,
+                                    "name": "int",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "361:3:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int256",
+                                        "typeString": "int256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 22,
+                                "mutability": "mutable",
+                                "name": "myIntSignedInicializado",
+                                "nameLocation": "386:23:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "382:32:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_int256",
+                                    "typeString": "int256"
+                                },
+                                "typeName": {
+                                    "id": 19,
+                                    "name": "int",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "382:3:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int256",
+                                        "typeString": "int256"
+                                    }
+                                },
+                                "value": {
+                                    "id": 21,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "UnaryOperation",
+                                    "operator": "-",
+                                    "prefix": true,
+                                    "src": "412:2:0",
+                                    "subExpression": {
+                                        "hexValue": "33",
+                                        "id": 20,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "number",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "413:1:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_rational_3_by_1",
+                                            "typeString": "int_const 3"
+                                        },
+                                        "value": "3"
+                                    },
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_minus_3_by_1",
+                                        "typeString": "int_const -3"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 25,
+                                "mutability": "mutable",
+                                "name": "myInt2",
+                                "nameLocation": "424:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "420:14:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_int256",
+                                    "typeString": "int256"
+                                },
+                                "typeName": {
+                                    "id": 23,
+                                    "name": "int",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "420:3:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int256",
+                                        "typeString": "int256"
+                                    }
+                                },
+                                "value": {
+                                    "hexValue": "32",
+                                    "id": 24,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "number",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "433:1:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_2_by_1",
+                                        "typeString": "int_const 2"
+                                    },
+                                    "value": "2"
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 27,
+                                "mutability": "mutable",
+                                "name": "myInt8BitSigned",
+                                "nameLocation": "513:15:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "508:20:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_int8",
+                                    "typeString": "int8"
+                                },
+                                "typeName": {
+                                    "id": 26,
+                                    "name": "int8",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "508:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int8",
+                                        "typeString": "int8"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 29,
+                                "mutability": "mutable",
+                                "name": "myInt72BitSigned",
+                                "nameLocation": "540:16:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "534:22:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_int72",
+                                    "typeString": "int72"
+                                },
+                                "typeName": {
+                                    "id": 28,
+                                    "name": "int72",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "534:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int72",
+                                        "typeString": "int72"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 32,
+                                "mutability": "mutable",
+                                "name": "myInt240BitSigned",
+                                "nameLocation": "569:17:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "562:31:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_int240",
+                                    "typeString": "int240"
+                                },
+                                "typeName": {
+                                    "id": 30,
+                                    "name": "int240",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "562:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int240",
+                                        "typeString": "int240"
+                                    }
+                                },
+                                "value": {
+                                    "hexValue": "39303030",
+                                    "id": 31,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "number",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "589:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_9000_by_1",
+                                        "typeString": "int_const 9000"
+                                    },
+                                    "value": "9000"
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "scope": 34,
+                        "src": "57:540:0",
+                        "usedErrors": []
+                    }
+                ],
+                "src": "32:565:0"
+            },
+            "id": 0
+        }
+    }
+}
