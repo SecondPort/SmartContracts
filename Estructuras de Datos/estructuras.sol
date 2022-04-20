@@ -1,5 +1,4 @@
 pragma solidity 0.8.13;
-
 contract Estructuras{
 
     //cliente de una pagina web de pago
