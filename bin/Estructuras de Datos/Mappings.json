@@ -1,0 +1,1418 @@
+{
+    "contractName": "Mappings",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "name": "CantDinero",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                }
+            ],
+            "name": "ConsultarDinero",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "Numero",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_dni",
+                    "type": "uint256"
+                }
+            ],
+            "name": "VisualizarPerosona",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "nombre",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "edad",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct Mappings.Persona",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "consultarNumero",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_numeroDni",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_edad",
+                    "type": "uint256"
+                }
+            ],
+            "name": "dni_Persona",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_numero",
+                    "type": "uint256"
+                }
+            ],
+            "name": "elegirNumero",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_cantidad",
+                    "type": "uint256"
+                }
+            ],
+            "name": "mDinero",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "personas",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "edad",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"CantDinero\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"}],\"name\":\"ConsultarDinero\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"Numero\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_dni\",\"type\":\"uint256\"}],\"name\":\"VisualizarPerosona\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"edad\",\"type\":\"uint256\"}],\"internalType\":\"struct Mappings.Persona\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"consultarNumero\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_numeroDni\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_edad\",\"type\":\"uint256\"}],\"name\":\"dni_Persona\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_numero\",\"type\":\"uint256\"}],\"name\":\"elegirNumero\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_cantidad\",\"type\":\"uint256\"}],\"name\":\"mDinero\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"personas\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"edad\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Estructuras de Datos/mapping.sol\":\"Mappings\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Estructuras de Datos/mapping.sol\":{\"keccak256\":\"0xc28875af71f62ae7608cd228a6adb32bd474def1b76a9d4f6682138272c91dfc\",\"urls\":[\"bzz-raw://e04692597011c36e2912d90d1987f544fa1b54a80a7b9e80f850b8bd6f614aad\",\"dweb:/ipfs/QmbNNFwuKD4CBdM5xiHxZywzyQ9VUpBVsKnfH6rTHbM67j\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50610747806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80635bd30c1f116100665780635bd30c1f1461010a5780637fdce9491461013857806392174b4914610163578063d0427d5a14610178578063ec81f7941461019857600080fd5b8063072afbaa1461009857806321897068146100ad5780632a3d9090146100d657806340291e6a146100e9575b600080fd5b6100ab6100a63660046104f0565b6101ab565b005b6100c06100bb366004610540565b6101f4565b6040516100cd91906105b5565b60405180910390f35b6100ab6100e43660046105e7565b6102c3565b6100fc6100f7366004610540565b6102e8565b6040516100cd92919061062c565b61012a61011836600461064e565b60006020819052908152604090205481565b6040519081526020016100cd565b61012a61014636600461067e565b805160208183018101805160018252928201919093012091525481565b3360009081526020819052604090205461012a565b6100ab610186366004610540565b33600090815260208190526040902055565b61012a6101a636600461067e565b61038c565b60408051808201825283815260208082018490526000868152600282529290922081518051929391926101e192849201906103b4565b5060208201518160010155905050505050565b604080518082019091526060815260006020820152600082815260026020526040908190208151808301909252805482908290610230906106bb565b80601f016020809104026020016040519081016040528092919081815260200182805461025c906106bb565b80156102a95780601f1061027e576101008083540402835291602001916102a9565b820191906000526020600020905b81548152906001019060200180831161028c57829003601f168201915b505050505081526020016001820154815250509050919050565b806001836040516102d491906106f5565b908152604051908190036020019020555050565b600260205260009081526040902080548190610303906106bb565b80601f016020809104026020016040519081016040528092919081815260200182805461032f906106bb565b801561037c5780601f106103515761010080835404028352916020019161037c565b820191906000526020600020905b81548152906001019060200180831161035f57829003601f168201915b5050505050908060010154905082565b600060018260405161039e91906106f5565b9081526020016040518091039020549050919050565b8280546103c0906106bb565b90600052602060002090601f0160209004810192826103e25760008555610428565b82601f106103fb57805160ff1916838001178555610428565b82800160010185558215610428579182015b8281111561042857825182559160200191906001019061040d565b50610434929150610438565b5090565b5b808211156104345760008155600101610439565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261047457600080fd5b813567ffffffffffffffff8082111561048f5761048f61044d565b604051601f8301601f19908116603f011681019082821181831017156104b7576104b761044d565b816040528381528660208588010111156104d057600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060006060848603121561050557600080fd5b83359250602084013567ffffffffffffffff81111561052357600080fd5b61052f86828701610463565b925050604084013590509250925092565b60006020828403121561055257600080fd5b5035919050565b60005b8381101561057457818101518382015260200161055c565b83811115610583576000848401525b50505050565b600081518084526105a1816020860160208601610559565b601f01601f19169290920160200192915050565b6020815260008251604060208401526105d16060840182610589565b9050602084015160408401528091505092915050565b600080604083850312156105fa57600080fd5b823567ffffffffffffffff81111561061157600080fd5b61061d85828601610463565b95602094909401359450505050565b60408152600061063f6040830185610589565b90508260208301529392505050565b60006020828403121561066057600080fd5b81356001600160a01b038116811461067757600080fd5b9392505050565b60006020828403121561069057600080fd5b813567ffffffffffffffff8111156106a757600080fd5b6106b384828501610463565b949350505050565b600181811c908216806106cf57607f821691505b6020821081036106ef57634e487b7160e01b600052602260045260246000fd5b50919050565b60008251610707818460208701610559565b919091019291505056fea2646970667358221220fb8da152c3c5bec2c07cd7d58f78232c2e1dc8287ebdffe20c37bd014e3a543964736f6c634300080d0033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100935760003560e01c80635bd30c1f116100665780635bd30c1f1461010a5780637fdce9491461013857806392174b4914610163578063d0427d5a14610178578063ec81f7941461019857600080fd5b8063072afbaa1461009857806321897068146100ad5780632a3d9090146100d657806340291e6a146100e9575b600080fd5b6100ab6100a63660046104f0565b6101ab565b005b6100c06100bb366004610540565b6101f4565b6040516100cd91906105b5565b60405180910390f35b6100ab6100e43660046105e7565b6102c3565b6100fc6100f7366004610540565b6102e8565b6040516100cd92919061062c565b61012a61011836600461064e565b60006020819052908152604090205481565b6040519081526020016100cd565b61012a61014636600461067e565b805160208183018101805160018252928201919093012091525481565b3360009081526020819052604090205461012a565b6100ab610186366004610540565b33600090815260208190526040902055565b61012a6101a636600461067e565b61038c565b60408051808201825283815260208082018490526000868152600282529290922081518051929391926101e192849201906103b4565b5060208201518160010155905050505050565b604080518082019091526060815260006020820152600082815260026020526040908190208151808301909252805482908290610230906106bb565b80601f016020809104026020016040519081016040528092919081815260200182805461025c906106bb565b80156102a95780601f1061027e576101008083540402835291602001916102a9565b820191906000526020600020905b81548152906001019060200180831161028c57829003601f168201915b505050505081526020016001820154815250509050919050565b806001836040516102d491906106f5565b908152604051908190036020019020555050565b600260205260009081526040902080548190610303906106bb565b80601f016020809104026020016040519081016040528092919081815260200182805461032f906106bb565b801561037c5780601f106103515761010080835404028352916020019161037c565b820191906000526020600020905b81548152906001019060200180831161035f57829003601f168201915b5050505050908060010154905082565b600060018260405161039e91906106f5565b9081526020016040518091039020549050919050565b8280546103c0906106bb565b90600052602060002090601f0160209004810192826103e25760008555610428565b82601f106103fb57805160ff1916838001178555610428565b82800160010185558215610428579182015b8281111561042857825182559160200191906001019061040d565b50610434929150610438565b5090565b5b808211156104345760008155600101610439565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261047457600080fd5b813567ffffffffffffffff8082111561048f5761048f61044d565b604051601f8301601f19908116603f011681019082821181831017156104b7576104b761044d565b816040528381528660208588010111156104d057600080fd5b836020870160208301376000602085830101528094505050505092915050565b60008060006060848603121561050557600080fd5b83359250602084013567ffffffffffffffff81111561052357600080fd5b61052f86828701610463565b925050604084013590509250925092565b60006020828403121561055257600080fd5b5035919050565b60005b8381101561057457818101518382015260200161055c565b83811115610583576000848401525b50505050565b600081518084526105a1816020860160208601610559565b601f01601f19169290920160200192915050565b6020815260008251604060208401526105d16060840182610589565b9050602084015160408401528091505092915050565b600080604083850312156105fa57600080fd5b823567ffffffffffffffff81111561061157600080fd5b61061d85828601610463565b95602094909401359450505050565b60408152600061063f6040830185610589565b90508260208301529392505050565b60006020828403121561066057600080fd5b81356001600160a01b038116811461067757600080fd5b9392505050565b60006020828403121561069057600080fd5b813567ffffffffffffffff8111156106a757600080fd5b6106b384828501610463565b949350505050565b600181811c908216806106cf57607f821691505b6020821081036106ef57634e487b7160e01b600052602260045260246000fd5b50919050565b60008251610707818460208701610559565b919091019291505056fea2646970667358221220fb8da152c3c5bec2c07cd7d58f78232c2e1dc8287ebdffe20c37bd014e3a543964736f6c634300080d0033",
+    "sourceMap": "60:1055:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "60:1055:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;854:141;;;;;;:::i;:::-;;:::i;:::-;;1001:112;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;449:110;;;;;;:::i;:::-;;:::i;809:38::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;:::i;107:::-;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;3602:25:1;;;3590:2;3575:18;107:38:0;3456:177:1;401:41:0;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;245:94;321:10;292:4;314:18;;;;;;;;;;;245:94;;152:87;;;;;;:::i;:::-;211:10;204:6;:18;;;;;;;;;;:28;152:87;565:116;;;;;;:::i;:::-;;:::i;854:141::-;965:23;;;;;;;;;;;;;;;;;;-1:-1:-1;942:20:0;;;:8;:20;;;;;;:46;;;;965:23;;942:20;;:46;;:20;;:46;;;:::i;:::-;;;;;;;;;;;;;854:141;;;:::o;1001:112::-;-1:-1:-1;;;;;;;;;;;;;;;;;1092:14:0;;;;:8;:14;;;;;;;1085:21;;;;;;;;;;;;1092:14;;1085:21;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1001:112;;;:::o;449:110::-;543:9;521:10;532:7;521:19;;;;;;:::i;:::-;;;;;;;;;;;;;;:31;-1:-1:-1;;449:110:0:o;809:38::-;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;565:116::-;633:4;655:10;666:7;655:19;;;;;;:::i;:::-;;;;;;;;;;;;;;648:26;;565:116;;;:::o;-1:-1:-1:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:719;189:5;242:3;235:4;227:6;223:17;219:27;209:55;;260:1;257;250:12;209:55;296:6;283:20;322:18;359:2;355;352:10;349:36;;;365:18;;:::i;:::-;440:2;434:9;408:2;494:13;;-1:-1:-1;;490:22:1;;;514:2;486:31;482:40;470:53;;;538:18;;;558:22;;;535:46;532:72;;;584:18;;:::i;:::-;624:10;620:2;613:22;659:2;651:6;644:18;705:3;698:4;693:2;685:6;681:15;677:26;674:35;671:55;;;722:1;719;712:12;671:55;786:2;779:4;771:6;767:17;760:4;752:6;748:17;735:54;833:1;826:4;821:2;813:6;809:15;805:26;798:37;853:6;844:15;;;;;;146:719;;;;:::o;870:458::-;957:6;965;973;1026:2;1014:9;1005:7;1001:23;997:32;994:52;;;1042:1;1039;1032:12;994:52;1078:9;1065:23;1055:33;;1139:2;1128:9;1124:18;1111:32;1166:18;1158:6;1155:30;1152:50;;;1198:1;1195;1188:12;1152:50;1221;1263:7;1254:6;1243:9;1239:22;1221:50;:::i;:::-;1211:60;;;1318:2;1307:9;1303:18;1290:32;1280:42;;870:458;;;;;:::o;1333:180::-;1392:6;1445:2;1433:9;1424:7;1420:23;1416:32;1413:52;;;1461:1;1458;1451:12;1413:52;-1:-1:-1;1484:23:1;;1333:180;-1:-1:-1;1333:180:1:o;1518:258::-;1590:1;1600:113;1614:6;1611:1;1608:13;1600:113;;;1690:11;;;1684:18;1671:11;;;1664:39;1636:2;1629:10;1600:113;;;1731:6;1728:1;1725:13;1722:48;;;1766:1;1757:6;1752:3;1748:16;1741:27;1722:48;;1518:258;;;:::o;1781:::-;1823:3;1861:5;1855:12;1888:6;1883:3;1876:19;1904:63;1960:6;1953:4;1948:3;1944:14;1937:4;1930:5;1926:16;1904:63;:::i;:::-;2021:2;2000:15;-1:-1:-1;;1996:29:1;1987:39;;;;2028:4;1983:50;;1781:258;-1:-1:-1;;1781:258:1:o;2044:425::-;2219:2;2208:9;2201:21;2182:4;2257:6;2251:13;2300:4;2295:2;2284:9;2280:18;2273:32;2328:51;2375:2;2364:9;2360:18;2346:12;2328:51;:::i;:::-;2314:65;;2435:2;2427:6;2423:15;2417:22;2410:4;2399:9;2395:20;2388:52;2457:6;2449:14;;;2044:425;;;;:::o;2474:390::-;2552:6;2560;2613:2;2601:9;2592:7;2588:23;2584:32;2581:52;;;2629:1;2626;2619:12;2581:52;2669:9;2656:23;2702:18;2694:6;2691:30;2688:50;;;2734:1;2731;2724:12;2688:50;2757;2799:7;2790:6;2779:9;2775:22;2757:50;:::i;:::-;2747:60;2854:2;2839:18;;;;2826:32;;-1:-1:-1;;;;2474:390:1:o;2869:291::-;3046:2;3035:9;3028:21;3009:4;3066:45;3107:2;3096:9;3092:18;3084:6;3066:45;:::i;:::-;3058:53;;3147:6;3142:2;3131:9;3127:18;3120:34;2869:291;;;;;:::o;3165:286::-;3224:6;3277:2;3265:9;3256:7;3252:23;3248:32;3245:52;;;3293:1;3290;3283:12;3245:52;3319:23;;-1:-1:-1;;;;;3371:31:1;;3361:42;;3351:70;;3417:1;3414;3407:12;3351:70;3440:5;3165:286;-1:-1:-1;;;3165:286:1:o;3638:322::-;3707:6;3760:2;3748:9;3739:7;3735:23;3731:32;3728:52;;;3776:1;3773;3766:12;3728:52;3816:9;3803:23;3849:18;3841:6;3838:30;3835:50;;;3881:1;3878;3871:12;3835:50;3904;3946:7;3937:6;3926:9;3922:22;3904:50;:::i;:::-;3894:60;3638:322;-1:-1:-1;;;;3638:322:1:o;3965:380::-;4044:1;4040:12;;;;4087;;;4108:61;;4162:4;4154:6;4150:17;4140:27;;4108:61;4215:2;4207:6;4204:14;4184:18;4181:38;4178:161;;4261:10;4256:3;4252:20;4249:1;4242:31;4296:4;4293:1;4286:15;4324:4;4321:1;4314:15;4178:161;;3965:380;;;:::o;4350:276::-;4481:3;4519:6;4513:13;4535:53;4581:6;4576:3;4569:4;4561:6;4557:17;4535:53;:::i;:::-;4604:16;;;;;4350:276;-1:-1:-1;;4350:276:1:o",
+    "sourcePath": "/home/secondport/Documents/SmartContracts/Estructuras de Datos/mapping.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.13+commit.abaa5c0e"
+    },
+    "ast": {
+        "absolutePath": "/home/secondport/Documents/SmartContracts/Estructuras de Datos/mapping.sol",
+        "exportedSymbols": {
+            "Mappings": [
+                103
+            ]
+        },
+        "id": 104,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "0.8",
+                    ".13"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "id": 2,
+                "literals": [
+                    "experimental",
+                    "ABIEncoderV2"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "24:33:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Mappings",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 103,
+                "linearizedBaseContracts": [
+                    103
+                ],
+                "name": "Mappings",
+                "nameLocation": "69:8:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "5bd30c1f",
+                        "id": 6,
+                        "mutability": "mutable",
+                        "name": "Numero",
+                        "nameLocation": "139:6:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 103,
+                        "src": "107:38:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                        },
+                        "typeName": {
+                            "id": 5,
+                            "keyType": {
+                                "id": 3,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "115:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "107:24:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                "typeString": "mapping(address => uint256)"
+                            },
+                            "valueType": {
+                                "id": 4,
+                                "name": "uint",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "126:4:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 18,
+                            "nodeType": "Block",
+                            "src": "194:45:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 16,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 11,
+                                                "name": "Numero",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 6,
+                                                "src": "204:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                                    "typeString": "mapping(address => uint256)"
+                                                }
+                                            },
+                                            "id": 14,
+                                            "indexExpression": {
+                                                "expression": {
+                                                    "id": 12,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4294967281,
+                                                    "src": "211:3:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 13,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "src": "211:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "204:18:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 15,
+                                            "name": "_numero",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 8,
+                                            "src": "225:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "204:28:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 17,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "204:28:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "d0427d5a",
+                        "id": 19,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "elegirNumero",
+                        "nameLocation": "161:12:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 9,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 8,
+                                    "mutability": "mutable",
+                                    "name": "_numero",
+                                    "nameLocation": "179:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 19,
+                                    "src": "174:12:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 7,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "174:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "173:14:0"
+                        },
+                        "returnParameters": {
+                            "id": 10,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "194:0:0"
+                        },
+                        "scope": 103,
+                        "src": "152:87:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 29,
+                            "nodeType": "Block",
+                            "src": "297:42:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "baseExpression": {
+                                            "id": 24,
+                                            "name": "Numero",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 6,
+                                            "src": "314:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                                "typeString": "mapping(address => uint256)"
+                                            }
+                                        },
+                                        "id": 27,
+                                        "indexExpression": {
+                                            "expression": {
+                                                "id": 25,
+                                                "name": "msg",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 4294967281,
+                                                "src": "321:3:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_magic_message",
+                                                    "typeString": "msg"
+                                                }
+                                            },
+                                            "id": 26,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "sender",
+                                            "nodeType": "MemberAccess",
+                                            "src": "321:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "314:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 23,
+                                    "id": 28,
+                                    "nodeType": "Return",
+                                    "src": "307:25:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "92174b49",
+                        "id": 30,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "consultarNumero",
+                        "nameLocation": "254:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 20,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "269:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 23,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 22,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 30,
+                                    "src": "292:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 21,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "292:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "291:6:0"
+                        },
+                        "scope": 103,
+                        "src": "245:94:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "7fdce949",
+                        "id": 34,
+                        "mutability": "mutable",
+                        "name": "CantDinero",
+                        "nameLocation": "432:10:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 103,
+                        "src": "401:41:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                            "typeString": "mapping(string => uint256)"
+                        },
+                        "typeName": {
+                            "id": 33,
+                            "keyType": {
+                                "id": 31,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "409:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "401:23:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                                "typeString": "mapping(string => uint256)"
+                            },
+                            "valueType": {
+                                "id": 32,
+                                "name": "uint",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "419:4:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 47,
+                            "nodeType": "Block",
+                            "src": "511:48:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 45,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 41,
+                                                "name": "CantDinero",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 34,
+                                                "src": "521:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                                                    "typeString": "mapping(string memory => uint256)"
+                                                }
+                                            },
+                                            "id": 43,
+                                            "indexExpression": {
+                                                "id": 42,
+                                                "name": "_nombre",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 36,
+                                                "src": "532:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "521:19:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 44,
+                                            "name": "_cantidad",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 38,
+                                            "src": "543:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "521:31:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 46,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "521:31:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "2a3d9090",
+                        "id": 48,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "mDinero",
+                        "nameLocation": "458:7:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 39,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 36,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "480:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 48,
+                                    "src": "466:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 35,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "466:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 38,
+                                    "mutability": "mutable",
+                                    "name": "_cantidad",
+                                    "nameLocation": "494:9:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 48,
+                                    "src": "489:14:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 37,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "489:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "465:39:0"
+                        },
+                        "returnParameters": {
+                            "id": 40,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "511:0:0"
+                        },
+                        "scope": 103,
+                        "src": "449:110:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 59,
+                            "nodeType": "Block",
+                            "src": "638:43:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "baseExpression": {
+                                            "id": 55,
+                                            "name": "CantDinero",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 34,
+                                            "src": "655:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                                                "typeString": "mapping(string memory => uint256)"
+                                            }
+                                        },
+                                        "id": 57,
+                                        "indexExpression": {
+                                            "id": 56,
+                                            "name": "_nombre",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 50,
+                                            "src": "666:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "655:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 54,
+                                    "id": 58,
+                                    "nodeType": "Return",
+                                    "src": "648:26:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "ec81f794",
+                        "id": 60,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "ConsultarDinero",
+                        "nameLocation": "574:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 51,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 50,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "604:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 60,
+                                    "src": "590:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 49,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "590:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "589:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 54,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 53,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 60,
+                                    "src": "633:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 52,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "633:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "632:6:0"
+                        },
+                        "scope": 103,
+                        "src": "565:116:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "Mappings.Persona",
+                        "id": 65,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 62,
+                                "mutability": "mutable",
+                                "name": "nombre",
+                                "nameLocation": "771:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 65,
+                                "src": "764:13:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 61,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "764:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 64,
+                                "mutability": "mutable",
+                                "name": "edad",
+                                "nameLocation": "792:4:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 65,
+                                "src": "787:9:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 63,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "787:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Persona",
+                        "nameLocation": "747:7:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 103,
+                        "src": "740:63:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "40291e6a",
+                        "id": 70,
+                        "mutability": "mutable",
+                        "name": "personas",
+                        "nameLocation": "839:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 103,
+                        "src": "809:38:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Persona_$65_storage_$",
+                            "typeString": "mapping(uint256 => struct Mappings.Persona)"
+                        },
+                        "typeName": {
+                            "id": 69,
+                            "keyType": {
+                                "id": 66,
+                                "name": "uint",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "817:4:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "809:22:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Persona_$65_storage_$",
+                                "typeString": "mapping(uint256 => struct Mappings.Persona)"
+                            },
+                            "valueType": {
+                                "id": 68,
+                                "nodeType": "UserDefinedTypeName",
+                                "pathNode": {
+                                    "id": 67,
+                                    "name": "Persona",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 65,
+                                    "src": "823:7:0"
+                                },
+                                "referencedDeclaration": 65,
+                                "src": "823:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Persona_$65_storage_ptr",
+                                    "typeString": "struct Mappings.Persona"
+                                }
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 88,
+                            "nodeType": "Block",
+                            "src": "932:63:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 86,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 79,
+                                                "name": "personas",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 70,
+                                                "src": "942:8:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Persona_$65_storage_$",
+                                                    "typeString": "mapping(uint256 => struct Mappings.Persona storage ref)"
+                                                }
+                                            },
+                                            "id": 81,
+                                            "indexExpression": {
+                                                "id": 80,
+                                                "name": "_numeroDni",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 72,
+                                                "src": "951:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "942:20:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Persona_$65_storage",
+                                                "typeString": "struct Mappings.Persona storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "id": 83,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 74,
+                                                    "src": "973:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 84,
+                                                    "name": "_edad",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 76,
+                                                    "src": "982:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                ],
+                                                "id": 82,
+                                                "name": "Persona",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 65,
+                                                "src": "965:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_struct$_Persona_$65_storage_ptr_$",
+                                                    "typeString": "type(struct Mappings.Persona storage pointer)"
+                                                }
+                                            },
+                                            "id": 85,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "structConstructorCall",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "965:23:0",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Persona_$65_memory_ptr",
+                                                "typeString": "struct Mappings.Persona memory"
+                                            }
+                                        },
+                                        "src": "942:46:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Persona_$65_storage",
+                                            "typeString": "struct Mappings.Persona storage ref"
+                                        }
+                                    },
+                                    "id": 87,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "942:46:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "072afbaa",
+                        "id": 89,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "dni_Persona",
+                        "nameLocation": "863:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 77,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 72,
+                                    "mutability": "mutable",
+                                    "name": "_numeroDni",
+                                    "nameLocation": "880:10:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 89,
+                                    "src": "875:15:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 71,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "875:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 74,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "906:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 89,
+                                    "src": "892:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 73,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "892:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 76,
+                                    "mutability": "mutable",
+                                    "name": "_edad",
+                                    "nameLocation": "920:5:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 89,
+                                    "src": "915:10:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 75,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "915:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "874:52:0"
+                        },
+                        "returnParameters": {
+                            "id": 78,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "932:0:0"
+                        },
+                        "scope": 103,
+                        "src": "854:141:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 101,
+                            "nodeType": "Block",
+                            "src": "1075:38:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "baseExpression": {
+                                            "id": 97,
+                                            "name": "personas",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 70,
+                                            "src": "1092:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Persona_$65_storage_$",
+                                                "typeString": "mapping(uint256 => struct Mappings.Persona storage ref)"
+                                            }
+                                        },
+                                        "id": 99,
+                                        "indexExpression": {
+                                            "id": 98,
+                                            "name": "_dni",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 91,
+                                            "src": "1101:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "1092:14:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Persona_$65_storage",
+                                            "typeString": "struct Mappings.Persona storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 96,
+                                    "id": 100,
+                                    "nodeType": "Return",
+                                    "src": "1085:21:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "21897068",
+                        "id": 102,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "VisualizarPerosona",
+                        "nameLocation": "1010:18:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 92,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 91,
+                                    "mutability": "mutable",
+                                    "name": "_dni",
+                                    "nameLocation": "1034:4:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 102,
+                                    "src": "1029:9:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 90,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1029:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1028:11:0"
+                        },
+                        "returnParameters": {
+                            "id": 96,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 95,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 102,
+                                    "src": "1060:14:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Persona_$65_memory_ptr",
+                                        "typeString": "struct Mappings.Persona"
+                                    },
+                                    "typeName": {
+                                        "id": 94,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 93,
+                                            "name": "Persona",
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 65,
+                                            "src": "1060:7:0"
+                                        },
+                                        "referencedDeclaration": 65,
+                                        "src": "1060:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Persona_$65_storage_ptr",
+                                            "typeString": "struct Mappings.Persona"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1059:16:0"
+                        },
+                        "scope": 103,
+                        "src": "1001:112:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 104,
+                "src": "60:1055:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "0:1115:0"
+    },
+    "functionHashes": {
+        "CantDinero(string)": "7fdce949",
+        "ConsultarDinero(string)": "ec81f794",
+        "Numero(address)": "5bd30c1f",
+        "VisualizarPerosona(uint256)": "21897068",
+        "consultarNumero()": "92174b49",
+        "dni_Persona(uint256,string,uint256)": "072afbaa",
+        "elegirNumero(uint256)": "d0427d5a",
+        "mDinero(string,uint256)": "2a3d9090",
+        "personas(uint256)": "40291e6a"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "372600",
+            "executionCost": "411",
+            "totalCost": "373011"
+        },
+        "external": {
+            "CantDinero(string)": "infinite",
+            "ConsultarDinero(string)": "infinite",
+            "Numero(address)": "2487",
+            "VisualizarPerosona(uint256)": "infinite",
+            "consultarNumero()": "2407",
+            "dni_Persona(uint256,string,uint256)": "infinite",
+            "elegirNumero(uint256)": "22449",
+            "mDinero(string,uint256)": "infinite",
+            "personas(uint256)": "infinite"
+        }
+    }
+}
