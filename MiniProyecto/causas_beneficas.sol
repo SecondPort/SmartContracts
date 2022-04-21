@@ -30,7 +30,7 @@ contract causasBeneficas{
         }
         return flag;
     }
-    //Esta funcion permite donar a una causa
+    /Esta funcion permite donar a una causa
     function donar(string memory _nombre, uint _cantidad)public returns(bool){
 
         bool aceptar_donacion = true;
