@@ -22,12 +22,12 @@ contract bucle_for{
     }
     //comprobar si la direccion esta en el array de direcciones
     function comprobarAsociacion()public view returns(bool, address){
-
+        bool flag = false;
         for( uint i = 0; i < direcciones.length; i++){
             if(direcciones[i] == msg.sender){
-                return (true, direcciones[i]);
+                flag = true;
             }
-        }
+        }return (flag, msg.sender);
     }
 
     //doble for: suma los 10 primeros facatoriales
