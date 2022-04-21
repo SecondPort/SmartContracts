@@ -38,9 +38,27 @@ contract ValoresDeRetorno{
 
     //practica para el manejo de los valores devueltos
 
-    function numeros() public returns(uint, uint, uint,uint, uint){
-        return (1, 2, 3, 4, 5);
+    function numeros() public returns(uint, uint, uint,uint, uint, uint){
+        return (1, 2, 3, 4, 5, 6);
     }
 
     //asignacion multiple de valores
+
+    function todos_los_valores()public{
+
+        //declaramos las variables donde se almacenaran los valores de retorno de la funcion numeros
+        uint a;
+        uint b;
+        uint c;
+        uint d;
+        uint e;
+        uint f;
+        //realizar la asignacion multiple
+        (a, b, c, d, e, f) = numeros();
+    }
+
+    function ultimo_valor()public {
+
+        (,,,,,uint ultimo) = numeros();
+    }
 }
