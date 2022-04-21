@@ -96,11 +96,11 @@
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Direcciones\",\"outputs\":[{\"internalType\":\"enum enumeraciones.direcciones\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"Estado\",\"outputs\":[{\"internalType\":\"enum enumeraciones.estado\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"abajo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"apagar\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"arriba\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"derecha\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"encender\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_k\",\"type\":\"uint256\"}],\"name\":\"fijarDirecciones\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_k\",\"type\":\"uint256\"}],\"name\":\"fijarEstado\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"izquierda\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/enums.sol\":\"enumeraciones\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/enums.sol\":{\"keccak256\":\"0xddbac3b5716fe49172fc50351fc3cbdd846efed3bb3872ccfcc7e2167b682d9c\",\"urls\":[\"bzz-raw://59766cad209037a8ab37d19c49c07768e88979ae1abfe9f04cf2e5266b3d8e15\",\"dweb:/ipfs/QmY5hKgbF8F11fh1LW1X9fDnB5PK1Gw4EaGHMbrP7fpgVA\"]}},\"version\":1}",
-    "bytecode": "60806040526000805461ff001916905534801561001b57600080fd5b506102a58061002b6000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063b46e8d1a11610066578063b46e8d1a146100f1578063daf4343f14610104578063e0be4a2e1461010c578063e7260f9a1461011f578063e9073c331461012757600080fd5b806339feafa3146100a3578063862b7129146100c45780638a60839f146100ce578063943fad7f146100d6578063b1e92247146100de575b600080fd5b600054610100900460ff166040516100bb9190610228565b60405180910390f35b6100cc61012f565b005b6100cc610145565b6100cc61015b565b6100cc6100ec366004610242565b610171565b60005460ff166040516100bb919061025b565b6100cc6101a9565b6100cc61011a366004610242565b6101bf565b6100cc6101ec565b6100cc610200565b600080546001919060ff191682805b0217905550565b600080546003919061ff0019166101008361013e565b600080546002919061ff0019166101008361013e565b80600381111561018357610183610212565b6000805461ff0019166101008360038111156101a1576101a1610212565b021790555050565b600080546001919061ff0019166101008361013e565b8060018111156101d1576101d1610212565b6000805460ff1916600183818111156101a1576101a1610212565b60008054819061ff0019166101008261013e565b60008054819060ff191660018261013e565b634e487b7160e01b600052602160045260246000fd5b602081016004831061023c5761023c610212565b91905290565b60006020828403121561025457600080fd5b5035919050565b602081016002831061023c5761023c61021256fea2646970667358221220efc64f2db20e60a918ac6bf69e20d4b7f055a64221cbac508b6ec279f2280aff64736f6c634300080d0033",
-    "deployedBytecode": "608060405234801561001057600080fd5b506004361061009e5760003560e01c8063b46e8d1a11610066578063b46e8d1a146100f1578063daf4343f14610104578063e0be4a2e1461010c578063e7260f9a1461011f578063e9073c331461012757600080fd5b806339feafa3146100a3578063862b7129146100c45780638a60839f146100ce578063943fad7f146100d6578063b1e92247146100de575b600080fd5b600054610100900460ff166040516100bb9190610228565b60405180910390f35b6100cc61012f565b005b6100cc610145565b6100cc61015b565b6100cc6100ec366004610242565b610171565b60005460ff166040516100bb919061025b565b6100cc6101a9565b6100cc61011a366004610242565b6101bf565b6100cc6101ec565b6100cc610200565b600080546001919060ff191682805b0217905550565b600080546003919061ff0019166101008361013e565b600080546002919061ff0019166101008361013e565b80600381111561018357610183610212565b6000805461ff0019166101008360038111156101a1576101a1610212565b021790555050565b600080546001919061ff0019166101008361013e565b8060018111156101d1576101d1610212565b6000805460ff1916600183818111156101a1576101a1610212565b60008054819061ff0019166101008261013e565b60008054819060ff191660018261013e565b634e487b7160e01b600052602160045260246000fd5b602081016004831061023c5761023c610212565b91905290565b60006020828403121561025457600080fd5b5035919050565b602081016002831061023c5761023c61021256fea2646970667358221220efc64f2db20e60a918ac6bf69e20d4b7f055a64221cbac508b6ec279f2280aff64736f6c634300080d0033",
-    "sourceMap": "25:1105:0:-:0;;;615:18;592:41;;-1:-1:-1;;592:41:0;;;25:1105;;;;;;;;;;;;;;;;",
-    "deployedSourceMap": "25:1105:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1040:88;1083:11;1112:9;;;;;;1040:88;;;;;;:::i;:::-;;;;;;;;225:58;;;:::i;:::-;;872:72;;;:::i;790:76::-;;;:::i;950:84::-;;;;;;:::i;:::-;;:::i;393:74::-;431:6;455:5;;;393:74;;;;;;:::i;716:68::-;;;:::i;289:98::-;;;;;;:::i;:::-;;:::i;640:70::-;;;:::i;161:59::-;;;:::i;225:58::-;258:5;:18;;266:10;;258:5;-1:-1:-1;;258:18:0;266:10;;258:18;;;;;;225:58::o;872:72::-;906:9;:31;;918:19;;906:9;-1:-1:-1;;906:31:0;;918:19;906:31;;790:76;826:9;:33;;838:21;;826:9;-1:-1:-1;;826:33:0;;838:21;826:33;;950:84;1024:2;1012:15;;;;;;;;:::i;:::-;1000:9;:27;;-1:-1:-1;;1000:27:0;;;;;;;;;;;:::i;:::-;;;;;;950:84;:::o;716:68::-;748:9;:29;;760:17;;748:9;-1:-1:-1;;748:29:0;;760:17;748:29;;289:98;349:2;342:10;;;;;;;;:::i;:::-;334:5;:18;;-1:-1:-1;;334:18:0;;;;;;;;;;;:::i;640:70::-;685:18;673:30;;685:18;;-1:-1:-1;;673:30:0;;685:18;673:30;;161:59;204:9;196:17;;204:9;;-1:-1:-1;;196:17:0;;204:9;196:17;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:245;292:2;277:18;;325:1;314:13;;304:47;;331:18;;:::i;:::-;360:25;;;146:245;:::o;396:180::-;455:6;508:2;496:9;487:7;483:23;479:32;476:52;;;524:1;521;514:12;476:52;-1:-1:-1;547:23:1;;396:180;-1:-1:-1;396:180:1:o;581:239::-;721:2;706:18;;754:1;743:13;;733:47;;760:18;;:::i",
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Direcciones\",\"outputs\":[{\"internalType\":\"enum enumeraciones.direcciones\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"Estado\",\"outputs\":[{\"internalType\":\"enum enumeraciones.estado\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"abajo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"apagar\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"arriba\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"derecha\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"encender\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_k\",\"type\":\"uint256\"}],\"name\":\"fijarDirecciones\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_k\",\"type\":\"uint256\"}],\"name\":\"fijarEstado\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"izquierda\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/enums.sol\":\"enumeraciones\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/enums.sol\":{\"keccak256\":\"0x4de6deba89dc8ea423c9317d434c94874739509446a3f58677e3d6e6e684ab7d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f9718148b3ce5db2c1709489e79f1de68ca4ed300a37068bbbcb79f17b090fa6\",\"dweb:/ipfs/QmUUgd93tNLEWGn713N9bRBo8spNoC1abyJRLn3xTw2DWN\"]}},\"version\":1}",
+    "bytecode": "60806040526000805461ff001916905534801561001b57600080fd5b506102a58061002b6000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063b46e8d1a11610066578063b46e8d1a146100f1578063daf4343f14610104578063e0be4a2e1461010c578063e7260f9a1461011f578063e9073c331461012757600080fd5b806339feafa3146100a3578063862b7129146100c45780638a60839f146100ce578063943fad7f146100d6578063b1e92247146100de575b600080fd5b600054610100900460ff166040516100bb9190610228565b60405180910390f35b6100cc61012f565b005b6100cc610145565b6100cc61015b565b6100cc6100ec366004610242565b610171565b60005460ff166040516100bb919061025b565b6100cc6101a9565b6100cc61011a366004610242565b6101bf565b6100cc6101ec565b6100cc610200565b600080546001919060ff191682805b0217905550565b600080546003919061ff0019166101008361013e565b600080546002919061ff0019166101008361013e565b80600381111561018357610183610212565b6000805461ff0019166101008360038111156101a1576101a1610212565b021790555050565b600080546001919061ff0019166101008361013e565b8060018111156101d1576101d1610212565b6000805460ff1916600183818111156101a1576101a1610212565b60008054819061ff0019166101008261013e565b60008054819060ff191660018261013e565b634e487b7160e01b600052602160045260246000fd5b602081016004831061023c5761023c610212565b91905290565b60006020828403121561025457600080fd5b5035919050565b602081016002831061023c5761023c61021256fea26469706673582212209f8d95df40f46006afd2a8d521d8cd83438886c1751fc55450402e102e30ce3f64736f6c634300080d0033",
+    "deployedBytecode": "608060405234801561001057600080fd5b506004361061009e5760003560e01c8063b46e8d1a11610066578063b46e8d1a146100f1578063daf4343f14610104578063e0be4a2e1461010c578063e7260f9a1461011f578063e9073c331461012757600080fd5b806339feafa3146100a3578063862b7129146100c45780638a60839f146100ce578063943fad7f146100d6578063b1e92247146100de575b600080fd5b600054610100900460ff166040516100bb9190610228565b60405180910390f35b6100cc61012f565b005b6100cc610145565b6100cc61015b565b6100cc6100ec366004610242565b610171565b60005460ff166040516100bb919061025b565b6100cc6101a9565b6100cc61011a366004610242565b6101bf565b6100cc6101ec565b6100cc610200565b600080546001919060ff191682805b0217905550565b600080546003919061ff0019166101008361013e565b600080546002919061ff0019166101008361013e565b80600381111561018357610183610212565b6000805461ff0019166101008360038111156101a1576101a1610212565b021790555050565b600080546001919061ff0019166101008361013e565b8060018111156101d1576101d1610212565b6000805460ff1916600183818111156101a1576101a1610212565b60008054819061ff0019166101008261013e565b60008054819060ff191660018261013e565b634e487b7160e01b600052602160045260246000fd5b602081016004831061023c5761023c610212565b91905290565b60006020828403121561025457600080fd5b5035919050565b602081016002831061023c5761023c61021256fea26469706673582212209f8d95df40f46006afd2a8d521d8cd83438886c1751fc55450402e102e30ce3f64736f6c634300080d0033",
+    "sourceMap": "57:1105:0:-:0;;;647:18;624:41;;-1:-1:-1;;624:41:0;;;57:1105;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "57:1105:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1072:88;1115:11;1144:9;;;;;;1072:88;;;;;;:::i;:::-;;;;;;;;257:58;;;:::i;:::-;;904:72;;;:::i;822:76::-;;;:::i;982:84::-;;;;;;:::i;:::-;;:::i;425:74::-;463:6;487:5;;;425:74;;;;;;:::i;748:68::-;;;:::i;321:98::-;;;;;;:::i;:::-;;:::i;672:70::-;;;:::i;193:59::-;;;:::i;257:58::-;290:5;:18;;298:10;;290:5;-1:-1:-1;;290:18:0;298:10;;290:18;;;;;;257:58::o;904:72::-;938:9;:31;;950:19;;938:9;-1:-1:-1;;938:31:0;;950:19;938:31;;822:76;858:9;:33;;870:21;;858:9;-1:-1:-1;;858:33:0;;870:21;858:33;;982:84;1056:2;1044:15;;;;;;;;:::i;:::-;1032:9;:27;;-1:-1:-1;;1032:27:0;;;;;;;;;;;:::i;:::-;;;;;;982:84;:::o;748:68::-;780:9;:29;;792:17;;780:9;-1:-1:-1;;780:29:0;;792:17;780:29;;321:98;381:2;374:10;;;;;;;;:::i;:::-;366:5;:18;;-1:-1:-1;;366:18:0;;;;;;;;;;;:::i;672:70::-;717:18;705:30;;717:18;;-1:-1:-1;;705:30:0;;717:18;705:30;;193:59;236:9;228:17;;236:9;;-1:-1:-1;;228:17:0;;236:9;228:17;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:245;292:2;277:18;;325:1;314:13;;304:47;;331:18;;:::i;:::-;360:25;;;146:245;:::o;396:180::-;455:6;508:2;496:9;487:7;483:23;479:32;476:52;;;524:1;521;514:12;476:52;-1:-1:-1;547:23:1;;396:180;-1:-1:-1;396:180:1:o;581:239::-;721:2;706:18;;754:1;743:13;;733:47;;760:18;;:::i",
     "sourcePath": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/enums.sol",
     "compiler": {
         "name": "solc",
@@ -114,6 +114,7 @@
             ]
         },
         "id": 115,
+        "license": "MIT",
         "nodeType": "SourceUnit",
         "nodes": [
             {
@@ -124,7 +125,7 @@
                     ".13"
                 ],
                 "nodeType": "PragmaDirective",
-                "src": "0:23:0"
+                "src": "32:23:0"
             },
             {
                 "abstract": false,
@@ -138,7 +139,7 @@
                     114
                 ],
                 "name": "enumeraciones",
-                "nameLocation": "34:13:0",
+                "nameLocation": "66:13:0",
                 "nodeType": "ContractDefinition",
                 "nodes": [
                     {
@@ -148,32 +149,32 @@
                             {
                                 "id": 2,
                                 "name": "ON",
-                                "nameLocation": "100:2:0",
+                                "nameLocation": "132:2:0",
                                 "nodeType": "EnumValue",
-                                "src": "100:2:0"
+                                "src": "132:2:0"
                             },
                             {
                                 "id": 3,
                                 "name": "OFF",
-                                "nameLocation": "104:3:0",
+                                "nameLocation": "136:3:0",
                                 "nodeType": "EnumValue",
-                                "src": "104:3:0"
+                                "src": "136:3:0"
                             }
                         ],
                         "name": "estado",
-                        "nameLocation": "93:6:0",
+                        "nameLocation": "125:6:0",
                         "nodeType": "EnumDefinition",
-                        "src": "88:20:0"
+                        "src": "120:20:0"
                     },
                     {
                         "constant": false,
                         "id": 7,
                         "mutability": "mutable",
                         "name": "state",
-                        "nameLocation": "149:5:0",
+                        "nameLocation": "181:5:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 114,
-                        "src": "142:12:0",
+                        "src": "174:12:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -188,10 +189,10 @@
                                 "name": "estado",
                                 "nodeType": "IdentifierPath",
                                 "referencedDeclaration": 4,
-                                "src": "142:6:0"
+                                "src": "174:6:0"
                             },
                             "referencedDeclaration": 4,
-                            "src": "142:6:0",
+                            "src": "174:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_estado_$4",
                                 "typeString": "enum enumeraciones.estado"
@@ -203,7 +204,7 @@
                         "body": {
                             "id": 15,
                             "nodeType": "Block",
-                            "src": "186:34:0",
+                            "src": "218:34:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -218,7 +219,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 7,
-                                            "src": "196:5:0",
+                                            "src": "228:5:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_estado_$4",
                                                 "typeString": "enum enumeraciones.estado"
@@ -233,7 +234,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 4,
-                                                "src": "204:6:0",
+                                                "src": "236:6:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_estado_$4_$",
                                                     "typeString": "type(enum enumeraciones.estado)"
@@ -247,13 +248,13 @@
                                             "memberName": "ON",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 2,
-                                            "src": "204:9:0",
+                                            "src": "236:9:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_estado_$4",
                                                 "typeString": "enum enumeraciones.estado"
                                             }
                                         },
-                                        "src": "196:17:0",
+                                        "src": "228:17:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_estado_$4",
                                             "typeString": "enum enumeraciones.estado"
@@ -261,7 +262,7 @@
                                     },
                                     "id": 14,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "196:17:0"
+                                    "src": "228:17:0"
                                 }
                             ]
                         },
@@ -271,22 +272,22 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "encender",
-                        "nameLocation": "170:8:0",
+                        "nameLocation": "202:8:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 8,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "178:2:0"
+                            "src": "210:2:0"
                         },
                         "returnParameters": {
                             "id": 9,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "186:0:0"
+                            "src": "218:0:0"
                         },
                         "scope": 114,
-                        "src": "161:59:0",
+                        "src": "193:59:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -295,7 +296,7 @@
                         "body": {
                             "id": 24,
                             "nodeType": "Block",
-                            "src": "248:35:0",
+                            "src": "280:35:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -310,7 +311,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 7,
-                                            "src": "258:5:0",
+                                            "src": "290:5:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_estado_$4",
                                                 "typeString": "enum enumeraciones.estado"
@@ -325,7 +326,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 4,
-                                                "src": "266:6:0",
+                                                "src": "298:6:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_estado_$4_$",
                                                     "typeString": "type(enum enumeraciones.estado)"
@@ -339,13 +340,13 @@
                                             "memberName": "OFF",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 3,
-                                            "src": "266:10:0",
+                                            "src": "298:10:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_estado_$4",
                                                 "typeString": "enum enumeraciones.estado"
                                             }
                                         },
-                                        "src": "258:18:0",
+                                        "src": "290:18:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_estado_$4",
                                             "typeString": "enum enumeraciones.estado"
@@ -353,7 +354,7 @@
                                     },
                                     "id": 23,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "258:18:0"
+                                    "src": "290:18:0"
                                 }
                             ]
                         },
@@ -363,22 +364,22 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "apagar",
-                        "nameLocation": "234:6:0",
+                        "nameLocation": "266:6:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 17,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "240:2:0"
+                            "src": "272:2:0"
                         },
                         "returnParameters": {
                             "id": 18,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "248:0:0"
+                            "src": "280:0:0"
                         },
                         "scope": 114,
-                        "src": "225:58:0",
+                        "src": "257:58:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -387,7 +388,7 @@
                         "body": {
                             "id": 36,
                             "nodeType": "Block",
-                            "src": "324:63:0",
+                            "src": "356:63:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -402,7 +403,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 7,
-                                            "src": "334:5:0",
+                                            "src": "366:5:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_estado_$4",
                                                 "typeString": "enum enumeraciones.estado"
@@ -418,7 +419,7 @@
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
                                                     "referencedDeclaration": 27,
-                                                    "src": "349:2:0",
+                                                    "src": "381:2:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_uint256",
                                                         "typeString": "uint256"
@@ -437,7 +438,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 4,
-                                                "src": "342:6:0",
+                                                "src": "374:6:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_estado_$4_$",
                                                     "typeString": "type(enum enumeraciones.estado)"
@@ -451,14 +452,14 @@
                                             "lValueRequested": false,
                                             "names": [],
                                             "nodeType": "FunctionCall",
-                                            "src": "342:10:0",
+                                            "src": "374:10:0",
                                             "tryCall": false,
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_estado_$4",
                                                 "typeString": "enum enumeraciones.estado"
                                             }
                                         },
-                                        "src": "334:18:0",
+                                        "src": "366:18:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_estado_$4",
                                             "typeString": "enum enumeraciones.estado"
@@ -466,7 +467,7 @@
                                     },
                                     "id": 35,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "334:18:0"
+                                    "src": "366:18:0"
                                 }
                             ]
                         },
@@ -476,7 +477,7 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "fijarEstado",
-                        "nameLocation": "298:11:0",
+                        "nameLocation": "330:11:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 28,
@@ -487,10 +488,10 @@
                                     "id": 27,
                                     "mutability": "mutable",
                                     "name": "_k",
-                                    "nameLocation": "315:2:0",
+                                    "nameLocation": "347:2:0",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 37,
-                                    "src": "310:7:0",
+                                    "src": "342:7:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -501,7 +502,7 @@
                                         "id": 26,
                                         "name": "uint",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "310:4:0",
+                                        "src": "342:4:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint256",
                                             "typeString": "uint256"
@@ -510,16 +511,16 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "309:9:0"
+                            "src": "341:9:0"
                         },
                         "returnParameters": {
                             "id": 29,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "324:0:0"
+                            "src": "356:0:0"
                         },
                         "scope": 114,
-                        "src": "289:98:0",
+                        "src": "321:98:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -528,7 +529,7 @@
                         "body": {
                             "id": 45,
                             "nodeType": "Block",
-                            "src": "438:29:0",
+                            "src": "470:29:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -537,7 +538,7 @@
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
                                         "referencedDeclaration": 7,
-                                        "src": "455:5:0",
+                                        "src": "487:5:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_estado_$4",
                                             "typeString": "enum enumeraciones.estado"
@@ -546,7 +547,7 @@
                                     "functionReturnParameters": 42,
                                     "id": 44,
                                     "nodeType": "Return",
-                                    "src": "448:12:0"
+                                    "src": "480:12:0"
                                 }
                             ]
                         },
@@ -556,13 +557,13 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "Estado",
-                        "nameLocation": "402:6:0",
+                        "nameLocation": "434:6:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 38,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "408:2:0"
+                            "src": "440:2:0"
                         },
                         "returnParameters": {
                             "id": 42,
@@ -576,7 +577,7 @@
                                     "nameLocation": "-1:-1:-1",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 46,
-                                    "src": "431:6:0",
+                                    "src": "463:6:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -591,10 +592,10 @@
                                             "name": "estado",
                                             "nodeType": "IdentifierPath",
                                             "referencedDeclaration": 4,
-                                            "src": "431:6:0"
+                                            "src": "463:6:0"
                                         },
                                         "referencedDeclaration": 4,
-                                        "src": "431:6:0",
+                                        "src": "463:6:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_estado_$4",
                                             "typeString": "enum enumeraciones.estado"
@@ -603,10 +604,10 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "430:8:0"
+                            "src": "462:8:0"
                         },
                         "scope": 114,
-                        "src": "393:74:0",
+                        "src": "425:74:0",
                         "stateMutability": "view",
                         "virtual": false,
                         "visibility": "public"
@@ -618,46 +619,46 @@
                             {
                                 "id": 47,
                                 "name": "ARRIBA",
-                                "nameLocation": "524:6:0",
+                                "nameLocation": "556:6:0",
                                 "nodeType": "EnumValue",
-                                "src": "524:6:0"
+                                "src": "556:6:0"
                             },
                             {
                                 "id": 48,
                                 "name": "ABAJO",
-                                "nameLocation": "532:5:0",
+                                "nameLocation": "564:5:0",
                                 "nodeType": "EnumValue",
-                                "src": "532:5:0"
+                                "src": "564:5:0"
                             },
                             {
                                 "id": 49,
                                 "name": "IZQUIERDA",
-                                "nameLocation": "539:9:0",
+                                "nameLocation": "571:9:0",
                                 "nodeType": "EnumValue",
-                                "src": "539:9:0"
+                                "src": "571:9:0"
                             },
                             {
                                 "id": 50,
                                 "name": "DERECHA",
-                                "nameLocation": "550:7:0",
+                                "nameLocation": "582:7:0",
                                 "nodeType": "EnumValue",
-                                "src": "550:7:0"
+                                "src": "582:7:0"
                             }
                         ],
                         "name": "direcciones",
-                        "nameLocation": "511:11:0",
+                        "nameLocation": "543:11:0",
                         "nodeType": "EnumDefinition",
-                        "src": "506:52:0"
+                        "src": "538:52:0"
                     },
                     {
                         "constant": false,
                         "id": 56,
                         "mutability": "mutable",
                         "name": "direccion",
-                        "nameLocation": "604:9:0",
+                        "nameLocation": "636:9:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 114,
-                        "src": "592:41:0",
+                        "src": "624:41:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -672,10 +673,10 @@
                                 "name": "direcciones",
                                 "nodeType": "IdentifierPath",
                                 "referencedDeclaration": 51,
-                                "src": "592:11:0"
+                                "src": "624:11:0"
                             },
                             "referencedDeclaration": 51,
-                            "src": "592:11:0",
+                            "src": "624:11:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                 "typeString": "enum enumeraciones.direcciones"
@@ -688,7 +689,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 51,
-                                "src": "615:11:0",
+                                "src": "647:11:0",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_enum$_direcciones_$51_$",
                                     "typeString": "type(enum enumeraciones.direcciones)"
@@ -702,7 +703,7 @@
                             "memberName": "ARRIBA",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 47,
-                            "src": "615:18:0",
+                            "src": "647:18:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                 "typeString": "enum enumeraciones.direcciones"
@@ -714,7 +715,7 @@
                         "body": {
                             "id": 64,
                             "nodeType": "Block",
-                            "src": "663:47:0",
+                            "src": "695:47:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -729,7 +730,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 56,
-                                            "src": "673:9:0",
+                                            "src": "705:9:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
@@ -744,7 +745,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 51,
-                                                "src": "685:11:0",
+                                                "src": "717:11:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_direcciones_$51_$",
                                                     "typeString": "type(enum enumeraciones.direcciones)"
@@ -758,13 +759,13 @@
                                             "memberName": "ARRIBA",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 47,
-                                            "src": "685:18:0",
+                                            "src": "717:18:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
                                             }
                                         },
-                                        "src": "673:30:0",
+                                        "src": "705:30:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -772,7 +773,7 @@
                                     },
                                     "id": 63,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "673:30:0"
+                                    "src": "705:30:0"
                                 }
                             ]
                         },
@@ -782,22 +783,22 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "arriba",
-                        "nameLocation": "649:6:0",
+                        "nameLocation": "681:6:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 57,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "655:2:0"
+                            "src": "687:2:0"
                         },
                         "returnParameters": {
                             "id": 58,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "663:0:0"
+                            "src": "695:0:0"
                         },
                         "scope": 114,
-                        "src": "640:70:0",
+                        "src": "672:70:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -806,7 +807,7 @@
                         "body": {
                             "id": 73,
                             "nodeType": "Block",
-                            "src": "738:46:0",
+                            "src": "770:46:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -821,7 +822,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 56,
-                                            "src": "748:9:0",
+                                            "src": "780:9:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
@@ -836,7 +837,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 51,
-                                                "src": "760:11:0",
+                                                "src": "792:11:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_direcciones_$51_$",
                                                     "typeString": "type(enum enumeraciones.direcciones)"
@@ -850,13 +851,13 @@
                                             "memberName": "ABAJO",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 48,
-                                            "src": "760:17:0",
+                                            "src": "792:17:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
                                             }
                                         },
-                                        "src": "748:29:0",
+                                        "src": "780:29:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -864,7 +865,7 @@
                                     },
                                     "id": 72,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "748:29:0"
+                                    "src": "780:29:0"
                                 }
                             ]
                         },
@@ -874,22 +875,22 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "abajo",
-                        "nameLocation": "725:5:0",
+                        "nameLocation": "757:5:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 66,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "730:2:0"
+                            "src": "762:2:0"
                         },
                         "returnParameters": {
                             "id": 67,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "738:0:0"
+                            "src": "770:0:0"
                         },
                         "scope": 114,
-                        "src": "716:68:0",
+                        "src": "748:68:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -898,7 +899,7 @@
                         "body": {
                             "id": 82,
                             "nodeType": "Block",
-                            "src": "816:50:0",
+                            "src": "848:50:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -913,7 +914,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 56,
-                                            "src": "826:9:0",
+                                            "src": "858:9:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
@@ -928,7 +929,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 51,
-                                                "src": "838:11:0",
+                                                "src": "870:11:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_direcciones_$51_$",
                                                     "typeString": "type(enum enumeraciones.direcciones)"
@@ -942,13 +943,13 @@
                                             "memberName": "IZQUIERDA",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 49,
-                                            "src": "838:21:0",
+                                            "src": "870:21:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
                                             }
                                         },
-                                        "src": "826:33:0",
+                                        "src": "858:33:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -956,7 +957,7 @@
                                     },
                                     "id": 81,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "826:33:0"
+                                    "src": "858:33:0"
                                 }
                             ]
                         },
@@ -966,22 +967,22 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "izquierda",
-                        "nameLocation": "799:9:0",
+                        "nameLocation": "831:9:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 75,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "808:2:0"
+                            "src": "840:2:0"
                         },
                         "returnParameters": {
                             "id": 76,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "816:0:0"
+                            "src": "848:0:0"
                         },
                         "scope": 114,
-                        "src": "790:76:0",
+                        "src": "822:76:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -990,7 +991,7 @@
                         "body": {
                             "id": 91,
                             "nodeType": "Block",
-                            "src": "896:48:0",
+                            "src": "928:48:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -1005,7 +1006,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 56,
-                                            "src": "906:9:0",
+                                            "src": "938:9:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
@@ -1020,7 +1021,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 51,
-                                                "src": "918:11:0",
+                                                "src": "950:11:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_direcciones_$51_$",
                                                     "typeString": "type(enum enumeraciones.direcciones)"
@@ -1034,13 +1035,13 @@
                                             "memberName": "DERECHA",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 50,
-                                            "src": "918:19:0",
+                                            "src": "950:19:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
                                             }
                                         },
-                                        "src": "906:31:0",
+                                        "src": "938:31:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -1048,7 +1049,7 @@
                                     },
                                     "id": 90,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "906:31:0"
+                                    "src": "938:31:0"
                                 }
                             ]
                         },
@@ -1058,22 +1059,22 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "derecha",
-                        "nameLocation": "881:7:0",
+                        "nameLocation": "913:7:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 84,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "888:2:0"
+                            "src": "920:2:0"
                         },
                         "returnParameters": {
                             "id": 85,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "896:0:0"
+                            "src": "928:0:0"
                         },
                         "scope": 114,
-                        "src": "872:72:0",
+                        "src": "904:72:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -1082,7 +1083,7 @@
                         "body": {
                             "id": 103,
                             "nodeType": "Block",
-                            "src": "990:44:0",
+                            "src": "1022:44:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -1097,7 +1098,7 @@
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 56,
-                                            "src": "1000:9:0",
+                                            "src": "1032:9:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
@@ -1113,7 +1114,7 @@
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
                                                     "referencedDeclaration": 94,
-                                                    "src": "1024:2:0",
+                                                    "src": "1056:2:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_uint256",
                                                         "typeString": "uint256"
@@ -1132,7 +1133,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 51,
-                                                "src": "1012:11:0",
+                                                "src": "1044:11:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_type$_t_enum$_direcciones_$51_$",
                                                     "typeString": "type(enum enumeraciones.direcciones)"
@@ -1146,14 +1147,14 @@
                                             "lValueRequested": false,
                                             "names": [],
                                             "nodeType": "FunctionCall",
-                                            "src": "1012:15:0",
+                                            "src": "1044:15:0",
                                             "tryCall": false,
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_enum$_direcciones_$51",
                                                 "typeString": "enum enumeraciones.direcciones"
                                             }
                                         },
-                                        "src": "1000:27:0",
+                                        "src": "1032:27:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -1161,7 +1162,7 @@
                                     },
                                     "id": 102,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "1000:27:0"
+                                    "src": "1032:27:0"
                                 }
                             ]
                         },
@@ -1171,7 +1172,7 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "fijarDirecciones",
-                        "nameLocation": "959:16:0",
+                        "nameLocation": "991:16:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 95,
@@ -1182,10 +1183,10 @@
                                     "id": 94,
                                     "mutability": "mutable",
                                     "name": "_k",
-                                    "nameLocation": "981:2:0",
+                                    "nameLocation": "1013:2:0",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 104,
-                                    "src": "976:7:0",
+                                    "src": "1008:7:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -1196,7 +1197,7 @@
                                         "id": 93,
                                         "name": "uint",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "976:4:0",
+                                        "src": "1008:4:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint256",
                                             "typeString": "uint256"
@@ -1205,16 +1206,16 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "975:9:0"
+                            "src": "1007:9:0"
                         },
                         "returnParameters": {
                             "id": 96,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "990:0:0"
+                            "src": "1022:0:0"
                         },
                         "scope": 114,
-                        "src": "950:84:0",
+                        "src": "982:84:0",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
@@ -1223,7 +1224,7 @@
                         "body": {
                             "id": 112,
                             "nodeType": "Block",
-                            "src": "1095:33:0",
+                            "src": "1127:33:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -1232,7 +1233,7 @@
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
                                         "referencedDeclaration": 56,
-                                        "src": "1112:9:0",
+                                        "src": "1144:9:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -1241,7 +1242,7 @@
                                     "functionReturnParameters": 109,
                                     "id": 111,
                                     "nodeType": "Return",
-                                    "src": "1105:16:0"
+                                    "src": "1137:16:0"
                                 }
                             ]
                         },
@@ -1251,13 +1252,13 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "Direcciones",
-                        "nameLocation": "1049:11:0",
+                        "nameLocation": "1081:11:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 105,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "1060:2:0"
+                            "src": "1092:2:0"
                         },
                         "returnParameters": {
                             "id": 109,
@@ -1271,7 +1272,7 @@
                                     "nameLocation": "-1:-1:-1",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 113,
-                                    "src": "1083:11:0",
+                                    "src": "1115:11:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -1286,10 +1287,10 @@
                                             "name": "direcciones",
                                             "nodeType": "IdentifierPath",
                                             "referencedDeclaration": 51,
-                                            "src": "1083:11:0"
+                                            "src": "1115:11:0"
                                         },
                                         "referencedDeclaration": 51,
-                                        "src": "1083:11:0",
+                                        "src": "1115:11:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_enum$_direcciones_$51",
                                             "typeString": "enum enumeraciones.direcciones"
@@ -1298,21 +1299,21 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "1082:13:0"
+                            "src": "1114:13:0"
                         },
                         "scope": 114,
-                        "src": "1040:88:0",
+                        "src": "1072:88:0",
                         "stateMutability": "view",
                         "virtual": false,
                         "visibility": "public"
                     }
                 ],
                 "scope": 115,
-                "src": "25:1105:0",
+                "src": "57:1105:0",
                 "usedErrors": []
             }
         ],
-        "src": "0:1130:0"
+        "src": "32:1130:0"
     },
     "functionHashes": {
         "Direcciones()": "39feafa3",
