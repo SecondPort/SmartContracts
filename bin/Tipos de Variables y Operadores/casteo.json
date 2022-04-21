@@ -73,11 +73,11 @@
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"casteo_1\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_2\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_4\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_5\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_k\",\"type\":\"uint8\"}],\"name\":\"convertir\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol\":\"casteo\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol\":{\"keccak256\":\"0x1e11f6040e3c39996627405e56eb8edab7853695b6ac6ddf0bc95a592bf675d7\",\"urls\":[\"bzz-raw://04ae10b485b497b9ca4db175ffbc46c5a457898e34a744f55cd32ce3486f2a3b\",\"dweb:/ipfs/QmVra9tAyvHPmn3goLYB47Aw7RJWcmsJBwpQ6cbzmv1SSW\"]}},\"version\":1}",
-    "bytecode": "6080604052600080546001600160481b03191662177001179055620186a06001819055600280546001600160901b031916650dbba000000f1790819055624c4b40600355600480546001600160801b0319166a0186a0000000000000000117905563010000009004600e0b60055560065534801561007c57600080fd5b506101318061008c6000396000f3fe6080604052348015600f57600080fd5b506004361060505760003560e01c806302b037a71460555780632b74311b1460865780639fe40a171460a5578063af489aa61460b6578063ed4885e51460cb575b600080fd5b60045460689067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b60045460689068010000000000000000900467ffffffffffffffff1681565b606860b036600460d3565b60ff1690565b60be60065481565b604051908152602001607d565b60be60055481565b60006020828403121560e457600080fd5b813560ff8116811460f457600080fd5b939250505056fea2646970667358221220b2cc3f6575f29a44090e7258425e3277d0b9e9154923fc1990c9eddf714286b964736f6c634300080d0033",
-    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060505760003560e01c806302b037a71460555780632b74311b1460865780639fe40a171460a5578063af489aa61460b6578063ed4885e51460cb575b600080fd5b60045460689067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b60045460689068010000000000000000900467ffffffffffffffff1681565b606860b036600460d3565b60ff1690565b60be60065481565b604051908152602001607d565b60be60055481565b60006020828403121560e457600080fd5b813560ff8116811460f457600080fd5b939250505056fea2646970667358221220b2cc3f6575f29a44090e7258425e3277d0b9e9154923fc1990c9eddf714286b964736f6c634300080d0033",
-    "sourceMap": "25:567:0:-:0;;;85:17;;;-1:-1:-1;;;;;;108:22:0;;;;;152:6;-1:-1:-1;136:22:0;;;164:19;;;-1:-1:-1;;;;;;189:25:0;;;;;;;233:7;189:25;220:20;274:40;;;-1:-1:-1;;;;;;320:42:0;;;;;189:25;441:9;;189:25;441:9;415:36;;457;;25:567;;;;;;;;;;;;;;;;",
-    "deployedSourceMap": "25:567:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;274:40;;;;;;;;;;;;188:18:1;176:31;;;158:50;;146:2;131:18;274:40:0;;;;;;;;320:42;;;;;;;;;;;;501:89;;;;;;:::i;:::-;573:10;;;501:89;457:36;;;;;;;;;637:25:1;;;625:2;610:18;457:36:0;493:175:1;415:36:0;;;;;;219:269:1;276:6;329:2;317:9;308:7;304:23;300:32;297:52;;;345:1;342;335:12;297:52;384:9;371:23;434:4;427:5;423:16;416:5;413:27;403:55;;454:1;451;444:12;403:55;477:5;219:269;-1:-1:-1;;;219:269:1:o",
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"casteo_1\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_2\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_4\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"casteo_5\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_k\",\"type\":\"uint8\"}],\"name\":\"convertir\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol\":\"casteo\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol\":{\"keccak256\":\"0x068ae5266274ad1936f267c618af380acb69b9643448b5a4885451e8a8420eb5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ce806c3521dbda0b444886d61e930eda4fdf47c828fe92660cefcf03e3aa4a5\",\"dweb:/ipfs/QmcoFjzFGukf83N4WT8m5a9ndVe51b31nyjvwB4wWfdWhQ\"]}},\"version\":1}",
+    "bytecode": "6080604052600080546001600160481b03191662177001179055620186a06001819055600280546001600160901b031916650dbba000000f1790819055624c4b40600355600480546001600160801b0319166a0186a0000000000000000117905563010000009004600e0b60055560065534801561007c57600080fd5b506101318061008c6000396000f3fe6080604052348015600f57600080fd5b506004361060505760003560e01c806302b037a71460555780632b74311b1460865780639fe40a171460a5578063af489aa61460b6578063ed4885e51460cb575b600080fd5b60045460689067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b60045460689068010000000000000000900467ffffffffffffffff1681565b606860b036600460d3565b60ff1690565b60be60065481565b604051908152602001607d565b60be60055481565b60006020828403121560e457600080fd5b813560ff8116811460f457600080fd5b939250505056fea2646970667358221220ce8ef0a74c8c3a594a990eb6b313e500b97d39a399b57ad7aaa04f48ad9f52bf64736f6c634300080d0033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060505760003560e01c806302b037a71460555780632b74311b1460865780639fe40a171460a5578063af489aa61460b6578063ed4885e51460cb575b600080fd5b60045460689067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b60045460689068010000000000000000900467ffffffffffffffff1681565b606860b036600460d3565b60ff1690565b60be60065481565b604051908152602001607d565b60be60055481565b60006020828403121560e457600080fd5b813560ff8116811460f457600080fd5b939250505056fea2646970667358221220ce8ef0a74c8c3a594a990eb6b313e500b97d39a399b57ad7aaa04f48ad9f52bf64736f6c634300080d0033",
+    "sourceMap": "57:567:0:-:0;;;117:17;;;-1:-1:-1;;;;;;140:22:0;;;;;184:6;-1:-1:-1;168:22:0;;;196:19;;;-1:-1:-1;;;;;;221:25:0;;;;;;;265:7;221:25;252:20;306:40;;;-1:-1:-1;;;;;;352:42:0;;;;;221:25;473:9;;221:25;473:9;447:36;;489;;57:567;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "57:567:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;306:40;;;;;;;;;;;;188:18:1;176:31;;;158:50;;146:2;131:18;306:40:0;;;;;;;;352:42;;;;;;;;;;;;533:89;;;;;;:::i;:::-;605:10;;;533:89;489:36;;;;;;;;;637:25:1;;;625:2;610:18;489:36:0;493:175:1;447:36:0;;;;;;219:269:1;276:6;329:2;317:9;308:7;304:23;300:32;297:52;;;345:1;342;335:12;297:52;384:9;371:23;434:4;427:5;423:16;416:5;413:27;403:55;;454:1;451;444:12;403:55;477:5;219:269;-1:-1:-1;;;219:269:1:o",
     "sourcePath": "/home/secondport/Documents/SmartContracts/Tipos de Variables y Operadores/casteo_variables.sol",
     "compiler": {
         "name": "solc",
@@ -91,6 +91,7 @@
             ]
         },
         "id": 58,
+        "license": "MIT",
         "nodeType": "SourceUnit",
         "nodes": [
             {
@@ -101,7 +102,7 @@
                     ".13"
                 ],
                 "nodeType": "PragmaDirective",
-                "src": "0:23:0"
+                "src": "32:23:0"
             },
             {
                 "abstract": false,
@@ -115,7 +116,7 @@
                     57
                 ],
                 "name": "casteo",
-                "nameLocation": "34:6:0",
+                "nameLocation": "66:6:0",
                 "nodeType": "ContractDefinition",
                 "nodes": [
                     {
@@ -123,10 +124,10 @@
                         "id": 4,
                         "mutability": "mutable",
                         "name": "entero8",
-                        "nameLocation": "91:7:0",
+                        "nameLocation": "123:7:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "85:17:0",
+                        "src": "117:17:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -137,7 +138,7 @@
                             "id": 2,
                             "name": "uint8",
                             "nodeType": "ElementaryTypeName",
-                            "src": "85:5:0",
+                            "src": "117:5:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
                                 "typeString": "uint8"
@@ -152,7 +153,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "101:1:0",
+                            "src": "133:1:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_rational_1_by_1",
                                 "typeString": "int_const 1"
@@ -166,10 +167,10 @@
                         "id": 7,
                         "mutability": "mutable",
                         "name": "entero64",
-                        "nameLocation": "115:8:0",
+                        "nameLocation": "147:8:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "108:22:0",
+                        "src": "140:22:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -180,7 +181,7 @@
                             "id": 5,
                             "name": "uint64",
                             "nodeType": "ElementaryTypeName",
-                            "src": "108:6:0",
+                            "src": "140:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
                                 "typeString": "uint64"
@@ -195,7 +196,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "126:4:0",
+                            "src": "158:4:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_rational_6000_by_1",
                                 "typeString": "int_const 6000"
@@ -209,10 +210,10 @@
                         "id": 10,
                         "mutability": "mutable",
                         "name": "entero256",
-                        "nameLocation": "141:9:0",
+                        "nameLocation": "173:9:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "136:22:0",
+                        "src": "168:22:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -223,7 +224,7 @@
                             "id": 8,
                             "name": "uint",
                             "nodeType": "ElementaryTypeName",
-                            "src": "136:4:0",
+                            "src": "168:4:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -238,7 +239,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "152:6:0",
+                            "src": "184:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_rational_100000_by_1",
                                 "typeString": "int_const 100000"
@@ -252,10 +253,10 @@
                         "id": 13,
                         "mutability": "mutable",
                         "name": "entero24",
-                        "nameLocation": "170:8:0",
+                        "nameLocation": "202:8:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "164:19:0",
+                        "src": "196:19:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -266,7 +267,7 @@
                             "id": 11,
                             "name": "int24",
                             "nodeType": "ElementaryTypeName",
-                            "src": "164:5:0",
+                            "src": "196:5:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int24",
                                 "typeString": "int24"
@@ -281,7 +282,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "181:2:0",
+                            "src": "213:2:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_rational_15_by_1",
                                 "typeString": "int_const 15"
@@ -295,10 +296,10 @@
                         "id": 16,
                         "mutability": "mutable",
                         "name": "entero120",
-                        "nameLocation": "196:9:0",
+                        "nameLocation": "228:9:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "189:25:0",
+                        "src": "221:25:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -309,7 +310,7 @@
                             "id": 14,
                             "name": "int120",
                             "nodeType": "ElementaryTypeName",
-                            "src": "189:6:0",
+                            "src": "221:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int120",
                                 "typeString": "int120"
@@ -324,7 +325,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "208:6:0",
+                            "src": "240:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_rational_900000_by_1",
                                 "typeString": "int_const 900000"
@@ -338,10 +339,10 @@
                         "id": 19,
                         "mutability": "mutable",
                         "name": "entero",
-                        "nameLocation": "224:6:0",
+                        "nameLocation": "256:6:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "220:20:0",
+                        "src": "252:20:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -352,7 +353,7 @@
                             "id": 17,
                             "name": "int",
                             "nodeType": "ElementaryTypeName",
-                            "src": "220:3:0",
+                            "src": "252:3:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
                                 "typeString": "int256"
@@ -367,7 +368,7 @@
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "233:7:0",
+                            "src": "265:7:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_rational_5000000_by_1",
                                 "typeString": "int_const 5000000"
@@ -382,10 +383,10 @@
                         "id": 25,
                         "mutability": "mutable",
                         "name": "casteo_1",
-                        "nameLocation": "288:8:0",
+                        "nameLocation": "320:8:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "274:40:0",
+                        "src": "306:40:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -396,7 +397,7 @@
                             "id": 20,
                             "name": "uint64",
                             "nodeType": "ElementaryTypeName",
-                            "src": "274:6:0",
+                            "src": "306:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
                                 "typeString": "uint64"
@@ -410,7 +411,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 4,
-                                    "src": "306:7:0",
+                                    "src": "338:7:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint8",
                                         "typeString": "uint8"
@@ -430,7 +431,7 @@
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "nodeType": "ElementaryTypeNameExpression",
-                                "src": "299:6:0",
+                                "src": "331:6:0",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_uint64_$",
                                     "typeString": "type(uint64)"
@@ -439,7 +440,7 @@
                                     "id": 21,
                                     "name": "uint64",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "299:6:0",
+                                    "src": "331:6:0",
                                     "typeDescriptions": {}
                                 }
                             },
@@ -451,7 +452,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "299:15:0",
+                            "src": "331:15:0",
                             "tryCall": false,
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -466,10 +467,10 @@
                         "id": 31,
                         "mutability": "mutable",
                         "name": "casteo_2",
-                        "nameLocation": "334:8:0",
+                        "nameLocation": "366:8:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "320:42:0",
+                        "src": "352:42:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -480,7 +481,7 @@
                             "id": 26,
                             "name": "uint64",
                             "nodeType": "ElementaryTypeName",
-                            "src": "320:6:0",
+                            "src": "352:6:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
                                 "typeString": "uint64"
@@ -494,7 +495,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 10,
-                                    "src": "352:9:0",
+                                    "src": "384:9:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -514,7 +515,7 @@
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "nodeType": "ElementaryTypeNameExpression",
-                                "src": "345:6:0",
+                                "src": "377:6:0",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_uint64_$",
                                     "typeString": "type(uint64)"
@@ -523,7 +524,7 @@
                                     "id": 27,
                                     "name": "uint64",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "345:6:0",
+                                    "src": "377:6:0",
                                     "typeDescriptions": {}
                                 }
                             },
@@ -535,7 +536,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "345:17:0",
+                            "src": "377:17:0",
                             "tryCall": false,
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -550,10 +551,10 @@
                         "id": 37,
                         "mutability": "mutable",
                         "name": "casteo_4",
-                        "nameLocation": "426:8:0",
+                        "nameLocation": "458:8:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "415:36:0",
+                        "src": "447:36:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -564,7 +565,7 @@
                             "id": 32,
                             "name": "int",
                             "nodeType": "ElementaryTypeName",
-                            "src": "415:3:0",
+                            "src": "447:3:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
                                 "typeString": "int256"
@@ -578,7 +579,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 16,
-                                    "src": "441:9:0",
+                                    "src": "473:9:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_int120",
                                         "typeString": "int120"
@@ -598,7 +599,7 @@
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "nodeType": "ElementaryTypeNameExpression",
-                                "src": "437:3:0",
+                                "src": "469:3:0",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_int256_$",
                                     "typeString": "type(int256)"
@@ -607,7 +608,7 @@
                                     "id": 33,
                                     "name": "int",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "437:3:0",
+                                    "src": "469:3:0",
                                     "typeDescriptions": {}
                                 }
                             },
@@ -619,7 +620,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "437:14:0",
+                            "src": "469:14:0",
                             "tryCall": false,
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
@@ -634,10 +635,10 @@
                         "id": 43,
                         "mutability": "mutable",
                         "name": "casteo_5",
-                        "nameLocation": "468:8:0",
+                        "nameLocation": "500:8:0",
                         "nodeType": "VariableDeclaration",
                         "scope": 57,
-                        "src": "457:36:0",
+                        "src": "489:36:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -648,7 +649,7 @@
                             "id": 38,
                             "name": "int",
                             "nodeType": "ElementaryTypeName",
-                            "src": "457:3:0",
+                            "src": "489:3:0",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
                                 "typeString": "int256"
@@ -662,7 +663,7 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 10,
-                                    "src": "483:9:0",
+                                    "src": "515:9:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -682,7 +683,7 @@
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "nodeType": "ElementaryTypeNameExpression",
-                                "src": "479:3:0",
+                                "src": "511:3:0",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_int256_$",
                                     "typeString": "type(int256)"
@@ -691,7 +692,7 @@
                                     "id": 39,
                                     "name": "int",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "479:3:0",
+                                    "src": "511:3:0",
                                     "typeDescriptions": {}
                                 }
                             },
@@ -703,7 +704,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "479:14:0",
+                            "src": "511:14:0",
                             "tryCall": false,
                             "typeDescriptions": {
                                 "typeIdentifier": "t_int256",
@@ -716,7 +717,7 @@
                         "body": {
                             "id": 55,
                             "nodeType": "Block",
-                            "src": "556:34:0",
+                            "src": "588:34:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -727,7 +728,7 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 45,
-                                                "src": "580:2:0",
+                                                "src": "612:2:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_uint8",
                                                     "typeString": "uint8"
@@ -747,7 +748,7 @@
                                             "isPure": true,
                                             "lValueRequested": false,
                                             "nodeType": "ElementaryTypeNameExpression",
-                                            "src": "573:6:0",
+                                            "src": "605:6:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_type$_t_uint64_$",
                                                 "typeString": "type(uint64)"
@@ -756,7 +757,7 @@
                                                 "id": 50,
                                                 "name": "uint64",
                                                 "nodeType": "ElementaryTypeName",
-                                                "src": "573:6:0",
+                                                "src": "605:6:0",
                                                 "typeDescriptions": {}
                                             }
                                         },
@@ -768,7 +769,7 @@
                                         "lValueRequested": false,
                                         "names": [],
                                         "nodeType": "FunctionCall",
-                                        "src": "573:10:0",
+                                        "src": "605:10:0",
                                         "tryCall": false,
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint64",
@@ -778,7 +779,7 @@
                                     "functionReturnParameters": 49,
                                     "id": 54,
                                     "nodeType": "Return",
-                                    "src": "566:17:0"
+                                    "src": "598:17:0"
                                 }
                             ]
                         },
@@ -788,7 +789,7 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "convertir",
-                        "nameLocation": "510:9:0",
+                        "nameLocation": "542:9:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 46,
@@ -799,10 +800,10 @@
                                     "id": 45,
                                     "mutability": "mutable",
                                     "name": "_k",
-                                    "nameLocation": "526:2:0",
+                                    "nameLocation": "558:2:0",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 56,
-                                    "src": "520:8:0",
+                                    "src": "552:8:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -813,7 +814,7 @@
                                         "id": 44,
                                         "name": "uint8",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "520:5:0",
+                                        "src": "552:5:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint8",
                                             "typeString": "uint8"
@@ -822,7 +823,7 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "519:10:0"
+                            "src": "551:10:0"
                         },
                         "returnParameters": {
                             "id": 49,
@@ -836,7 +837,7 @@
                                     "nameLocation": "-1:-1:-1",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 56,
-                                    "src": "549:6:0",
+                                    "src": "581:6:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -847,7 +848,7 @@
                                         "id": 47,
                                         "name": "uint64",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "549:6:0",
+                                        "src": "581:6:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint64",
                                             "typeString": "uint64"
@@ -856,21 +857,21 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "548:8:0"
+                            "src": "580:8:0"
                         },
                         "scope": 57,
-                        "src": "501:89:0",
+                        "src": "533:89:0",
                         "stateMutability": "view",
                         "virtual": false,
                         "visibility": "public"
                     }
                 ],
                 "scope": 58,
-                "src": "25:567:0",
+                "src": "57:567:0",
                 "usedErrors": []
             }
         ],
-        "src": "0:592:0"
+        "src": "32:592:0"
     },
     "functionHashes": {
         "casteo_1()": "02b037a7",
