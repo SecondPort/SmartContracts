@@ -1,0 +1,1584 @@
+{
+    "contractName": "causasBeneficas",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                }
+            ],
+            "name": "comprobar_causa",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_cantidad",
+                    "type": "uint256"
+                }
+            ],
+            "name": "donar",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_precio_objetivo",
+                    "type": "uint256"
+                }
+            ],
+            "name": "nuevaCausa",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"}],\"name\":\"comprobar_causa\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_cantidad\",\"type\":\"uint256\"}],\"name\":\"donar\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_precio_objetivo\",\"type\":\"uint256\"}],\"name\":\"nuevaCausa\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/MiniProyecto/causas_beneficas.sol\":\"causasBeneficas\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/MiniProyecto/causas_beneficas.sol\":{\"keccak256\":\"0x8ba9307d56a70a6b9f25fd5eb7c96d5961a5dafb9966992097f5bbe9041c2799\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cd74be53af0bbddb86710065faebcd6950196913ab3468005427eb38f45895ff\",\"dweb:/ipfs/QmRx1X3jTtr8k6eDYbzFAWKtyeJs1rMFq9gTsrBGUqwEFA\"]}},\"version\":1}",
+    "bytecode": "60806040526000805534801561001457600080fd5b5061053e806100246000396000f3fe6080604052600436106100345760003560e01c80631a2c9b6a146100395780632ca087921461007557806345cd81b31461008a575b600080fd5b34801561004557600080fd5b506100596100543660046103ca565b6100ba565b6040805192151583526020830191909152015b60405180910390f35b610088610083366004610407565b610139565b005b34801561009657600080fd5b506100aa6100a5366004610407565b6101d5565b604051901515815260200161006c565b60008060006001846040516100cf919061044c565b9081526020016040518091039020600201546001856040516100f1919061044c565b9081526020016040518091039020600301540361010c575060015b8060018560405161011d919061044c565b9081526020016040518091039020600301549250925050915091565b6000805490806101488361049d565b91905055600081905550604051806080016040528060005481526020018381526020018281526020016000815250600183604051610186919061044c565b90815260200160405180910390206000820151816000015560208201518160010190805190602001906101ba92919061028e565b50604082015160028201556060909101516003909101555050565b60006001836040516101e7919061044c565b9081526020016040518091039020600201548260018560405161020a919061044c565b90815260200160405180910390206003015461022691906104b6565b111561023457506000610288565b81600184604051610245919061044c565b90815260200160405180910390206003015461026191906104b6565b600184604051610271919061044c565b908152604051908190036020019020600301555060015b92915050565b82805461029a906104ce565b90600052602060002090601f0160209004810192826102bc5760008555610302565b82601f106102d557805160ff1916838001178555610302565b82800160010185558215610302579182015b828111156103025782518255916020019190600101906102e7565b5061030e929150610312565b5090565b5b8082111561030e5760008155600101610313565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261034e57600080fd5b813567ffffffffffffffff8082111561036957610369610327565b604051601f8301601f19908116603f0116810190828211818310171561039157610391610327565b816040528381528660208588010111156103aa57600080fd5b836020870160208301376000602085830101528094505050505092915050565b6000602082840312156103dc57600080fd5b813567ffffffffffffffff8111156103f357600080fd5b6103ff8482850161033d565b949350505050565b6000806040838503121561041a57600080fd5b823567ffffffffffffffff81111561043157600080fd5b61043d8582860161033d565b95602094909401359450505050565b6000825160005b8181101561046d5760208186018101518583015201610453565b8181111561047c576000828501525b509190910192915050565b634e487b7160e01b600052601160045260246000fd5b6000600182016104af576104af610487565b5060010190565b600082198211156104c9576104c9610487565b500190565b600181811c908216806104e257607f821691505b60208210810361050257634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220486a62f8ebdb670aeee83d65d0eef0aa2e5372c989a22a720712a64ec39591a164736f6c634300080d0033",
+    "deployedBytecode": "6080604052600436106100345760003560e01c80631a2c9b6a146100395780632ca087921461007557806345cd81b31461008a575b600080fd5b34801561004557600080fd5b506100596100543660046103ca565b6100ba565b6040805192151583526020830191909152015b60405180910390f35b610088610083366004610407565b610139565b005b34801561009657600080fd5b506100aa6100a5366004610407565b6101d5565b604051901515815260200161006c565b60008060006001846040516100cf919061044c565b9081526020016040518091039020600201546001856040516100f1919061044c565b9081526020016040518091039020600301540361010c575060015b8060018560405161011d919061044c565b9081526020016040518091039020600301549250925050915091565b6000805490806101488361049d565b91905055600081905550604051806080016040528060005481526020018381526020018281526020016000815250600183604051610186919061044c565b90815260200160405180910390206000820151816000015560208201518160010190805190602001906101ba92919061028e565b50604082015160028201556060909101516003909101555050565b60006001836040516101e7919061044c565b9081526020016040518091039020600201548260018560405161020a919061044c565b90815260200160405180910390206003015461022691906104b6565b111561023457506000610288565b81600184604051610245919061044c565b90815260200160405180910390206003015461026191906104b6565b600184604051610271919061044c565b908152604051908190036020019020600301555060015b92915050565b82805461029a906104ce565b90600052602060002090601f0160209004810192826102bc5760008555610302565b82601f106102d557805160ff1916838001178555610302565b82800160010185558215610302579182015b828111156103025782518255916020019190600101906102e7565b5061030e929150610312565b5090565b5b8082111561030e5760008155600101610313565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261034e57600080fd5b813567ffffffffffffffff8082111561036957610369610327565b604051601f8301601f19908116603f0116810190828211818310171561039157610391610327565b816040528381528660208588010111156103aa57600080fd5b836020870160208301376000602085830101528094505050505092915050565b6000602082840312156103dc57600080fd5b813567ffffffffffffffff8111156103f357600080fd5b6103ff8482850161033d565b949350505050565b6000806040838503121561041a57600080fd5b823567ffffffffffffffff81111561043157600080fd5b61043d8582860161033d565b95602094909401359450505050565b6000825160005b8181101561046d5760208186018101518583015201610453565b8181111561047c576000828501525b509190910192915050565b634e487b7160e01b600052601160045260246000fd5b6000600182016104af576104af610487565b5060010190565b600082198211156104c9576104c9610487565b500190565b600181811c908216806104e257607f821691505b60208210810361050257634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220486a62f8ebdb670aeee83d65d0eef0aa2e5372c989a22a720712a64ec39591a164736f6c634300080d0033",
+    "sourceMap": "58:2087:0:-:0;;;271:1;248:24;;58:2087;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "58:2087:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1852:290;;;;;;;;;;-1:-1:-1;1852:290:0;;;;;:::i;:::-;;:::i;:::-;;;;1390:14:1;;1383:22;1365:41;;1437:2;1422:18;;1415:34;;;;1338:18;1852:290:0;;;;;;;;352:301;;;;;;:::i;:::-;;:::i;:::-;;1433:343;;;;;;;;;;-1:-1:-1;1433:343:0;;;;;:::i;:::-;;:::i;:::-;;;2020:14:1;;2013:22;1995:41;;1983:2;1968:18;1433:343:0;1855:187:1;1852:290:0;1920:4;1926;1941:9;2009:6;2016:7;2009:15;;;;;;:::i;:::-;;;;;;;;;;;;;:31;;;1971:6;1978:7;1971:15;;;;;;:::i;:::-;;;;;;;;;;;;;:34;;;:69;1968:109;;-1:-1:-1;2062:4:0;1968:109;2094:4;2100:6;2107:7;2100:15;;;;;;:::i;:::-;;;;;;;;;;;;;:34;;;2086:49;;;;;1852:290;;;:::o;352:301::-;460:15;:17;;;:15;:17;;;:::i;:::-;;;;;442:15;:35;;;;594:52;;;;;;;;600:15;;594:52;;;;617:7;594:52;;;;626:16;594:52;;;;644:1;594:52;;;576:6;583:7;576:15;;;;;;:::i;:::-;;;;;;;;;;;;;:70;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;576:70:0;;;;;;;;;;;;;;;;;;-1:-1:-1;;352:301:0:o;1433:343::-;1501:4;1568:6;1575:7;1568:15;;;;;;:::i;:::-;;;;;;;;;;;;;:31;;;1556:9;1519:6;1526:7;1519:15;;;;;;:::i;:::-;;;;;;;;;;;;;:34;;;:46;;;;:::i;:::-;:80;1516:233;;;-1:-1:-1;1621:5:0;1614:12;;1516:233;1729:9;1692:6;1699:7;1692:15;;;;;;:::i;:::-;;;;;;;;;;;;;:34;;;:46;;;;:::i;:::-;1655:6;1662:7;1655:15;;;;;;:::i;:::-;;;;;;;;;;;;;;:34;;:83;-1:-1:-1;1765:4:0;1433:343;;;;;:::o;-1:-1:-1:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:719;189:5;242:3;235:4;227:6;223:17;219:27;209:55;;260:1;257;250:12;209:55;296:6;283:20;322:18;359:2;355;352:10;349:36;;;365:18;;:::i;:::-;440:2;434:9;408:2;494:13;;-1:-1:-1;;490:22:1;;;514:2;486:31;482:40;470:53;;;538:18;;;558:22;;;535:46;532:72;;;584:18;;:::i;:::-;624:10;620:2;613:22;659:2;651:6;644:18;705:3;698:4;693:2;685:6;681:15;677:26;674:35;671:55;;;722:1;719;712:12;671:55;786:2;779:4;771:6;767:17;760:4;752:6;748:17;735:54;833:1;826:4;821:2;813:6;809:15;805:26;798:37;853:6;844:15;;;;;;146:719;;;;:::o;870:322::-;939:6;992:2;980:9;971:7;967:23;963:32;960:52;;;1008:1;1005;998:12;960:52;1048:9;1035:23;1081:18;1073:6;1070:30;1067:50;;;1113:1;1110;1103:12;1067:50;1136;1178:7;1169:6;1158:9;1154:22;1136:50;:::i;:::-;1126:60;870:322;-1:-1:-1;;;;870:322:1:o;1460:390::-;1538:6;1546;1599:2;1587:9;1578:7;1574:23;1570:32;1567:52;;;1615:1;1612;1605:12;1567:52;1655:9;1642:23;1688:18;1680:6;1677:30;1674:50;;;1720:1;1717;1710:12;1674:50;1743;1785:7;1776:6;1765:9;1761:22;1743:50;:::i;:::-;1733:60;1840:2;1825:18;;;;1812:32;;-1:-1:-1;;;;1460:390:1:o;2047:428::-;2178:3;2216:6;2210:13;2241:1;2251:129;2265:6;2262:1;2259:13;2251:129;;;2363:4;2347:14;;;2343:25;;2337:32;2324:11;;;2317:53;2280:12;2251:129;;;2398:6;2395:1;2392:13;2389:48;;;2433:1;2424:6;2419:3;2415:16;2408:27;2389:48;-1:-1:-1;2453:16:1;;;;;2047:428;-1:-1:-1;;2047:428:1:o;2480:127::-;2541:10;2536:3;2532:20;2529:1;2522:31;2572:4;2569:1;2562:15;2596:4;2593:1;2586:15;2612:135;2651:3;2672:17;;;2669:43;;2692:18;;:::i;:::-;-1:-1:-1;2739:1:1;2728:13;;2612:135::o;2752:128::-;2792:3;2823:1;2819:6;2816:1;2813:13;2810:39;;;2829:18;;:::i;:::-;-1:-1:-1;2865:9:1;;2752:128::o;2885:380::-;2964:1;2960:12;;;;3007;;;3028:61;;3082:4;3074:6;3070:17;3060:27;;3028:61;3135:2;3127:6;3124:14;3104:18;3101:38;3098:161;;3181:10;3176:3;3172:20;3169:1;3162:31;3216:4;3213:1;3206:15;3244:4;3241:1;3234:15;3098:161;;2885:380;;;:::o",
+    "sourcePath": "/home/secondport/Documents/SmartContracts/MiniProyecto/causas_beneficas.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.13+commit.abaa5c0e"
+    },
+    "ast": {
+        "absolutePath": "/home/secondport/Documents/SmartContracts/MiniProyecto/causas_beneficas.sol",
+        "exportedSymbols": {
+            "causasBeneficas": [
+                119
+            ]
+        },
+        "id": 120,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".13"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:24:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "causasBeneficas",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 119,
+                "linearizedBaseContracts": [
+                    119
+                ],
+                "name": "causasBeneficas",
+                "nameLocation": "67:15:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "causasBeneficas.Causa",
+                        "id": 10,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "Id",
+                                "nameLocation": "149:2:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 10,
+                                "src": "144:7:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "144:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 5,
+                                "mutability": "mutable",
+                                "name": "name",
+                                "nameLocation": "168:4:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 10,
+                                "src": "161:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "161:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 7,
+                                "mutability": "mutable",
+                                "name": "precio_objetivo",
+                                "nameLocation": "187:15:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 10,
+                                "src": "182:20:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 6,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "182:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 9,
+                                "mutability": "mutable",
+                                "name": "cantidad_recaudada",
+                                "nameLocation": "217:18:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 10,
+                                "src": "212:23:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 8,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "212:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Causa",
+                        "nameLocation": "129:5:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 119,
+                        "src": "122:120:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 13,
+                        "mutability": "mutable",
+                        "name": "contador_causas",
+                        "nameLocation": "253:15:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 119,
+                        "src": "248:24:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 11,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "248:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "30",
+                            "id": 12,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "271:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 18,
+                        "mutability": "mutable",
+                        "name": "causas",
+                        "nameLocation": "303:6:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 119,
+                        "src": "278:31:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                            "typeString": "mapping(string => struct causasBeneficas.Causa)"
+                        },
+                        "typeName": {
+                            "id": 17,
+                            "keyType": {
+                                "id": 14,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "286:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "278:24:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                "typeString": "mapping(string => struct causasBeneficas.Causa)"
+                            },
+                            "valueType": {
+                                "id": 16,
+                                "nodeType": "UserDefinedTypeName",
+                                "pathNode": {
+                                    "id": 15,
+                                    "name": "Causa",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 10,
+                                    "src": "296:5:0"
+                                },
+                                "referencedDeclaration": 10,
+                                "src": "296:5:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Causa_$10_storage_ptr",
+                                    "typeString": "struct causasBeneficas.Causa"
+                                }
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 41,
+                            "nodeType": "Block",
+                            "src": "432:221:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 28,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 25,
+                                            "name": "contador_causas",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 13,
+                                            "src": "442:15:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 27,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "UnaryOperation",
+                                            "operator": "++",
+                                            "prefix": false,
+                                            "src": "460:17:0",
+                                            "subExpression": {
+                                                "id": 26,
+                                                "name": "contador_causas",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 13,
+                                                "src": "460:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "442:35:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 29,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "442:35:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 39,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 30,
+                                                "name": "causas",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 18,
+                                                "src": "576:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                    "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                }
+                                            },
+                                            "id": 32,
+                                            "indexExpression": {
+                                                "id": 31,
+                                                "name": "_nombre",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 20,
+                                                "src": "583:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "576:15:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                "typeString": "struct causasBeneficas.Causa storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "id": 34,
+                                                    "name": "contador_causas",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 13,
+                                                    "src": "600:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 35,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 20,
+                                                    "src": "617:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 36,
+                                                    "name": "_precio_objetivo",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 22,
+                                                    "src": "626:16:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "hexValue": "30",
+                                                    "id": 37,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "644:1:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    },
+                                                    "value": "0"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    }
+                                                ],
+                                                "id": 33,
+                                                "name": "Causa",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10,
+                                                "src": "594:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_struct$_Causa_$10_storage_ptr_$",
+                                                    "typeString": "type(struct causasBeneficas.Causa storage pointer)"
+                                                }
+                                            },
+                                            "id": 38,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "structConstructorCall",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "594:52:0",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Causa_$10_memory_ptr",
+                                                "typeString": "struct causasBeneficas.Causa memory"
+                                            }
+                                        },
+                                        "src": "576:70:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                            "typeString": "struct causasBeneficas.Causa storage ref"
+                                        }
+                                    },
+                                    "id": 40,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "576:70:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "2ca08792",
+                        "id": 42,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "nuevaCausa",
+                        "nameLocation": "361:10:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 23,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 20,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "386:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 42,
+                                    "src": "372:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 19,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "372:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 22,
+                                    "mutability": "mutable",
+                                    "name": "_precio_objetivo",
+                                    "nameLocation": "400:16:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 42,
+                                    "src": "395:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 21,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "395:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "371:46:0"
+                        },
+                        "returnParameters": {
+                            "id": 24,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "432:0:0"
+                        },
+                        "scope": 119,
+                        "src": "352:301:0",
+                        "stateMutability": "payable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 81,
+                            "nodeType": "Block",
+                            "src": "1506:270:0",
+                            "statements": [
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 61,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 56,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "expression": {
+                                                    "baseExpression": {
+                                                        "id": 51,
+                                                        "name": "causas",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 18,
+                                                        "src": "1519:6:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                            "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                        }
+                                                    },
+                                                    "id": 53,
+                                                    "indexExpression": {
+                                                        "id": 52,
+                                                        "name": "_nombre",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 44,
+                                                        "src": "1526:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    },
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "IndexAccess",
+                                                    "src": "1519:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                        "typeString": "struct causasBeneficas.Causa storage ref"
+                                                    }
+                                                },
+                                                "id": 54,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "cantidad_recaudada",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 9,
+                                                "src": "1519:34:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "+",
+                                            "rightExpression": {
+                                                "id": 55,
+                                                "name": "_cantidad",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 46,
+                                                "src": "1556:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "src": "1519:46:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": ">",
+                                        "rightExpression": {
+                                            "expression": {
+                                                "baseExpression": {
+                                                    "id": 57,
+                                                    "name": "causas",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 18,
+                                                    "src": "1568:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                        "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                    }
+                                                },
+                                                "id": 59,
+                                                "indexExpression": {
+                                                    "id": 58,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 44,
+                                                    "src": "1575:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "1568:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                    "typeString": "struct causasBeneficas.Causa storage ref"
+                                                }
+                                            },
+                                            "id": 60,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "precio_objetivo",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 7,
+                                            "src": "1568:31:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1519:80:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "falseBody": {
+                                        "id": 77,
+                                        "nodeType": "Block",
+                                        "src": "1641:108:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 75,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "expression": {
+                                                            "baseExpression": {
+                                                                "id": 65,
+                                                                "name": "causas",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 18,
+                                                                "src": "1655:6:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                                    "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                                }
+                                                            },
+                                                            "id": 67,
+                                                            "indexExpression": {
+                                                                "id": 66,
+                                                                "name": "_nombre",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 44,
+                                                                "src": "1662:7:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                                    "typeString": "string memory"
+                                                                }
+                                                            },
+                                                            "isConstant": false,
+                                                            "isLValue": true,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "nodeType": "IndexAccess",
+                                                            "src": "1655:15:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                                "typeString": "struct causasBeneficas.Causa storage ref"
+                                                            }
+                                                        },
+                                                        "id": 68,
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": true,
+                                                        "memberName": "cantidad_recaudada",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 9,
+                                                        "src": "1655:34:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "=",
+                                                    "rightHandSide": {
+                                                        "commonType": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        },
+                                                        "id": 74,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "leftExpression": {
+                                                            "expression": {
+                                                                "baseExpression": {
+                                                                    "id": 69,
+                                                                    "name": "causas",
+                                                                    "nodeType": "Identifier",
+                                                                    "overloadedDeclarations": [],
+                                                                    "referencedDeclaration": 18,
+                                                                    "src": "1692:6:0",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                                        "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                                    }
+                                                                },
+                                                                "id": 71,
+                                                                "indexExpression": {
+                                                                    "id": 70,
+                                                                    "name": "_nombre",
+                                                                    "nodeType": "Identifier",
+                                                                    "overloadedDeclarations": [],
+                                                                    "referencedDeclaration": 44,
+                                                                    "src": "1699:7:0",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                                        "typeString": "string memory"
+                                                                    }
+                                                                },
+                                                                "isConstant": false,
+                                                                "isLValue": true,
+                                                                "isPure": false,
+                                                                "lValueRequested": false,
+                                                                "nodeType": "IndexAccess",
+                                                                "src": "1692:15:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                                    "typeString": "struct causasBeneficas.Causa storage ref"
+                                                                }
+                                                            },
+                                                            "id": 72,
+                                                            "isConstant": false,
+                                                            "isLValue": true,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "memberName": "cantidad_recaudada",
+                                                            "nodeType": "MemberAccess",
+                                                            "referencedDeclaration": 9,
+                                                            "src": "1692:34:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "nodeType": "BinaryOperation",
+                                                        "operator": "+",
+                                                        "rightExpression": {
+                                                            "id": 73,
+                                                            "name": "_cantidad",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 46,
+                                                            "src": "1729:9:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "src": "1692:46:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "1655:83:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 76,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "1655:83:0"
+                                            }
+                                        ]
+                                    },
+                                    "id": 78,
+                                    "nodeType": "IfStatement",
+                                    "src": "1516:233:0",
+                                    "trueBody": {
+                                        "id": 64,
+                                        "nodeType": "Block",
+                                        "src": "1600:37:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "hexValue": "66616c7365",
+                                                    "id": 62,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "bool",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "1621:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    },
+                                                    "value": "false"
+                                                },
+                                                "functionReturnParameters": 50,
+                                                "id": 63,
+                                                "nodeType": "Return",
+                                                "src": "1614:12:0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "hexValue": "74727565",
+                                        "id": 79,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "bool",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "1765:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        },
+                                        "value": "true"
+                                    },
+                                    "functionReturnParameters": 50,
+                                    "id": 80,
+                                    "nodeType": "Return",
+                                    "src": "1758:11:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "45cd81b3",
+                        "id": 82,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "donar",
+                        "nameLocation": "1442:5:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 47,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 44,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "1462:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 82,
+                                    "src": "1448:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 43,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1448:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 46,
+                                    "mutability": "mutable",
+                                    "name": "_cantidad",
+                                    "nameLocation": "1476:9:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 82,
+                                    "src": "1471:14:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 45,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1471:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1447:39:0"
+                        },
+                        "returnParameters": {
+                            "id": 50,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 49,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 82,
+                                    "src": "1501:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 48,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1501:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1500:6:0"
+                        },
+                        "scope": 119,
+                        "src": "1433:343:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 117,
+                            "nodeType": "Block",
+                            "src": "1931:211:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        92
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 92,
+                                            "mutability": "mutable",
+                                            "name": "flag",
+                                            "nameLocation": "1946:4:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 117,
+                                            "src": "1941:9:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 91,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1941:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 94,
+                                    "initialValue": {
+                                        "hexValue": "66616c7365",
+                                        "id": 93,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "bool",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "1953:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        },
+                                        "value": "false"
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1941:17:0"
+                                },
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 103,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "expression": {
+                                                "baseExpression": {
+                                                    "id": 95,
+                                                    "name": "causas",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 18,
+                                                    "src": "1971:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                        "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                    }
+                                                },
+                                                "id": 97,
+                                                "indexExpression": {
+                                                    "id": 96,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 84,
+                                                    "src": "1978:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "1971:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                    "typeString": "struct causasBeneficas.Causa storage ref"
+                                                }
+                                            },
+                                            "id": 98,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "cantidad_recaudada",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 9,
+                                            "src": "1971:34:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "==",
+                                        "rightExpression": {
+                                            "expression": {
+                                                "baseExpression": {
+                                                    "id": 99,
+                                                    "name": "causas",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 18,
+                                                    "src": "2009:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                        "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                    }
+                                                },
+                                                "id": 101,
+                                                "indexExpression": {
+                                                    "id": 100,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 84,
+                                                    "src": "2016:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "2009:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                    "typeString": "struct causasBeneficas.Causa storage ref"
+                                                }
+                                            },
+                                            "id": 102,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "precio_objetivo",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 7,
+                                            "src": "2009:31:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1971:69:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "id": 109,
+                                    "nodeType": "IfStatement",
+                                    "src": "1968:109:0",
+                                    "trueBody": {
+                                        "id": 108,
+                                        "nodeType": "Block",
+                                        "src": "2041:36:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 106,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "id": 104,
+                                                        "name": "flag",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 92,
+                                                        "src": "2055:4:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_bool",
+                                                            "typeString": "bool"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "=",
+                                                    "rightHandSide": {
+                                                        "hexValue": "74727565",
+                                                        "id": 105,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "bool",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "2062:4:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_bool",
+                                                            "typeString": "bool"
+                                                        },
+                                                        "value": "true"
+                                                    },
+                                                    "src": "2055:11:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "id": 107,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "2055:11:0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "components": [
+                                            {
+                                                "id": 110,
+                                                "name": "flag",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 92,
+                                                "src": "2094:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "expression": {
+                                                    "baseExpression": {
+                                                        "id": 111,
+                                                        "name": "causas",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 18,
+                                                        "src": "2100:6:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Causa_$10_storage_$",
+                                                            "typeString": "mapping(string memory => struct causasBeneficas.Causa storage ref)"
+                                                        }
+                                                    },
+                                                    "id": 113,
+                                                    "indexExpression": {
+                                                        "id": 112,
+                                                        "name": "_nombre",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 84,
+                                                        "src": "2107:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    },
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "IndexAccess",
+                                                    "src": "2100:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_Causa_$10_storage",
+                                                        "typeString": "struct causasBeneficas.Causa storage ref"
+                                                    }
+                                                },
+                                                "id": 114,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "cantidad_recaudada",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 9,
+                                                "src": "2100:34:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "id": 115,
+                                        "isConstant": false,
+                                        "isInlineArray": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "TupleExpression",
+                                        "src": "2093:42:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$_t_bool_$_t_uint256_$",
+                                            "typeString": "tuple(bool,uint256)"
+                                        }
+                                    },
+                                    "functionReturnParameters": 90,
+                                    "id": 116,
+                                    "nodeType": "Return",
+                                    "src": "2086:49:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "1a2c9b6a",
+                        "id": 118,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "comprobar_causa",
+                        "nameLocation": "1861:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 85,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 84,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "1891:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 118,
+                                    "src": "1877:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 83,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1877:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1876:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 90,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 87,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 118,
+                                    "src": "1920:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 86,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1920:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 89,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 118,
+                                    "src": "1926:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 88,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1926:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1919:12:0"
+                        },
+                        "scope": 119,
+                        "src": "1852:290:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 120,
+                "src": "58:2087:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "32:2113:0"
+    },
+    "functionHashes": {
+        "comprobar_causa(string)": "1a2c9b6a",
+        "donar(string,uint256)": "45cd81b3",
+        "nuevaCausa(string,uint256)": "2ca08792"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "268400",
+            "executionCost": "5312",
+            "totalCost": "273712"
+        },
+        "external": {
+            "comprobar_causa(string)": "infinite",
+            "donar(string,uint256)": "infinite",
+            "nuevaCausa(string,uint256)": "infinite"
+        }
+    }
+}
