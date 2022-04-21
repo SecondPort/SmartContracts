@@ -29,7 +29,7 @@ contract funciones_globales{
     }
 
     //msg.sig
-    function Sig() public view returns(bytes4){
+    function Sig() public pure returns(bytes4){
         return msg.sig;// devuelve el hash de la transaccion
     }
 
