@@ -31,7 +31,7 @@ contract Cliente is Banco{
     function Retirar(string memory _nombre, uint _cant)public returns(bool){
         bool flag = true;
 
-        if(clientes[_nombre].dinero - _cant >= 0){
+        if(int(clientes[_nombre].dinero) - int( _cant) >= 0){
             clientes[_nombre].dinero -= _cant;
         }else{
             flag = false;
