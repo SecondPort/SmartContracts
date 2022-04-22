@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
-//import "./Banco.sol";
-import {Banco} from "./Banco.sol";
+
+//import {Banco} from "./Banco.sol";
+import "./Banco.sol";
 
 contract Cliente is Banco{
 
