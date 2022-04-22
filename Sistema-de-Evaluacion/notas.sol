@@ -44,4 +44,13 @@ contract notas{
         bytes32 hashAlumno = keccak256(abi.encodePacked((_idAlumno)));
         return notas_alumnos[hashAlumno];
     }
+
+    //funcion para pedir revision de examen
+    function Revision(string memory _idAlumno)public{
+        //almacenamiento de la identidad del alumno en un array
+        revisiones.push(_idAlumno);
+        //emitre el evento
+        emit evento_revision(_idAlumno);
+
+    }
 }
