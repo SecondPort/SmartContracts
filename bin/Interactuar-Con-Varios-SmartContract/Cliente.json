@@ -1,0 +1,1439 @@
+{
+    "contractName": "Cliente",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                }
+            ],
+            "name": "AltaCliente",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                }
+            ],
+            "name": "ConsultarSaldo",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_cant",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Ingresar",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_nombre",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_cant",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Retirar",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"}],\"name\":\"AltaCliente\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"}],\"name\":\"ConsultarSaldo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_cant\",\"type\":\"uint256\"}],\"name\":\"Ingresar\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_nombre\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_cant\",\"type\":\"uint256\"}],\"name\":\"Retirar\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/herencia.sol\":\"Cliente\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/herencia.sol\":{\"keccak256\":\"0xc5aedc7d365c668bd1e187ffbb4290db963eff5ab827b9fc3558f2f0953a8e7a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://10ece4013629af0acdb6fa2364f5b4a25fd2a6c4aba29c3fa06350e8a98f7e7c\",\"dweb:/ipfs/QmXDmJkthao4nDLNdRHpdNYhi3T1fjuwANhKm1Bmum9XCh\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506104f7806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063385fd2451461005157806346cf529b14610066578063cb2a0b991461008e578063e25222b6146100a1575b600080fd5b61006461005f366004610385565b6100c2565b005b6100796100743660046103c2565b6100ce565b60405190151581526020015b60405180910390f35b61006461009c3660046103c2565b610150565b6100b46100af366004610385565b61018a565b604051908152602001610085565b6100cb816101b4565b50565b600080600190506000836000866040516100e89190610407565b9081526020016040518091039020600201546101049190610458565b10610145578260008560405161011a9190610407565b9081526020016040518091039020600201600082825461013a9190610458565b909155506101499050565b5060005b9392505050565b806000836040516101619190610407565b90815260200160405180910390206002016000828254610181919061046f565b90915550505050565b6000808260405161019b9190610407565b9081526020016040518091039020600201549050919050565b6040518060600160405280828152602001336001600160a01b0316815260200160008152506000826040516101e99190610407565b90815260200160405180910390206000820151816000019080519060200190610213929190610249565b5060208201516001820180546001600160a01b0319166001600160a01b0390921691909117905560409091015160029091015550565b82805461025590610487565b90600052602060002090601f01602090048101928261027757600085556102bd565b82601f1061029057805160ff19168380011785556102bd565b828001600101855582156102bd579182015b828111156102bd5782518255916020019190600101906102a2565b506102c99291506102cd565b5090565b5b808211156102c957600081556001016102ce565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261030957600080fd5b813567ffffffffffffffff80821115610324576103246102e2565b604051601f8301601f19908116603f0116810190828211818310171561034c5761034c6102e2565b8160405283815286602085880101111561036557600080fd5b836020870160208301376000602085830101528094505050505092915050565b60006020828403121561039757600080fd5b813567ffffffffffffffff8111156103ae57600080fd5b6103ba848285016102f8565b949350505050565b600080604083850312156103d557600080fd5b823567ffffffffffffffff8111156103ec57600080fd5b6103f8858286016102f8565b95602094909401359450505050565b6000825160005b81811015610428576020818601810151858301520161040e565b81811115610437576000828501525b509190910192915050565b634e487b7160e01b600052601160045260246000fd5b60008282101561046a5761046a610442565b500390565b6000821982111561048257610482610442565b500190565b600181811c9082168061049b57607f821691505b6020821081036104bb57634e487b7160e01b600052602260045260246000fd5b5091905056fea26469706673582212204889944b5e6e77d9812a686191d9426e476fae7ac4336984605c96aba4458b8a64736f6c634300080d0033",
+    "deployedBytecode": "608060405234801561001057600080fd5b506004361061004c5760003560e01c8063385fd2451461005157806346cf529b14610066578063cb2a0b991461008e578063e25222b6146100a1575b600080fd5b61006461005f366004610385565b6100c2565b005b6100796100743660046103c2565b6100ce565b60405190151581526020015b60405180910390f35b61006461009c3660046103c2565b610150565b6100b46100af366004610385565b61018a565b604051908152602001610085565b6100cb816101b4565b50565b600080600190506000836000866040516100e89190610407565b9081526020016040518091039020600201546101049190610458565b10610145578260008560405161011a9190610407565b9081526020016040518091039020600201600082825461013a9190610458565b909155506101499050565b5060005b9392505050565b806000836040516101619190610407565b90815260200160405180910390206002016000828254610181919061046f565b90915550505050565b6000808260405161019b9190610407565b9081526020016040518091039020600201549050919050565b6040518060600160405280828152602001336001600160a01b0316815260200160008152506000826040516101e99190610407565b90815260200160405180910390206000820151816000019080519060200190610213929190610249565b5060208201516001820180546001600160a01b0319166001600160a01b0390921691909117905560409091015160029091015550565b82805461025590610487565b90600052602060002090601f01602090048101928261027757600085556102bd565b82601f1061029057805160ff19168380011785556102bd565b828001600101855582156102bd579182015b828111156102bd5782518255916020019190600101906102a2565b506102c99291506102cd565b5090565b5b808211156102c957600081556001016102ce565b634e487b7160e01b600052604160045260246000fd5b600082601f83011261030957600080fd5b813567ffffffffffffffff80821115610324576103246102e2565b604051601f8301601f19908116603f0116810190828211818310171561034c5761034c6102e2565b8160405283815286602085880101111561036557600080fd5b836020870160208301376000602085830101528094505050505092915050565b60006020828403121561039757600080fd5b813567ffffffffffffffff8111156103ae57600080fd5b6103ba848285016102f8565b949350505050565b600080604083850312156103d557600080fd5b823567ffffffffffffffff8111156103ec57600080fd5b6103f8858286016102f8565b95602094909401359450505050565b6000825160005b81811015610428576020818601810151858301520161040e565b81811115610437576000828501525b509190910192915050565b634e487b7160e01b600052601160045260246000fd5b60008282101561046a5761046a610442565b500390565b6000821982111561048257610482610442565b500190565b600181811c9082168061049b57607f821691505b6020821081036104bb57634e487b7160e01b600052602260045260246000fd5b5091905056fea26469706673582212204889944b5e6e77d9812a686191d9426e476fae7ac4336984605c96aba4458b8a64736f6c634300080d0033",
+    "sourceMap": "521:633:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "521:633:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;553:88;;;;;;:::i;:::-;;:::i;:::-;;761:266;;;;;;:::i;:::-;;:::i;:::-;;;1757:14:1;;1750:22;1732:41;;1720:2;1705:18;761:266:0;;;;;;;;647:108;;;;;;:::i;:::-;;:::i;1033:119::-;;;;;;:::i;:::-;;:::i;:::-;;;1930:25:1;;;1918:2;1903:18;1033:119:0;1784:177:1;553:88:0;613:21;626:7;613:12;:21::i;:::-;553:88;:::o;761:266::-;827:4;842:9;854:4;842:16;;908:1;899:5;872:8;881:7;872:17;;;;;;:::i;:::-;;;;;;;;;;;;;:24;;;:32;;;;:::i;:::-;:37;869:140;;952:5;924:8;933:7;924:17;;;;;;:::i;:::-;;;;;;;;;;;;;:24;;;:33;;;;;;;:::i;:::-;;;;-1:-1:-1;869:140:0;;-1:-1:-1;869:140:0;;-1:-1:-1;993:5:0;869:140;1016:4;761:266;-1:-1:-1;;;761:266:0:o;647:108::-;743:5;715:8;724:7;715:17;;;;;;:::i;:::-;;;;;;;;;;;;;:24;;;:33;;;;;;;:::i;:::-;;;;-1:-1:-1;;;;647:108:0:o;1033:119::-;1099:4;1121:8;1130:7;1121:17;;;;;;:::i;:::-;;;;;;;;;;;;;:24;;;1114:31;;1033:119;;;:::o;396:121::-;479:31;;;;;;;;487:7;479:31;;;;496:10;-1:-1:-1;;;;;479:31:0;;;;;508:1;479:31;;;459:8;468:7;459:17;;;;;;:::i;:::-;;;;;;;;;;;;;:51;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;459:51:0;;;;;;;;;-1:-1:-1;;;;;;459:51:0;-1:-1:-1;;;;;459:51:0;;;;;;;;;;;;;;;;;;;-1:-1:-1;396:121:0:o;-1:-1:-1:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:719;189:5;242:3;235:4;227:6;223:17;219:27;209:55;;260:1;257;250:12;209:55;296:6;283:20;322:18;359:2;355;352:10;349:36;;;365:18;;:::i;:::-;440:2;434:9;408:2;494:13;;-1:-1:-1;;490:22:1;;;514:2;486:31;482:40;470:53;;;538:18;;;558:22;;;535:46;532:72;;;584:18;;:::i;:::-;624:10;620:2;613:22;659:2;651:6;644:18;705:3;698:4;693:2;685:6;681:15;677:26;674:35;671:55;;;722:1;719;712:12;671:55;786:2;779:4;771:6;767:17;760:4;752:6;748:17;735:54;833:1;826:4;821:2;813:6;809:15;805:26;798:37;853:6;844:15;;;;;;146:719;;;;:::o;870:322::-;939:6;992:2;980:9;971:7;967:23;963:32;960:52;;;1008:1;1005;998:12;960:52;1048:9;1035:23;1081:18;1073:6;1070:30;1067:50;;;1113:1;1110;1103:12;1067:50;1136;1178:7;1169:6;1158:9;1154:22;1136:50;:::i;:::-;1126:60;870:322;-1:-1:-1;;;;870:322:1:o;1197:390::-;1275:6;1283;1336:2;1324:9;1315:7;1311:23;1307:32;1304:52;;;1352:1;1349;1342:12;1304:52;1392:9;1379:23;1425:18;1417:6;1414:30;1411:50;;;1457:1;1454;1447:12;1411:50;1480;1522:7;1513:6;1502:9;1498:22;1480:50;:::i;:::-;1470:60;1577:2;1562:18;;;;1549:32;;-1:-1:-1;;;;1197:390:1:o;1966:428::-;2097:3;2135:6;2129:13;2160:1;2170:129;2184:6;2181:1;2178:13;2170:129;;;2282:4;2266:14;;;2262:25;;2256:32;2243:11;;;2236:53;2199:12;2170:129;;;2317:6;2314:1;2311:13;2308:48;;;2352:1;2343:6;2338:3;2334:16;2327:27;2308:48;-1:-1:-1;2372:16:1;;;;;1966:428;-1:-1:-1;;1966:428:1:o;2399:127::-;2460:10;2455:3;2451:20;2448:1;2441:31;2491:4;2488:1;2481:15;2515:4;2512:1;2505:15;2531:125;2571:4;2599:1;2596;2593:8;2590:34;;;2604:18;;:::i;:::-;-1:-1:-1;2641:9:1;;2531:125::o;2661:128::-;2701:3;2732:1;2728:6;2725:1;2722:13;2719:39;;;2738:18;;:::i;:::-;-1:-1:-1;2774:9:1;;2661:128::o;2794:380::-;2873:1;2869:12;;;;2916;;;2937:61;;2991:4;2983:6;2979:17;2969:27;;2937:61;3044:2;3036:6;3033:14;3013:18;3010:38;3007:161;;3090:10;3085:3;3081:20;3078:1;3071:31;3125:4;3122:1;3115:15;3153:4;3150:1;3143:15;3007:161;;2794:380;;;:::o",
+    "sourcePath": "/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/herencia.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.13+commit.abaa5c0e"
+    },
+    "ast": {
+        "absolutePath": "/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/herencia.sol",
+        "exportedSymbols": {
+            "Banco": [
+                31
+            ],
+            "Cliente": [
+                110
+            ]
+        },
+        "id": 111,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "0.8",
+                    ".13"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Banco",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 31,
+                "linearizedBaseContracts": [
+                    31
+                ],
+                "name": "Banco",
+                "nameLocation": "66:5:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "Banco.cliente",
+                        "id": 8,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "cliente",
+                                "nameLocation": "149:7:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "142:14:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "142:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 5,
+                                "mutability": "mutable",
+                                "name": "direccion",
+                                "nameLocation": "174:9:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "166:17:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "166:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 7,
+                                "mutability": "mutable",
+                                "name": "dinero",
+                                "nameLocation": "198:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "193:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 6,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "193:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "cliente",
+                        "nameLocation": "125:7:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 31,
+                        "src": "118:93:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 13,
+                        "mutability": "mutable",
+                        "name": "clientes",
+                        "nameLocation": "322:8:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 31,
+                        "src": "295:35:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                            "typeString": "mapping(string => struct Banco.cliente)"
+                        },
+                        "typeName": {
+                            "id": 12,
+                            "keyType": {
+                                "id": 9,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "303:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "295:26:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                                "typeString": "mapping(string => struct Banco.cliente)"
+                            },
+                            "valueType": {
+                                "id": 11,
+                                "nodeType": "UserDefinedTypeName",
+                                "pathNode": {
+                                    "id": 10,
+                                    "name": "cliente",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 8,
+                                    "src": "313:7:0"
+                                },
+                                "referencedDeclaration": 8,
+                                "src": "313:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_cliente_$8_storage_ptr",
+                                    "typeString": "struct Banco.cliente"
+                                }
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 29,
+                            "nodeType": "Block",
+                            "src": "449:68:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 27,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 18,
+                                                "name": "clientes",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 13,
+                                                "src": "459:8:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                                                    "typeString": "mapping(string memory => struct Banco.cliente storage ref)"
+                                                }
+                                            },
+                                            "id": 20,
+                                            "indexExpression": {
+                                                "id": 19,
+                                                "name": "_nombre",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 15,
+                                                "src": "468:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "459:17:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_cliente_$8_storage",
+                                                "typeString": "struct Banco.cliente storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "id": 22,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 15,
+                                                    "src": "487:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                {
+                                                    "expression": {
+                                                        "id": 23,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 4294967281,
+                                                        "src": "496:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 24,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "src": "496:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                {
+                                                    "hexValue": "30",
+                                                    "id": 25,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "508:1:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    },
+                                                    "value": "0"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    }
+                                                ],
+                                                "id": 21,
+                                                "name": "cliente",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 8,
+                                                "src": "479:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_struct$_cliente_$8_storage_ptr_$",
+                                                    "typeString": "type(struct Banco.cliente storage pointer)"
+                                                }
+                                            },
+                                            "id": 26,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "structConstructorCall",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "479:31:0",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_cliente_$8_memory_ptr",
+                                                "typeString": "struct Banco.cliente memory"
+                                            }
+                                        },
+                                        "src": "459:51:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_cliente_$8_storage",
+                                            "typeString": "struct Banco.cliente storage ref"
+                                        }
+                                    },
+                                    "id": 28,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "459:51:0"
+                                }
+                            ]
+                        },
+                        "id": 30,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "nuevoCliente",
+                        "nameLocation": "405:12:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 16,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 15,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "432:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 30,
+                                    "src": "418:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 14,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "418:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "417:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 17,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "449:0:0"
+                        },
+                        "scope": 31,
+                        "src": "396:121:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "internal"
+                    }
+                ],
+                "scope": 111,
+                "src": "57:462:0",
+                "usedErrors": []
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 32,
+                            "name": "Banco",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 31,
+                            "src": "541:5:0"
+                        },
+                        "id": 33,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "541:5:0"
+                    }
+                ],
+                "canonicalName": "Cliente",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 110,
+                "linearizedBaseContracts": [
+                    110,
+                    31
+                ],
+                "name": "Cliente",
+                "nameLocation": "530:7:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 42,
+                            "nodeType": "Block",
+                            "src": "603:38:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 39,
+                                                "name": "_nombre",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 35,
+                                                "src": "626:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            ],
+                                            "id": 38,
+                                            "name": "nuevoCliente",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 30,
+                                            "src": "613:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (string memory)"
+                                            }
+                                        },
+                                        "id": 40,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "613:21:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 41,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "613:21:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "385fd245",
+                        "id": 43,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "AltaCliente",
+                        "nameLocation": "562:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 36,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 35,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "588:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 43,
+                                    "src": "574:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 34,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "574:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "573:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 37,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "603:0:0"
+                        },
+                        "scope": 110,
+                        "src": "553:88:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 57,
+                            "nodeType": "Block",
+                            "src": "705:50:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 55,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "baseExpression": {
+                                                    "id": 50,
+                                                    "name": "clientes",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 13,
+                                                    "src": "715:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                                                        "typeString": "mapping(string memory => struct Banco.cliente storage ref)"
+                                                    }
+                                                },
+                                                "id": 52,
+                                                "indexExpression": {
+                                                    "id": 51,
+                                                    "name": "_nombre",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 45,
+                                                    "src": "724:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "715:17:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_cliente_$8_storage",
+                                                    "typeString": "struct Banco.cliente storage ref"
+                                                }
+                                            },
+                                            "id": 53,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberName": "dinero",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 7,
+                                            "src": "715:24:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "id": 54,
+                                            "name": "_cant",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 47,
+                                            "src": "743:5:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "715:33:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 56,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "715:33:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "cb2a0b99",
+                        "id": 58,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "Ingresar",
+                        "nameLocation": "656:8:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 48,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 45,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "679:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 58,
+                                    "src": "665:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 44,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "665:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 47,
+                                    "mutability": "mutable",
+                                    "name": "_cant",
+                                    "nameLocation": "693:5:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 58,
+                                    "src": "688:10:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 46,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "688:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "664:35:0"
+                        },
+                        "returnParameters": {
+                            "id": 49,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "705:0:0"
+                        },
+                        "scope": 110,
+                        "src": "647:108:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 95,
+                            "nodeType": "Block",
+                            "src": "832:195:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        68
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 68,
+                                            "mutability": "mutable",
+                                            "name": "flag",
+                                            "nameLocation": "847:4:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 95,
+                                            "src": "842:9:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 67,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "842:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 70,
+                                    "initialValue": {
+                                        "hexValue": "74727565",
+                                        "id": 69,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "bool",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "854:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        },
+                                        "value": "true"
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "842:16:0"
+                                },
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 78,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 76,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "expression": {
+                                                    "baseExpression": {
+                                                        "id": 71,
+                                                        "name": "clientes",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 13,
+                                                        "src": "872:8:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                                                            "typeString": "mapping(string memory => struct Banco.cliente storage ref)"
+                                                        }
+                                                    },
+                                                    "id": 73,
+                                                    "indexExpression": {
+                                                        "id": 72,
+                                                        "name": "_nombre",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 60,
+                                                        "src": "881:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    },
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "IndexAccess",
+                                                    "src": "872:17:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_cliente_$8_storage",
+                                                        "typeString": "struct Banco.cliente storage ref"
+                                                    }
+                                                },
+                                                "id": 74,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "dinero",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 7,
+                                                "src": "872:24:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "-",
+                                            "rightExpression": {
+                                                "id": 75,
+                                                "name": "_cant",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 62,
+                                                "src": "899:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "src": "872:32:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": ">=",
+                                        "rightExpression": {
+                                            "hexValue": "30",
+                                            "id": 77,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "908:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_0_by_1",
+                                                "typeString": "int_const 0"
+                                            },
+                                            "value": "0"
+                                        },
+                                        "src": "872:37:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "falseBody": {
+                                        "id": 91,
+                                        "nodeType": "Block",
+                                        "src": "972:37:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 89,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "id": 87,
+                                                        "name": "flag",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 68,
+                                                        "src": "986:4:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_bool",
+                                                            "typeString": "bool"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "=",
+                                                    "rightHandSide": {
+                                                        "hexValue": "66616c7365",
+                                                        "id": 88,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "bool",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "993:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_bool",
+                                                            "typeString": "bool"
+                                                        },
+                                                        "value": "false"
+                                                    },
+                                                    "src": "986:12:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "id": 90,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "986:12:0"
+                                            }
+                                        ]
+                                    },
+                                    "id": 92,
+                                    "nodeType": "IfStatement",
+                                    "src": "869:140:0",
+                                    "trueBody": {
+                                        "id": 86,
+                                        "nodeType": "Block",
+                                        "src": "910:58:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 84,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "expression": {
+                                                            "baseExpression": {
+                                                                "id": 79,
+                                                                "name": "clientes",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 13,
+                                                                "src": "924:8:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                                                                    "typeString": "mapping(string memory => struct Banco.cliente storage ref)"
+                                                                }
+                                                            },
+                                                            "id": 81,
+                                                            "indexExpression": {
+                                                                "id": 80,
+                                                                "name": "_nombre",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 60,
+                                                                "src": "933:7:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                                    "typeString": "string memory"
+                                                                }
+                                                            },
+                                                            "isConstant": false,
+                                                            "isLValue": true,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "nodeType": "IndexAccess",
+                                                            "src": "924:17:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_struct$_cliente_$8_storage",
+                                                                "typeString": "struct Banco.cliente storage ref"
+                                                            }
+                                                        },
+                                                        "id": 82,
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": true,
+                                                        "memberName": "dinero",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 7,
+                                                        "src": "924:24:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "-=",
+                                                    "rightHandSide": {
+                                                        "id": 83,
+                                                        "name": "_cant",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 62,
+                                                        "src": "952:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "924:33:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 85,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "924:33:0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "id": 93,
+                                        "name": "flag",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 68,
+                                        "src": "1016:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "functionReturnParameters": 66,
+                                    "id": 94,
+                                    "nodeType": "Return",
+                                    "src": "1009:11:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "46cf529b",
+                        "id": 96,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "Retirar",
+                        "nameLocation": "770:7:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 63,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 60,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "792:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 96,
+                                    "src": "778:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 59,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "778:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 62,
+                                    "mutability": "mutable",
+                                    "name": "_cant",
+                                    "nameLocation": "806:5:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 96,
+                                    "src": "801:10:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 61,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "801:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "777:35:0"
+                        },
+                        "returnParameters": {
+                            "id": 66,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 65,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 96,
+                                    "src": "827:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 64,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "827:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "826:6:0"
+                        },
+                        "scope": 110,
+                        "src": "761:266:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 108,
+                            "nodeType": "Block",
+                            "src": "1104:48:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "expression": {
+                                            "baseExpression": {
+                                                "id": 103,
+                                                "name": "clientes",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 13,
+                                                "src": "1121:8:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_cliente_$8_storage_$",
+                                                    "typeString": "mapping(string memory => struct Banco.cliente storage ref)"
+                                                }
+                                            },
+                                            "id": 105,
+                                            "indexExpression": {
+                                                "id": 104,
+                                                "name": "_nombre",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 98,
+                                                "src": "1130:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "IndexAccess",
+                                            "src": "1121:17:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_cliente_$8_storage",
+                                                "typeString": "struct Banco.cliente storage ref"
+                                            }
+                                        },
+                                        "id": 106,
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "dinero",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 7,
+                                        "src": "1121:24:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 102,
+                                    "id": 107,
+                                    "nodeType": "Return",
+                                    "src": "1114:31:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "e25222b6",
+                        "id": 109,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "ConsultarSaldo",
+                        "nameLocation": "1042:14:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 99,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 98,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "1071:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 109,
+                                    "src": "1057:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 97,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1057:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1056:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 102,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 101,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 109,
+                                    "src": "1099:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 100,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1099:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1098:6:0"
+                        },
+                        "scope": 110,
+                        "src": "1033:119:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 111,
+                "src": "521:633:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "32:1122:0"
+    },
+    "functionHashes": {
+        "AltaCliente(string)": "385fd245",
+        "ConsultarSaldo(string)": "e25222b6",
+        "Ingresar(string,uint256)": "cb2a0b99",
+        "Retirar(string,uint256)": "46cf529b"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "254200",
+            "executionCost": "294",
+            "totalCost": "254494"
+        },
+        "external": {
+            "AltaCliente(string)": "infinite",
+            "ConsultarSaldo(string)": "infinite",
+            "Ingresar(string,uint256)": "infinite",
+            "Retirar(string,uint256)": "infinite"
+        }
+    }
+}
