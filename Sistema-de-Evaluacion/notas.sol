@@ -39,4 +39,9 @@ contract notas{
         _;
     }
 
+    //funcion para ver las notas de un alumno
+    function VerNotas(string memory _idAlumno)public view returns(uint){
+        bytes32 hashAlumno = keccak256(abi.encodePacked((_idAlumno)));
+        return notas_alumnos[hashAlumno];
+    }
 }
