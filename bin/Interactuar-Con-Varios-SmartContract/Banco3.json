@@ -1,11 +1,11 @@
 {
-    "contractName": "Banco",
+    "contractName": "Banco3",
     "abi": [],
-    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/Banco.sol\":\"Banco\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/Banco.sol\":{\"keccak256\":\"0xfab7f35bcb5a797429a8ecd2d5646c15200288dec315ce14ee03e4232a11c846\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7501672331f61b70440a5fd1ecc2b75f6aace02e1cdbc5a716aef977d179a6bb\",\"dweb:/ipfs/QmeRKAGHqW69bL5ANYsj73mQ4qkgkRrQLHXLtQc1v7pmq1\"]}},\"version\":1}",
-    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205622ec79f7a5f836a7b66d1d20f61a7985fdb0f265b8348e3573568ab246deac64736f6c634300080d0033",
-    "deployedBytecode": "6080604052600080fdfea26469706673582212205622ec79f7a5f836a7b66d1d20f61a7985fdb0f265b8348e3573568ab246deac64736f6c634300080d0033",
-    "sourceMap": "57:462:0:-:0;;;;;;;;;;;;;;;;;;;",
-    "deployedSourceMap": "57:462:0:-:0;;;;;",
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/Banco.sol\":\"Banco3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/Banco.sol\":{\"keccak256\":\"0xfab7f35bcb5a797429a8ecd2d5646c15200288dec315ce14ee03e4232a11c846\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7501672331f61b70440a5fd1ecc2b75f6aace02e1cdbc5a716aef977d179a6bb\",\"dweb:/ipfs/QmeRKAGHqW69bL5ANYsj73mQ4qkgkRrQLHXLtQc1v7pmq1\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122091c8182b480f75fe281b545b9b3b79d1983c83f7525e625343f17e1ff78ce1fd64736f6c634300080d0033",
+    "deployedBytecode": "6080604052600080fdfea264697066735822122091c8182b480f75fe281b545b9b3b79d1983c83f7525e625343f17e1ff78ce1fd64736f6c634300080d0033",
+    "sourceMap": "542:23:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "542:23:0:-:0;;;;;",
     "sourcePath": "/home/secondport/Documents/SmartContracts/Interactuar-Con-Varios-SmartContract/Banco.sol",
     "compiler": {
         "name": "solc",
@@ -467,9 +467,6 @@
             "codeDepositCost": "12600",
             "executionCost": "66",
             "totalCost": "12666"
-        },
-        "internal": {
-            "nuevoCliente(string memory)": "infinite"
         }
     }
 }
