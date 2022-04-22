@@ -49,8 +49,14 @@ contract notas{
     function Revision(string memory _idAlumno)public{
         //almacenamiento de la identidad del alumno en un array
         revisiones.push(_idAlumno);
-        //emitre el evento
+        //emitir el evento
         emit evento_revision(_idAlumno);
 
+    }
+
+    //funcion para ver revisiones de examen
+    function VerRevisiones()public view UnicamenteProfesor(msg.sender) returns(string [] memory){
+        //devolver las identidades de los alumnos que han pedido revision
+        return revisiones;
     }
 }
