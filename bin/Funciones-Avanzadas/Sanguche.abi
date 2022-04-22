@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"string","name":"_ingredientes","type":"string"},{"internalType":"uint256","name":"_tiempo","type":"uint256"}],"name":"sanguche","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"verIngredientes","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]

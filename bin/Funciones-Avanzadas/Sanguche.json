@@ -1,0 +1,1072 @@
+{
+    "contractName": "Sanguche",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_ingredientes",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_tiempo",
+                    "type": "uint256"
+                }
+            ],
+            "name": "sanguche",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "verIngredientes",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_ingredientes\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_tiempo\",\"type\":\"uint256\"}],\"name\":\"sanguche\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"verIngredientes\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Funciones-Avanzadas/internal-external.sol\":\"Sanguche\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Funciones-Avanzadas/internal-external.sol\":{\"keccak256\":\"0x6da251184068f08513267cfaf066858ac4162f01a8985435f5c00be76b56a820\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aeb042e2e09bccbb6432ce24e33c0e9072a3dafad02fa989da15a65475e916b9\",\"dweb:/ipfs/QmTmsXHSE7iRBvnkGHwSdGNjrUk9jd4Fnnj6DJyQwNLEtV\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5061048d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806319a08b0b1461003b578063dc53d5c714610050575b600080fd5b61004e6100493660046102ed565b61006e565b005b61005861009d565b60405161006591906103ce565b60405180910390f35b6100996040518060400160405280600881526020016753616e677563686560c01b81525083836100cd565b5050565b60606100c86040518060400160405280600881526020016753616e677563686560c01b81525061018e565b905090565b6040805160608101825284815260208082018590529181018390526000805460018101825590805281518051929360039092027f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e5630192610130928492019061023e565b506020828101518051610149926001850192019061023e565b50604082015181600201555050816001846040516101679190610401565b9081526020016040518091039020908051906020019061018892919061023e565b50505050565b60606001826040516101a09190610401565b908152602001604051809103902080546101b99061041d565b80601f01602080910402602001604051908101604052809291908181526020018280546101e59061041d565b80156102325780601f1061020757610100808354040283529160200191610232565b820191906000526020600020905b81548152906001019060200180831161021557829003601f168201915b50505050509050919050565b82805461024a9061041d565b90600052602060002090601f01602090048101928261026c57600085556102b2565b82601f1061028557805160ff19168380011785556102b2565b828001600101855582156102b2579182015b828111156102b2578251825591602001919060010190610297565b506102be9291506102c2565b5090565b5b808211156102be57600081556001016102c3565b634e487b7160e01b600052604160045260246000fd5b6000806040838503121561030057600080fd5b823567ffffffffffffffff8082111561031857600080fd5b818501915085601f83011261032c57600080fd5b81358181111561033e5761033e6102d7565b604051601f8201601f19908116603f01168101908382118183101715610366576103666102d7565b8160405282815288602084870101111561037f57600080fd5b826020860160208301376000602093820184015298969091013596505050505050565b60005b838110156103bd5781810151838201526020016103a5565b838111156101885750506000910152565b60208152600082518060208401526103ed8160408501602087016103a2565b601f01601f19169190910160400192915050565b600082516104138184602087016103a2565b9190910192915050565b600181811c9082168061043157607f821691505b60208210810361045157634e487b7160e01b600052602260045260246000fd5b5091905056fea264697066735822122050fc14d32876d1745ba7ba263322262f36ca6a539dd101517f382a51fb1f567d64736f6c634300080d0033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100365760003560e01c806319a08b0b1461003b578063dc53d5c714610050575b600080fd5b61004e6100493660046102ed565b61006e565b005b61005861009d565b60405161006591906103ce565b60405180910390f35b6100996040518060400160405280600881526020016753616e677563686560c01b81525083836100cd565b5050565b60606100c86040518060400160405280600881526020016753616e677563686560c01b81525061018e565b905090565b6040805160608101825284815260208082018590529181018390526000805460018101825590805281518051929360039092027f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e5630192610130928492019061023e565b506020828101518051610149926001850192019061023e565b50604082015181600201555050816001846040516101679190610401565b9081526020016040518091039020908051906020019061018892919061023e565b50505050565b60606001826040516101a09190610401565b908152602001604051809103902080546101b99061041d565b80601f01602080910402602001604051908101604052809291908181526020018280546101e59061041d565b80156102325780601f1061020757610100808354040283529160200191610232565b820191906000526020600020905b81548152906001019060200180831161021557829003601f168201915b50505050509050919050565b82805461024a9061041d565b90600052602060002090601f01602090048101928261026c57600085556102b2565b82601f1061028557805160ff19168380011785556102b2565b828001600101855582156102b2579182015b828111156102b2578251825591602001919060010190610297565b506102be9291506102c2565b5090565b5b808211156102be57600081556001016102c3565b634e487b7160e01b600052604160045260246000fd5b6000806040838503121561030057600080fd5b823567ffffffffffffffff8082111561031857600080fd5b818501915085601f83011261032c57600080fd5b81358181111561033e5761033e6102d7565b604051601f8201601f19908116603f01168101908382118183101715610366576103666102d7565b8160405282815288602084870101111561037f57600080fd5b826020860160208301376000602093820184015298969091013596505050505050565b60005b838110156103bd5781810151838201526020016103a5565b838111156101885750506000910152565b60208152600082518060208401526103ed8160408501602087016103a2565b601f01601f19169190910160400192915050565b600082516104138184602087016103a2565b9190910192915050565b600181811c9082168061043157607f821691505b60208210810361045157634e487b7160e01b600052602260045260246000fd5b5091905056fea264697066735822122050fc14d32876d1745ba7ba263322262f36ca6a539dd101517f382a51fb1f567d64736f6c634300080d0033",
+    "sourceMap": "753:289:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "753:289:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;788:131;;;;;;:::i;:::-;;:::i;:::-;;924:116;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;788:131;866:46;;;;;;;;;;;;;;-1:-1:-1;;;866:46:0;;;889:13;904:7;866:10;:46::i;:::-;788:131;;:::o;924:116::-;973:13;1004:29;;;;;;;;;;;;;;-1:-1:-1;;;1004:29:0;;;:17;:29::i;:::-;997:36;;924:116;:::o;407:205::-;521:37;;;;;;;;;;;;;;;;;;;;;;;;509:6;:50;;;;;;;;;;;;;;521:37;;509:50;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;509:50:0;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;593:12;569;582:7;569:21;;;;;;:::i;:::-;;;;;;;;;;;;;:36;;;;;;;;;;;;:::i;:::-;;407:205;;;:::o;618:130::-;689:13;720:12;733:7;720:21;;;;;;:::i;:::-;;;;;;;;;;;;;713:28;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;618:130;;;:::o;-1:-1:-1:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:1000;224:6;232;285:2;273:9;264:7;260:23;256:32;253:52;;;301:1;298;291:12;253:52;341:9;328:23;370:18;411:2;403:6;400:14;397:34;;;427:1;424;417:12;397:34;465:6;454:9;450:22;440:32;;510:7;503:4;499:2;495:13;491:27;481:55;;532:1;529;522:12;481:55;568:2;555:16;590:2;586;583:10;580:36;;;596:18;;:::i;:::-;671:2;665:9;639:2;725:13;;-1:-1:-1;;721:22:1;;;745:2;717:31;713:40;701:53;;;769:18;;;789:22;;;766:46;763:72;;;815:18;;:::i;:::-;855:10;851:2;844:22;890:2;882:6;875:18;932:7;925:4;920:2;916;912:11;908:22;905:35;902:55;;;953:1;950;943:12;902:55;1013:2;1006:4;1002:2;998:13;991:4;983:6;979:17;966:50;1060:1;1053:4;1036:15;;;1032:26;;1025:37;1036:15;1119:20;;;;1106:34;;-1:-1:-1;;;;;;146:1000:1:o;1151:258::-;1223:1;1233:113;1247:6;1244:1;1241:13;1233:113;;;1323:11;;;1317:18;1304:11;;;1297:39;1269:2;1262:10;1233:113;;;1364:6;1361:1;1358:13;1355:48;;;-1:-1:-1;;1399:1:1;1381:16;;1374:27;1151:258::o;1414:383::-;1563:2;1552:9;1545:21;1526:4;1595:6;1589:13;1638:6;1633:2;1622:9;1618:18;1611:34;1654:66;1713:6;1708:2;1697:9;1693:18;1688:2;1680:6;1676:15;1654:66;:::i;:::-;1781:2;1760:15;-1:-1:-1;;1756:29:1;1741:45;;;;1788:2;1737:54;;1414:383;-1:-1:-1;;1414:383:1:o;1802:276::-;1933:3;1971:6;1965:13;1987:53;2033:6;2028:3;2021:4;2013:6;2009:17;1987:53;:::i;:::-;2056:16;;;;;1802:276;-1:-1:-1;;1802:276:1:o;2083:380::-;2162:1;2158:12;;;;2205;;;2226:61;;2280:4;2272:6;2268:17;2258:27;;2226:61;2333:2;2325:6;2322:14;2302:18;2299:38;2296:161;;2379:10;2374:3;2370:20;2367:1;2360:31;2414:4;2411:1;2404:15;2442:4;2439:1;2432:15;2296:161;;2083:380;;;:::o",
+    "sourcePath": "/home/secondport/Documents/SmartContracts/Funciones-Avanzadas/internal-external.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.13+commit.abaa5c0e"
+    },
+    "ast": {
+        "absolutePath": "/home/secondport/Documents/SmartContracts/Funciones-Avanzadas/internal-external.sol",
+        "exportedSymbols": {
+            "Comida": [
+                55
+            ],
+            "Sanguche": [
+                82
+            ]
+        },
+        "id": 83,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "0.8",
+                    ".13"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Comida",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 55,
+                "linearizedBaseContracts": [
+                    55
+                ],
+                "name": "Comida",
+                "nameLocation": "66:6:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "Comida.plato",
+                        "id": 8,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "nombre",
+                                "nameLocation": "107:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "100:13:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "100:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 5,
+                                "mutability": "mutable",
+                                "name": "ingredientes",
+                                "nameLocation": "130:12:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "123:19:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "123:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 7,
+                                "mutability": "mutable",
+                                "name": "tiempo",
+                                "nameLocation": "157:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "152:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 6,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "152:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "plato",
+                        "nameLocation": "85:5:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 55,
+                        "src": "78:92:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 12,
+                        "mutability": "mutable",
+                        "name": "platos",
+                        "nameLocation": "224:6:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 55,
+                        "src": "215:15:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_plato_$8_storage_$dyn_storage",
+                            "typeString": "struct Comida.plato[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "id": 10,
+                                "nodeType": "UserDefinedTypeName",
+                                "pathNode": {
+                                    "id": 9,
+                                    "name": "plato",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 8,
+                                    "src": "215:5:0"
+                                },
+                                "referencedDeclaration": 8,
+                                "src": "215:5:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_plato_$8_storage_ptr",
+                                    "typeString": "struct Comida.plato"
+                                }
+                            },
+                            "id": 11,
+                            "nodeType": "ArrayTypeName",
+                            "src": "215:8:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_struct$_plato_$8_storage_$dyn_storage_ptr",
+                                "typeString": "struct Comida.plato[]"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 16,
+                        "mutability": "mutable",
+                        "name": "ingredientes",
+                        "nameLocation": "337:12:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 55,
+                        "src": "311:38:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_string_storage_$",
+                            "typeString": "mapping(string => string)"
+                        },
+                        "typeName": {
+                            "id": 15,
+                            "keyType": {
+                                "id": 13,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "319:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "311:25:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_string_storage_$",
+                                "typeString": "mapping(string => string)"
+                            },
+                            "valueType": {
+                                "id": 14,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "329:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 41,
+                            "nodeType": "Block",
+                            "src": "499:113:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "arguments": [
+                                                    {
+                                                        "id": 29,
+                                                        "name": "_nombre",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 18,
+                                                        "src": "527:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": 30,
+                                                        "name": "_ingrediente",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 20,
+                                                        "src": "536:12:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": 31,
+                                                        "name": "_tiempo",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 22,
+                                                        "src": "550:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        },
+                                                        {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        },
+                                                        {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    ],
+                                                    "id": 28,
+                                                    "name": "plato",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 8,
+                                                    "src": "521:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_struct$_plato_$8_storage_ptr_$",
+                                                        "typeString": "type(struct Comida.plato storage pointer)"
+                                                    }
+                                                },
+                                                "id": 32,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "structConstructorCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "521:37:0",
+                                                "tryCall": false,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_plato_$8_memory_ptr",
+                                                    "typeString": "struct Comida.plato memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_struct$_plato_$8_memory_ptr",
+                                                    "typeString": "struct Comida.plato memory"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 25,
+                                                "name": "platos",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 12,
+                                                "src": "509:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_struct$_plato_$8_storage_$dyn_storage",
+                                                    "typeString": "struct Comida.plato storage ref[] storage ref"
+                                                }
+                                            },
+                                            "id": 27,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "push",
+                                            "nodeType": "MemberAccess",
+                                            "src": "509:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_plato_$8_storage_$dyn_storage_ptr_$_t_struct$_plato_$8_storage_$returns$__$bound_to$_t_array$_t_struct$_plato_$8_storage_$dyn_storage_ptr_$",
+                                                "typeString": "function (struct Comida.plato storage ref[] storage pointer,struct Comida.plato storage ref)"
+                                            }
+                                        },
+                                        "id": 33,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "509:50:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 34,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "509:50:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 39,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 35,
+                                                "name": "ingredientes",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 16,
+                                                "src": "569:12:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_string_storage_$",
+                                                    "typeString": "mapping(string memory => string storage ref)"
+                                                }
+                                            },
+                                            "id": 37,
+                                            "indexExpression": {
+                                                "id": 36,
+                                                "name": "_nombre",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 18,
+                                                "src": "582:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "569:21:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 38,
+                                            "name": "_ingrediente",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 20,
+                                            "src": "593:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "569:36:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 40,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "569:36:0"
+                                }
+                            ]
+                        },
+                        "id": 42,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "NuevoPlato",
+                        "nameLocation": "416:10:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 23,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 18,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "441:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 42,
+                                    "src": "427:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 17,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "427:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 20,
+                                    "mutability": "mutable",
+                                    "name": "_ingrediente",
+                                    "nameLocation": "464:12:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 42,
+                                    "src": "450:26:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 19,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "450:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 22,
+                                    "mutability": "mutable",
+                                    "name": "_tiempo",
+                                    "nameLocation": "483:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 42,
+                                    "src": "478:12:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 21,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "478:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "426:65:0"
+                        },
+                        "returnParameters": {
+                            "id": 24,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "499:0:0"
+                        },
+                        "scope": 55,
+                        "src": "407:205:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 53,
+                            "nodeType": "Block",
+                            "src": "703:45:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "baseExpression": {
+                                            "id": 49,
+                                            "name": "ingredientes",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 16,
+                                            "src": "720:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_string_storage_$",
+                                                "typeString": "mapping(string memory => string storage ref)"
+                                            }
+                                        },
+                                        "id": 51,
+                                        "indexExpression": {
+                                            "id": 50,
+                                            "name": "_nombre",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 44,
+                                            "src": "733:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "720:21:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 48,
+                                    "id": 52,
+                                    "nodeType": "Return",
+                                    "src": "713:28:0"
+                                }
+                            ]
+                        },
+                        "id": 54,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "ingredientesFinal",
+                        "nameLocation": "627:17:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 45,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 44,
+                                    "mutability": "mutable",
+                                    "name": "_nombre",
+                                    "nameLocation": "659:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 54,
+                                    "src": "645:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 43,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "645:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "644:23:0"
+                        },
+                        "returnParameters": {
+                            "id": 48,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 47,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 54,
+                                    "src": "689:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 46,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "689:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "688:15:0"
+                        },
+                        "scope": 55,
+                        "src": "618:130:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "internal"
+                    }
+                ],
+                "scope": 83,
+                "src": "57:694:0",
+                "usedErrors": []
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 56,
+                            "name": "Comida",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 55,
+                            "src": "774:6:0"
+                        },
+                        "id": 57,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "774:6:0"
+                    }
+                ],
+                "canonicalName": "Sanguche",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 82,
+                "linearizedBaseContracts": [
+                    82,
+                    55
+                ],
+                "name": "Sanguche",
+                "nameLocation": "762:8:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 70,
+                            "nodeType": "Block",
+                            "src": "856:63:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "53616e6775636865",
+                                                "id": 65,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "877:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_d6dea1f84b0efc3961217f4f22975d4aac8e415090623bcc224d5a7e676498a0",
+                                                    "typeString": "literal_string \"Sanguche\""
+                                                },
+                                                "value": "Sanguche"
+                                            },
+                                            {
+                                                "id": 66,
+                                                "name": "_ingredientes",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 59,
+                                                "src": "889:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            {
+                                                "id": 67,
+                                                "name": "_tiempo",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 61,
+                                                "src": "904:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_d6dea1f84b0efc3961217f4f22975d4aac8e415090623bcc224d5a7e676498a0",
+                                                    "typeString": "literal_string \"Sanguche\""
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "id": 64,
+                                            "name": "NuevoPlato",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 42,
+                                            "src": "866:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                                                "typeString": "function (string memory,string memory,uint256)"
+                                            }
+                                        },
+                                        "id": 68,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "866:46:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 69,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "866:46:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "19a08b0b",
+                        "id": 71,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "sanguche",
+                        "nameLocation": "797:8:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 62,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 59,
+                                    "mutability": "mutable",
+                                    "name": "_ingredientes",
+                                    "nameLocation": "820:13:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 71,
+                                    "src": "806:27:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 58,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "806:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 61,
+                                    "mutability": "mutable",
+                                    "name": "_tiempo",
+                                    "nameLocation": "840:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 71,
+                                    "src": "835:12:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 60,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "835:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "805:43:0"
+                        },
+                        "returnParameters": {
+                            "id": 63,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "856:0:0"
+                        },
+                        "scope": 82,
+                        "src": "788:131:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "body": {
+                            "id": 80,
+                            "nodeType": "Block",
+                            "src": "987:53:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "53616e6775636865",
+                                                "id": 77,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "1022:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_d6dea1f84b0efc3961217f4f22975d4aac8e415090623bcc224d5a7e676498a0",
+                                                    "typeString": "literal_string \"Sanguche\""
+                                                },
+                                                "value": "Sanguche"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_d6dea1f84b0efc3961217f4f22975d4aac8e415090623bcc224d5a7e676498a0",
+                                                    "typeString": "literal_string \"Sanguche\""
+                                                }
+                                            ],
+                                            "id": 76,
+                                            "name": "ingredientesFinal",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 54,
+                                            "src": "1004:17:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
+                                                "typeString": "function (string memory) view returns (string memory)"
+                                            }
+                                        },
+                                        "id": 78,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1004:29:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_memory_ptr",
+                                            "typeString": "string memory"
+                                        }
+                                    },
+                                    "functionReturnParameters": 75,
+                                    "id": 79,
+                                    "nodeType": "Return",
+                                    "src": "997:36:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "dc53d5c7",
+                        "id": 81,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "verIngredientes",
+                        "nameLocation": "933:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 72,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "948:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 75,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 74,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 81,
+                                    "src": "973:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 73,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "973:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "972:15:0"
+                        },
+                        "scope": 82,
+                        "src": "924:116:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 83,
+                "src": "753:289:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "32:1010:0"
+    },
+    "functionHashes": {
+        "sanguche(string,uint256)": "19a08b0b",
+        "verIngredientes()": "dc53d5c7"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "233000",
+            "executionCost": "275",
+            "totalCost": "233275"
+        },
+        "external": {
+            "sanguche(string,uint256)": "infinite",
+            "verIngredientes()": "infinite"
+        }
+    }
+}
