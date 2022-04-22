@@ -12,7 +12,7 @@ contract First {
 
     //Guardamos en la variable owner la direccion de la persona que despliega el contrato
     //inicializamos el numero de tokens
-    constructor() public  {
+    constructor()  {
         owner = msg.sender; //dirreccion del remitente
         token = new ERC20Basic(1000);// cantidad de tokens a desplegar
     }
