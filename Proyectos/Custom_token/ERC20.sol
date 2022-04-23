@@ -66,7 +66,7 @@ contract Token420 is IERC20{
     }
 
     //devuelve la cantidad de tokens en existencia
-    function totalSupply() external view returns (uint256){
+    function totalSupply() external override view returns (uint256){
         return totalSupply_;
     }
 
@@ -76,17 +76,17 @@ contract Token420 is IERC20{
     }
 
     //devuelve la canti de tokens para una direccion indicada por parametro
-    function balanceOf(address _owner) external view returns (uint256){
+    function balanceOf(address _owner) external override view returns (uint256){
         return balances[_owner];
     }
 
     //devuelve la cantidad de tokens que el spender podra gastar en nombre del propietario
-    function allowancce(address _owner, address _spender) external view returns (uint256){
+    function allowancce(address _owner, address _spender) external  override view returns (uint256){
         return allowed[_owner][_spender];
     }
 
     //devuelve un valor booleano resultado de la operacion indicada
-    function transfer(address recipient, uint256 _amount) external returns (bool){
+    function transfer(address recipient, uint256 _amount) external override returns (bool){
         require(_amount <= balances[msg.sender], "Amount exceeds balance");
         balances[msg.sender] = balances[msg.sender].sub(_amount);
         balances[recipient] = balances[recipient].add(_amount);
@@ -95,14 +95,14 @@ contract Token420 is IERC20{
     }
 
     //devuelve un valor booleano con el resultado de la operacion de gasto
-    function approve(address _spender, uint256 _amount) external returns (bool){
+    function approve(address _spender, uint256 _amount) external override returns (bool){
         allowed[msg.sender][_spender] = _amount;
         emit Approval(msg.sender, _spender, _amount);
         return true;
     }
 
     //resultado de la operacion de paso de una cantidad de tokens usando el metodo allowance
-    function transferFrom(address _from, address _buyer, uint256 _amount) external returns (bool){
+    function transferFrom(address _from, address _buyer, uint256 _amount) external override returns (bool){
         require(_amount <= balances[_from], "Amount exceeds balance");
         require(_amount <= allowed[_from][msg.sender], "Amount exceeds allowance");
         balances[_from] = balances[_from].sub(_amount);
