@@ -5,7 +5,7 @@ pragma abicoder v2;
 contract votacion{
 
     //direccion del propietario del contrato
-    address public owner;
+    address owner;
 
     constructor(){
         owner = msg.sender;
@@ -36,6 +36,20 @@ contract votacion{
     //funcion para visualizar los candidatos existentes
     function verCandidatos()public view returns(string[] memory){
         return candidatos;
+    }
+
+    //los votantes van a poder votar
+    function Votar(string memory _candidato)public{
+        //hash de la persona que ejecuta la funcion
+        bytes32 hashVotante = keccak256(abi.encodePacked(msg.sender));
+        //verificar si el votante ya voto
+        for(uint i = 0; i < votantes.length; i++){
+            require(votantes[i] != hashVotante, "Ya voto");
+        }
+        //almacenamos el hash del votante dentro del array
+        votantes.push(hashVotante);
+        //añadimos un voto al candidato
+        votos_Candidato[_candidato]++;
     }
 
 }
