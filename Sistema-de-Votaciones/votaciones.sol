@@ -52,4 +52,9 @@ contract votacion{
         votos_Candidato[_candidato]++;
     }
 
+    //visualizar los votos de un candidato
+    function verVotos(string memory _nombre)public view returns(uint){
+        return votos_Candidato[_nombre];
+    }
+
 }
