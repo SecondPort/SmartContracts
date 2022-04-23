@@ -73,7 +73,7 @@ contract votacion{
     }
 
     //visualizar los votos de un candidato
-    function verVotos(string memory _nombre)public view returns(uint){
+    function verVotos(string memory _nombre)private view returns(uint){
         return votos_Candidato[_nombre];
     }
 
@@ -91,4 +91,31 @@ contract votacion{
         return resultados;
     }
 
+    //funcion determinar ganador
+    function Gandor()public view returns(string memory){
+
+            //contiene el nombre del candidato gandor
+            string memory ganador = candidatos[0];
+            //nos sirve para la situacion de empate
+            bool flag;
+
+            //recorremos el array de candidatos para verificar si hay un ganador
+            for(uint i = 1; i < candidatos.length; i++){
+
+                //comprobamos si nuestro ganador ha sido superado por otro candidato
+                if(votos_Candidato[ganador] < votos_Candidato[candidatos[i]]){
+                    ganador = candidatos[i];
+                    flag = false;
+                }else{
+                    //miramos si hay empate entre los candidatos
+                    if(votos_Candidato[ganador] == votos_Candidato[candidatos[i]]){
+                        flag = true;
+                    }
+                }
+            //comprobamos el empate entre los candidatos
+            }if(flag == true){
+                ganador = "Empate";
+        }
+        return ganador;
+    }
 }
