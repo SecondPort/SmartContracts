@@ -1,56 +1,60 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
-pragma abicoder v2;
+pragma experimental ABIEncoderV2;
 import "./SafeMath.sol";
+
 
 
 //Lucas ---> 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 //Jose ---> 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
 //Pepe ---> 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
 
-//interface de nuestro token
+//Interface de nuestro token ERC20
 interface IERC20{
-    //devuelve la cantidad de tokens en existencia
-    function suministro_total() external view returns (uint256);
+    //Devuelve la cantidad de tokens en existencia
+    function totalSupply() external view returns (uint256);
 
-    //devuelve la canti de tokens para una direccion indicada por parametro
-    function balanceOf(address _owner) external view returns (uint256);
+    //Devuelve la cantidad de rokens para una dirección indicada por parámetro
+    function balanceOf(address account) external view returns (uint256);
 
-    //devuelve la cantidad de tokens que el spender podra gastar en nombre del propietario
-    function prestacion(address _owner, address _spender) external view returns (uint256);
+    //Devuelve el número de token que el spender podrá gastar en nombre del propietario (owner)
+    function allowance(address owner, address spender) external view returns (uint256);
 
-    //devuelve un valor booleano resultado de la operacion indicada
+    //Devuelve un valor booleano resultado de la operación indicada
     function transfer(address recipient, uint256 amount) external returns (bool);
 
-    //devuelve un valor booleano con el resultado de la operacion de gasto
-    function aprobar(address _spender, uint256 _amount) external returns (bool);
+    //Devuelve un valor booleano con el resultado de la operación de gasto
+    function approve(address spender, uint256 amount) external returns (bool);
 
-    //resultado de la operacion de paso de una cantidad de tokens usando el metodo allowance
-    function transferFrom(address _from, address _to, uint256 _amount) external returns (bool);
+    //Devuelve un valor booleano con el resultado de la operación de paso de una cantidad de tokens usando el método allowance()
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 
-    //evento que se debe emitir cuando una cant de token pase de un orginen a un destino
-    event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
-    //evento que se emite cuando se establece una asignacion con el metodo allowance
-    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+
+    //Evento que se debe emitir cuando una cantidad de tokens pase de un origen a un destino
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    //Evento que se debe emitir cuando se establece una asignación con el mmétodo allowance()
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
+//Implementación de las funciones del token ERC20
 contract ERC20Basic is IERC20{
 
-    string public constant name = "ERC20Basic";
-    string public constant symbol = "SP420";
+    string public constant name = "ERC20BlockchainAZ";
+    string public constant symbol = "ERC";
     uint8 public constant decimals = 18;
 
-    event Transfer(address indexed _from, address indexed _to, uint200 _amount);
-    event Approval(address indexed _owner, address indexed _spender, uint104 _value);
+    event Transfer(address indexed from, address indexed to, uint256 tokens);
+    event Approval(address indexed owner, address indexed spender, uint256 tokens);
+
 
     using SafeMath for uint256;
 
-    mapping (address => uint256) balances;
+    mapping (address => uint) balances;
     //distribucion del token,ejemplo: el minero es el owner de esos tokens pero los puede tranferir a otro usuario
-    mapping (address => mapping (address => uint256)) allowed;
+    mapping (address => mapping (address => uint)) allowed;
     uint256 totalSupply_;
-    address contract_addres;
 
     constructor(uint256 initialSuply){
         totalSupply_ = initialSuply;
@@ -64,50 +68,46 @@ contract ERC20Basic is IERC20{
         _;
     }
 
-    //devuelve la cantidad de tokens en existencia
-    function suministro_total() external view returns (uint256){
+
+    function totalSupply() public override view returns (uint256){
         return totalSupply_;
     }
 
-    function aumentarSuministroTotal(uint256 increaseAmount) external UnicamenteOwner(msg.sender){
+    function increaseTotalSupply(uint newTokensAmount) public {
         totalSupply_ = totalSupply_.add(increaseAmount);
         balances[msg.sender] = balances[msg.sender].add(increaseAmount);
     }
 
-    //devuelve la canti de tokens para una direccion indicada por parametro
-    function balanceOf(address _owner) external view returns (uint256){
-        return balances[_owner];
+    function balanceOf(address tokenOwner) public override view returns (uint256){
+        return balances[tokenOwner];
     }
 
-    //devuelve la cantidad de tokens que el spender podra gastar en nombre del propietario
-    function prestacion(address _owner, address _spender) external view returns (uint256){
-        return allowed[_owner][_spender];
+    function allowance(address owner, address delegate) public override view returns (uint256){
+        return allowed[owner][delegate];
     }
 
-    //devuelve un valor booleano resultado de la operacion indicada
-    function transfer(address recipient, uint256 _amount) external returns (bool){
-        require(_amount <= balances[msg.sender], "Amount exceeds balance");
-        balances[msg.sender] = balances[msg.sender].sub(_amount);
-        balances[recipient] = balances[recipient].add(_amount);
-        emit Transfer(msg.sender, recipient, _amount);
+    function transfer(address recipient, uint256 numTokens) public override returns (bool){
+        require(numTokens <= balances[msg.sender]);
+        balances[msg.sender] = balances[msg.sender].sub(numTokens);
+        balances[recipient] = balances[recipient].add(numTokens);
+        emit Transfer(msg.sender, recipient, numTokens);
         return true;
     }
 
-    //devuelve un valor booleano con el resultado de la operacion de gasto
-    function aprobar(address _spender, uint256 _amount) external returns (bool){
-        allowed[msg.sender][_spender] = _amount;
-        emit Approval(msg.sender, _spender, _amount);
+    function approve(address delegate, uint256 numTokens) public override returns (bool){
+        allowed[msg.sender][delegate] = numTokens;
+        emit Approval(msg.sender, delegate, numTokens);
         return true;
     }
 
-    //resultado de la operacion de paso de una cantidad de tokens usando el metodo allowance
-    function transferFrom(address _from, address _buyer, uint256 _amount) external returns (bool){
-        require(_amount <= balances[_from], "Amount exceeds balance");
-        require(_amount <= allowed[_from][msg.sender], "Amount exceeds allowance");
-        balances[_from] = balances[_from].sub(_amount);
-        allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_amount);
-        balances[_buyer] = balances[_buyer].add(_amount);
-        emit Transfer(_from, _buyer, _amount);
+    function transferFrom(address owner, address buyer, uint256 numTokens) public override returns (bool){
+        require(numTokens <= balances[owner]);
+        require(numTokens <= allowed[owner][msg.sender]);
+
+        balances[owner] = balances[owner].sub(numTokens);
+        allowed[owner][msg.sender] = allowed[owner][msg.sender].sub(numTokens);
+        balances[buyer] = balances[buyer].add(numTokens);
+        emit Transfer(owner, buyer, numTokens);
         return true;
     }
 }
