@@ -33,4 +33,9 @@ contract votacion{
         candidatos.push(_nombre);
     }
 
+    //funcion para visualizar los candidatos existentes
+    function verCandidatos()public view returns(string[] memory){
+        return candidatos;
+    }
+
 }
