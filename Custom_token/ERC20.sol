@@ -22,4 +22,20 @@ interface IERC20{
 
     //resultado de la operacion de paso de una cantidad de tokens usando el metodo allowance
     function transferFrom(address _from, address _to, uint256 _amount) external returns (bool);
+
+    //evento que se debe emitir cuando una cant de token pase de un orginen a un destino
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
+
+    //evento que se emite cuando se establece una asignacion con el metodo allowance
+    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+}
+
+contract ERC20Basic is IERC20{
+
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
+    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+
+    using SafeMath for uint256;
+
+    
 }
