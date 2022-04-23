@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.13;
-pragma abicoder v2;
+pragma solidity >=0.4.4 <0.7.0;
+pragma experimental ABIEncoderV2;
 
 contract votacion{
 
     //direccion del propietario del contrato
     address owner;
 
-    constructor(){
+    constructor()public{
         owner = msg.sender;
     }
 
@@ -20,6 +20,26 @@ contract votacion{
     string[] candidatos;
     //lista de los hashes votantes
     bytes32[] votantes;
+
+    //Funcion auxiliar que transforma un uint a un string
+    function uint2str(uint _i) internal pure returns (string memory _uintAsString) {
+        if (_i == 0) {
+            return "0";
+        }
+        uint j = _i;
+        uint len;
+        while (j != 0) {
+            len++;
+            j /= 10;
+        }
+        bytes memory bstr = new bytes(len);
+        uint k = len - 1;
+        while (_i != 0) {
+            bstr[k--] = byte(uint8(48 + _i % 10));
+            _i /= 10;
+        }
+        return string(bstr);
+    }
 
     //funcion para crear un nuevo candidato
     function NuevoCandidato(string memory _nombre, uint _edad, string memory _id)public {
@@ -55,6 +75,20 @@ contract votacion{
     //visualizar los votos de un candidato
     function verVotos(string memory _nombre)public view returns(uint){
         return votos_Candidato[_nombre];
+    }
+
+    //ver los votos de cada uno de los candidatos
+    function VerResultados()public view returns(string memory){
+        //guardamos en un string los candidatos con sus votos
+        string memory resultados;
+
+        //recorremos el array de candidatos para actualizar el string rasultados
+        for(uint i = 0; i < candidatos.length; i++){
+            //actualizamos el string rasultados y añadimos el candidato que ocupa la posicion i del array
+            //y su numero de vos
+            resultados = string(abi.encodePacked(resultados, "(", candidatos[i], ",", uint2str(verVotos(candidatos[i])), ")"));
+        }
+        return resultados;
     }
 
 }
