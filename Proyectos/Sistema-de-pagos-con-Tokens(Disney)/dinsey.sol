@@ -85,7 +85,7 @@ contract Disney{
     event baja_atraccion(string, string);
     event nueva_comida(string, uint, string);
     event baja_comida(string, string);
-    event disfruta_comida(string, string);
+    event disfruta_comida(string, uint,address);
 
     //estructura de la atraccion
     struct atraccion{
@@ -130,7 +130,7 @@ contract Disney{
     }
 
     //crear nueva atraccion
-    function NuevaComida(string memory _nombreComida, uint _precio)public Unicamete(msg.sender){
+    function NuevaComida(string memory _nombreComida, uint _precio)public Unicamente(msg.sender){
         require(MappingComidas[_nombreComida].estado_comida == false,
                                 "Ya existe una comida con ese nombre");
         //crear comida
@@ -232,12 +232,12 @@ contract Disney{
     //funcion para que un cliente de disney pueda devolver tokens en cualquier momento
     function DevolverTokens(uint _numTokens)public payable{
         //verificar que el numero de tokens a devolver es positivo
-        require(_nomTokens > 0, "No puedes devolver 0 o menos tokens");
+        require(_numTokens > 0, "No puedes devolver 0 o menos tokens");
         //el usuario debe tener el numero ed tokens que desea devolver
         require(token.balanceOf(msg.sender) >= _numTokens,
                                 "No tienes suficientes tokens");
         //el cliente devuelve los tokens
-        token.transfer(msg.sender, address(this), _numTokens);
+        token.transferencia_disney(msg.sender, address(this), _numTokens);
         //devolucion de los ethers al cliente
         msg.sender.transfer(PrecioTokens(_numTokens));
     }
