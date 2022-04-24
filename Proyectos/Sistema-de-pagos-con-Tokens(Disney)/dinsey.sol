@@ -82,7 +82,10 @@ contract Disney{
     //eventos
     event disfruta_atraccion(string);
     event nueva_atraccion(string, uint);
-    event baja_atraccion(string);
+    event baja_atraccion(string, string);
+    event noExisteAtraccion(string, string);
+    event yaExisteAtraccion(string, string);
+    event AtraccionActivada(string, string);
 
     //estructura de la atraccion
     struct atraccion{
@@ -101,12 +104,25 @@ contract Disney{
 
     //crear nuevas atracciones
     function NuevaAtraccion(string memory _nombreAtraccion, uint _precio)public Unicamente(msg.sender){
+        require(MappingAtracciones[_nombreAtraccion].estado_atraccion == false, "Ya existe una atraccion con ese nombre y esta desactivada");
         //crear atraccion
         MappingAtracciones[_nombreAtraccion] = atraccion(_nombreAtraccion, _precio, true);
         //almacenar en el array de atracciones los nombres
         Atracciones.push(_nombreAtraccion);
         //eventos
         emit nueva_atraccion(_nombreAtraccion, _precio);
+    }
+
+    //dar de bja una atraccion
+    function BajaAtraccion(string memory _nombreAtraccion)public Unicamente(msg.sender){
+        //verificar si la atraccion existe y si esta activa
+        require(MappingAtracciones[_nombreAtraccion].estado_atraccion, "La atraccion no existe o no esta activa");
+        if(MappingAtracciones[_nombreAtraccion].estado_atraccion == true){
+            //desactivar la atraccion
+            MappingAtracciones[_nombreAtraccion].estado_atraccion = false;
+            //eventos
+            emit baja_atraccion(_nombreAtraccion, "La atraccion ha sido dada de baja");
+        }
     }
 
 }
