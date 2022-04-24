@@ -100,10 +100,10 @@ contract Disney{
         bool estado_comida;
     }
     //mapping para relacionar un nombre de una atraccion con una estructura de datos de la atraccion
-    mapping(string => atraccion) public MappingAtracciones;
+    mapping(string => atraccion) public DetalleAtracciones;
 
     //mapping para relacionar un nombre de una comida con una estructura de datos de la comida
-    mapping(string => comida) public MappingComidas;
+    mapping(string => comida) public DetalleComidas;
 
     //almacenar en un array las atracciones
     string[] Atracciones;
@@ -112,17 +112,17 @@ contract Disney{
     string[] Comidas;
 
     //mapping para relacionar una identidad(cliente) con su historial de atracciones
-    mapping(address => string[]) public HistorialAtracciones;
+    mapping(address => string[]) HistorialAtracciones;
 
     //maping para relacionar una identidad(cliente) con su historial de comidas
-    mapping(address => string[]) public HistorialComidas;
+    mapping(address => string[]) HistorialComidas;
 
     //crear nuevas atracciones
     function NuevaAtraccion(string memory _nombreAtraccion, uint _precio)public Unicamente(msg.sender){
-        require(MappingAtracciones[_nombreAtraccion].estado_atraccion == false,
+        require(DetalleAtracciones[_nombreAtraccion].estado_atraccion == false,
                                     "Ya existe una atraccion con ese nombre");
         //crear atraccion
-        MappingAtracciones[_nombreAtraccion] = atraccion(_nombreAtraccion, _precio, true);
+        DetalleAtracciones[_nombreAtraccion] = atraccion(_nombreAtraccion, _precio, true);
         //almacenar en el array de atracciones los nombres
         Atracciones.push(_nombreAtraccion);
         //eventos
@@ -131,10 +131,10 @@ contract Disney{
 
     //crear nueva atraccion
     function NuevaComida(string memory _nombreComida, uint _precio)public Unicamente(msg.sender){
-        require(MappingComidas[_nombreComida].estado_comida == false,
+        require(DetalleComidas[_nombreComida].estado_comida == false,
                                 "Ya existe una comida con ese nombre");
         //crear comida
-        MappingComidas[_nombreComida] = comida(_nombreComida, _precio, true);
+        DetalleComidas[_nombreComida] = comida(_nombreComida, _precio, true);
         //almacenar en el array de comidas los nombres
         Comidas.push(_nombreComida);
         //eventos
@@ -144,11 +144,11 @@ contract Disney{
     //dar de bja una atraccion
     function BajaAtraccion(string memory _nombreAtraccion)public Unicamente(msg.sender){
         //verificar si la atraccion existe y si esta activa
-        require(MappingAtracciones[_nombreAtraccion].estado_atraccion,
+        require(DetalleAtracciones[_nombreAtraccion].estado_atraccion,
                             "La atraccion no existe o no esta activa");
-        if(MappingAtracciones[_nombreAtraccion].estado_atraccion == true){
+        if(DetalleAtracciones[_nombreAtraccion].estado_atraccion == true){
             //desactivar la atraccion
-            MappingAtracciones[_nombreAtraccion].estado_atraccion = false;
+            DetalleAtracciones[_nombreAtraccion].estado_atraccion = false;
             //eventos
             emit baja_atraccion(_nombreAtraccion,
                                         "La atraccion ha sido dada de baja");
@@ -156,11 +156,11 @@ contract Disney{
     }
 
     function BajaComida(string memory _nombreComida)public Unicamente(msg.sender){
-        require(MappingComidas[_nombreComida].estado_comida,
+        require(DetalleComidas[_nombreComida].estado_comida,
                             "La comida no existe o no esta activa");
-        if(MappingComidas[_nombreComida].estado_comida == true){
+        if(DetalleComidas[_nombreComida].estado_comida == true){
             //desactivar la comida
-            MappingComidas[_nombreComida].estado_comida = false;
+            DetalleComidas[_nombreComida].estado_comida = false;
             //eventos
             emit baja_comida(_nombreComida,
                                 "La comida ha sido dada de baja");
@@ -180,9 +180,9 @@ contract Disney{
     //funcion para subirse a una atraccion de disney y pagar en tokens
     function SubirseAtraccion(string memory _nombreAtraccion)public{
         //precio de la atraccion en tokens
-        uint tokens_atraccion = MappingAtracciones[_nombreAtraccion].precio_atraccion;
+        uint tokens_atraccion = DetalleAtracciones[_nombreAtraccion].precio_atraccion;
         //verifica el estado de la atraccion(si esta disponible)
-        require(MappingAtracciones[_nombreAtraccion].estado_atraccion == true,
+        require(DetalleAtracciones[_nombreAtraccion].estado_atraccion == true,
                                         "La atraccion no esta disponible");
         //verifica que el cliente tenga tokens suficientes
         require(token.balanceOf(msg.sender) >= tokens_atraccion,
@@ -203,9 +203,9 @@ contract Disney{
 
     function ComprarComida(string memory _nombreComida)public{
         //precio de la comida (en tokens)
-        uint tokens_comida = MappingComidas[_nombreComida].precio_comida;
+        uint tokens_comida = DetalleComidas[_nombreComida].precio_comida;
         //verifica el estado de la comida(si esta disponible)
-        require(MappingComidas[_nombreComida].estado_comida == true,
+        require(DetalleComidas[_nombreComida].estado_comida == true,
                                         "La comida no esta disponible");
         /* El cliente paga la atraccion en Tokens:
         ? Ha sido necesario crear una funcion en ERC20.sol llamada tranferencia_disney
