@@ -16,6 +16,9 @@ contract loteria{
     //variable para el numero de tokens a crear
     uint public tokens_creados = 10000;
 
+    //evanto de compra de tokens
+    event ComprandoTokens(address,uint);
+
     constructor()public{
         token = new ERC20Basic(tokens_creados);
         owner = msg.sender;
@@ -55,6 +58,8 @@ contract loteria{
         require((_numTokens <= balance),"No tienes suficientes tokens para comprar");
         //tranferencia de tokes al comprador
         token.transfer(msg.sender, _numTokens);
+        //emitir evento de compra de tokens
+        emit ComprandoTokens(msg.sender,_numTokens);
     }
 
     //balance de tokens del contrato
@@ -71,4 +76,8 @@ contract loteria{
     function MisTokes()public view returns(uint){
         return token.balanceOf(msg.sender);
     }
+
+    //---------------------- LOTERIA ----------------------------
+
+
 }
