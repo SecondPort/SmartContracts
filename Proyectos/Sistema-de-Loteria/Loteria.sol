@@ -130,5 +130,10 @@ contract loteria{
         }
     }
 
+    //visualizar el numero de boletos de una pesona
+    function TusBoletos()public view returns(uint[] memory){
+        return idPersona_boletos[msg.sender];
+    }
+
 
 }
