@@ -56,4 +56,9 @@ contract loteria{
         //tranferencia de tokes al comprador
         token.transfer(msg.sender, _numTokens);
     }
+
+    //balance de tokens del contrato
+    function TokensDisponibles()public view returns(uint){
+        return token.balanceOf(contrato);
+    }
 }
