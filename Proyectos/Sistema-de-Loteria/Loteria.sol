@@ -27,7 +27,7 @@ contract loteria{
 
     //establecer precio al token
     function PrecioTokens(uint _numTokens)internal pure returns(uint){
-        return _numTokens*(1 ether);
+        return _numTokens*(0.1 ether);
     }
 
     //generar mas tokens por la loteria
@@ -41,6 +41,19 @@ contract loteria{
         _;
     }
 
-
-
+    //comprar tokens
+    function CompraTokens(uint _numTokens)public payable{
+        //calcular el precio del token
+        uint coste = PrecioTokens(_numTokens);
+        //se requiere que el valor de ethers pagadoss sea equivalente al coste
+        require(msg.value >= coste,"No tienes suficientes ethers para comprar tokens");
+        //devolverr la diferiencia entre el valor de ethers pagados y el coste
+        msg.sender.transfer(msg.value - coste);
+        //obtener el balance de tokens del contrato
+        uint balance = TokensDisponibles();
+        //filtro para evaluar los tokens a comprar con los tokens disponibles
+        require((_numTokens <= balance),"No tienes suficientes tokens para comprar");
+        //tranferencia de tokes al comprador
+        token.transfer(msg.sender, _numTokens);
+    }
 }
