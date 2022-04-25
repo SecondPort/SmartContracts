@@ -61,4 +61,9 @@ contract loteria{
     function TokensDisponibles()public view returns(uint){
         return token.balanceOf(contrato);
     }
+
+    //balance de tokens acumulados en el bote
+    function Bote()public view returns(uint){
+        return token.balanceOf(owner);
+    }
 }
