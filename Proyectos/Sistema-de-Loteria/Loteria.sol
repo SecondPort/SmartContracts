@@ -135,5 +135,23 @@ contract loteria{
         return idPersona_boletos[msg.sender];
     }
 
+    //elegir un ganador de forma aleatoria
+    function Ganador()public Unicamente(msg.sender){
+        //debe haber boletos comprados para generar un ganador
+        require(boletos_comprados.length > 0,"No hay boletos para generar un ganador");
+        //declaracion de la longitud del array
+        uint longitud = boletos_comprados.length;
+        //de forma aleatoria seleccionar un numero de boleto entre 0 - longitud
+        uint pos_array = uint(keccak256(abi.encodePacked(block.timestamp))) % longitud;
+        //seleccionar el boleto del array
+        uint eleccion = boletos_comprados[pos_array];
+        //emitir evento de ganador
+        emit boleto_ganador(eleccion);
+        //recuperar la direccion del ganador
+        address direccion_ganador = ADN_Boleto[eleccion];
+        //enviar tokens del premio al ganador
+        token.transferencia_loteria(msg.sender, direccion_ganador, Bote());
+    }
+
 
 }
