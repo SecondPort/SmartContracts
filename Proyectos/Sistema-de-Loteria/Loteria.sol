@@ -79,5 +79,19 @@ contract loteria{
 
     //---------------------- LOTERIA ----------------------------
 
+    //precio del boleto en tokens
+    uint public PrecioBoleto = 5;
+    //relacion entre la persona que compra y los numeros de los boletos
+    mapping(address => uint[]) public idPersona_boletos;
+    //relacion para identificar el ganador
+    mapping(uint => address) public ADN_Boleto;
+    //numero aleatorio para el boleto
+    uint randNonce = 0;
+    //registro de los boletos generados
+    uint[] boletos_comprados;
+    //eventos
+    event boleto_comprado(uint);
+    event boleto_ganador(uint);
+
 
 }
