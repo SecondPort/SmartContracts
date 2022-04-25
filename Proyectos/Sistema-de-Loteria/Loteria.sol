@@ -93,5 +93,42 @@ contract loteria{
     event boleto_comprado(uint);
     event boleto_ganador(uint);
 
+    //funcion para comprar boletos
+    function CompraBoleto(uint _boletos)public{
+        //precio total de boletos a comprar
+        uint precio_total = _boletos*PrecioBoleto;
+        //filtrado de los tokens a pagar
+        require(MisTokes() >= precio_total,"No tienes suficientes ethers para comprar boletos");
+        //tranferencua de tokens al owner -> bote/premio
+        /* El cliente paga la atraccion en Tokens:
+        ? Ha sido necesario crear una funcion en ERC20.sol llamada transferencia_loteria
+        ? debido a que en caso de usar el transfer o transferFrom las direcciones
+        ? eran equivocadas,ya que el msg.sender que recibia el metodo TransferFrom
+        ? era la direccion del contrato.
+         */
+        token.transferencia_loteria(msg.sender, owner, precio_total);
+
+        /*
+        lo que haces es tomar la marca de tiempo actual, el msg.sender y el nonce
+        (un numero que solo se utiliza una vez para que no ejectuemos dos veces la misma funcion
+        de hash con los mismos parametros de entrada) en incremento
+        Luego utilizamos keccakk256 para convertar estas entradas en un hash aleatorio,
+        convertimos ese hash a un uint y luego utilizamos % 10000 para tomar los ultimos 4 digitos
+        dando un valor aleatorio entre 0 y 9999.
+         */
+        for (uint i = 0; i < _boletos; i++){
+            uint random = uint(keccak256(abi.encodePacked(block.timestamp, msg.sender, randNonce))) % 10000;
+            randNonce++;
+            //almacenar los datos del boleto en la relacion
+            idPersona_boletos[msg.sender].push(random);
+            //numero de boleto comprado
+            boletos_comprados.push(random);
+            //asignacion del ADN del boleto a la relacion
+            ADN_Boleto[random] = msg.sender;
+            //emitir evento de compra de boleto
+            emit boleto_comprado(random);
+        }
+    }
+
 
 }
