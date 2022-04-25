@@ -66,4 +66,9 @@ contract loteria{
     function Bote()public view returns(uint){
         return token.balanceOf(owner);
     }
+
+    //Balance de tokens del usuario
+    function MisTokes()public view returns(uint){
+        return token.balanceOf(msg.sender);
+    }
 }
