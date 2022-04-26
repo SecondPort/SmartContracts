@@ -92,6 +92,7 @@ contract loteria{
     //eventos
     event boleto_comprado(uint);
     event boleto_ganador(uint);
+    event tokens_devueltos(address,uint);
 
     //funcion para comprar boletos
     function CompraBoleto(uint _boletos)public{
@@ -142,7 +143,7 @@ contract loteria{
         //declaracion de la longitud del array
         uint longitud = boletos_comprados.length;
         //de forma aleatoria seleccionar un numero de boleto entre 0 - longitud
-        uint pos_array = uint(keccak256(abi.encodePacked(block.timestamp))) % longitud;
+        uint pos_array = uint(uint(keccak256(abi.encodePacked(block.timestamp))) % longitud);
         //seleccionar el boleto del array
         uint eleccion = boletos_comprados[pos_array];
         //emitir evento de ganador
@@ -151,6 +152,21 @@ contract loteria{
         address direccion_ganador = ADN_Boleto[eleccion];
         //enviar tokens del premio al ganador
         token.transferencia_loteria(msg.sender, direccion_ganador, Bote());
+    }
+
+    //devolucion de los tokens
+    function DevolverTokens(uint _numTokens)public payable{
+        //el numero de tokens a devolver debe ser mayor a 0
+        require(_numTokens > 0,"No se pueden devolver 0 tokens");
+        //el usuario/cliente debe disponer los tokens que desea devovler
+        require(_numTokens <= MisTokes(),"No tienes suficientes tokens para devolver");
+        //DEVOLUCION:
+        //1. el cliente devuelve los tokens
+        //2. la loteria paga los tokens devueltos
+        token.transferencia_loteria(msg.sender, address(this), _numTokens);
+        msg.sender.transfer(PrecioTokens(_numTokens));
+        //evento
+        emit tokens_devueltos(msg.sender,_numTokens);
     }
 
 
