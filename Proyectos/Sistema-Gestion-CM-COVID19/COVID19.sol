@@ -24,7 +24,7 @@ contract OMS_COVID19 {
     address[] public direcciones_contratos_salud;
 
     //array de las dirrecciones que soliciten acceso
-    address[] public Solicitudes;
+    address[] Solicitudes;
 
     //eventos
     event SolicitudAcceso(address);
@@ -38,7 +38,7 @@ contract OMS_COVID19 {
     }
 
     //funcion que visualiza las dirreciones que han solicitado acceso
-    function VisualizarSocilicitude() public UnicamenteOMS(msg.sender) returns(address[]memory){
+    function VisualizarSocilicitudes() public view UnicamenteOMS(msg.sender) returns(address[]memory){
         return Solicitudes;
     }
 
@@ -55,6 +55,8 @@ contract OMS_COVID19 {
         Validacion_CentrosSalud[_centroSalud] = true;
         //emitir evento
         emit NuevoCentroValidado(_centroSalud);
+        //eliminar la solicitud del array
+        Solicitudes.pop();
     }
 
     //funcion para crear un contrato inteligente de un centro de salud
@@ -124,9 +126,21 @@ contract CentroSalud{
         ResultadosCOVID[hash_idPersona] = Resultados(_resultadoCOVID, _codigoIPFS);
         //?emitir un evento
         emit NuevoResultado (_codigoIPFS, _resultadoCOVID);
-
     }
 
-
-
+    //funcion para ver los resultados
+    function VisualizarResultados(string memory _idPersona)public view returns(string memory _resultadoPrueba, string memory _codigoIPFS){
+        //hash de la identificacion de la persona
+        bytes32 hash_idPersona = keccak256(abi.encodePacked(_idPersona));
+        //retorno de un bool como string
+        string memory resultadoPrueba;
+        if(ResultadosCOVID[hash_idPersona].Diagnosticos == true){
+            resultadoPrueba = "Positivo";
+        }else{
+            resultadoPrueba = "Negativo";
+        }
+        //retorno de los parametros
+        _resultadoPrueba = resultadoPrueba;
+        _codigoIPFS =  ResultadosCOVID[hash_idPersona].IPFS;
+    }
 }
