@@ -85,5 +85,18 @@ contract CentroSalud{
         DireccionContrato = address(this);
     }
 
+    //mapping que relaciona una ID con un resultado con una prueba de COVID
+    mapping(bytes32 => bool) public ResultadoCOVID;
 
+    //mapping para relacionar el hash de la prueba con el codigo IPFS
+    mapping(bytes32 => string) ResultadoCOVID_IPFS;
+
+    //eventos
+    event NuevoResultado(string, bool);
+
+    //filtrar las funciones para el centro de salud
+    modifier UnicamenteCentroSalud(address _direccion){
+        require(_direccion == DireccionCetroSalud, "No tienes permiso");
+        _;
+    }
 }
