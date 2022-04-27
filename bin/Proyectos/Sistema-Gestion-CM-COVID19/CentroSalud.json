@@ -63,32 +63,36 @@
             "type": "function"
         },
         {
-            "constant": true,
+            "constant": false,
             "inputs": [
                 {
-                    "internalType": "bytes32",
-                    "name": "",
-                    "type": "bytes32"
-                }
-            ],
-            "name": "ResultadoCOVID",
-            "outputs": [
+                    "internalType": "string",
+                    "name": "_idPersona",
+                    "type": "string"
+                },
                 {
                     "internalType": "bool",
-                    "name": "",
+                    "name": "_resultadoCOVID",
                     "type": "bool"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_codigoIPFS",
+                    "type": "string"
                 }
             ],
+            "name": "ResultadosPruebaCOVID",
+            "outputs": [],
             "payable": false,
-            "stateMutability": "view",
+            "stateMutability": "nonpayable",
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_direccion\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"name\":\"NuevoResultado\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"DireccionCetroSalud\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"DireccionContrato\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"ResultadoCOVID\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Proyectos/Sistema-Gestion-CM-COVID19/COVID19.sol\":\"CentroSalud\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Proyectos/Sistema-Gestion-CM-COVID19/COVID19.sol\":{\"keccak256\":\"0xdddbd3f08df4ff360df8674bbd6799e87404e721d9271d74889653f20b3a3290\",\"urls\":[\"bzz-raw://2f89d4aee13bd3cfe37b10f3947b77de272d69b8997fda665156836795cb957c\",\"dweb:/ipfs/QmRC4Y1P9FWpbo1tXK3tK28d7uJV7SwvcgeSPoraSue6cS\"]}},\"version\":1}",
-    "bytecode": "608060405234801561001057600080fd5b5060405161026e38038061026e83398101604081905261002f9161006e565b600080546001600160a01b039092166001600160a01b031992831617905560018054909116301790556100bc565b8051610068816100a5565b92915050565b60006020828403121561008057600080fd5b600061008c848461005d565b949350505050565b60006001600160a01b038216610068565b6100ae81610094565b81146100b957600080fd5b50565b6101a3806100cb6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063630ea6e214610046578063e4f837d214610064578063edddfbea14610084575b600080fd5b61004e61008c565b60405161005b919061010e565b60405180910390f35b6100776100723660046100d0565b61009b565b60405161005b919061011c565b61004e6100b0565b6001546001600160a01b031681565b60026020526000908152604090205460ff1681565b6000546001600160a01b031681565b80356100ca81610149565b92915050565b6000602082840312156100e257600080fd5b60006100ee84846100bf565b949350505050565b6100ff8161012a565b82525050565b6100ff81610135565b602081016100ca82846100f6565b602081016100ca8284610105565b60006100ca8261013d565b151590565b90565b6001600160a01b031690565b6101528161013a565b811461015d57600080fd5b5056fea365627a7a72315820730418ab694cc42580b4db51a64628d128bc025323f70995d048312cc4289f216c6578706572696d656e74616cf564736f6c63430005100040",
-    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063630ea6e214610046578063e4f837d214610064578063edddfbea14610084575b600080fd5b61004e61008c565b60405161005b919061010e565b60405180910390f35b6100776100723660046100d0565b61009b565b60405161005b919061011c565b61004e6100b0565b6001546001600160a01b031681565b60026020526000908152604090205460ff1681565b6000546001600160a01b031681565b80356100ca81610149565b92915050565b6000602082840312156100e257600080fd5b60006100ee84846100bf565b949350505050565b6100ff8161012a565b82525050565b6100ff81610135565b602081016100ca82846100f6565b602081016100ca8284610105565b60006100ca8261013d565b151590565b90565b6001600160a01b031690565b6101528161013a565b811461015d57600080fd5b5056fea365627a7a72315820730418ab694cc42580b4db51a64628d128bc025323f70995d048312cc4289f216c6578706572696d656e74616cf564736f6c63430005100040",
-    "sourceMap": "2862:773:0:-;;;2996:131;8:9:-1;5:2;;;30:1;27;20:12;5:2;2996:131:0;;;;;;;;;;;;;;;;;;;;;3045:19;:32;;-1:-1:-1;;;;;3045:32:0;;;;-1:-1:-1;;;;;;3045:32:0;;;;;;-1:-1:-1;3087:33:0;;;;;3115:4;3087:33;;;2862:773;;5:134:-1;83:13;;101:33;83:13;101:33;;;68:71;;;;;146:263;;261:2;249:9;240:7;236:23;232:32;229:2;;;277:1;274;267:12;229:2;312:1;329:64;385:7;365:9;329:64;;;319:74;223:186;-1:-1;;;;223:186;416:91;;-1:-1;;;;;576:54;;478:24;559:76;642:117;711:24;729:5;711:24;;;704:5;701:35;691:2;;750:1;747;740:12;691:2;685:74;;;2862:773:0;;;;;;",
-    "deployedSourceMap": "2862:773:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2862:773:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2957:32;;;:::i;:::-;;;;;;;;;;;;;;;;3209:46;;;;;;;;;:::i;:::-;;;;;;;;2917:34;;;:::i;2957:32::-;;;-1:-1:-1;;;;;2957:32:0;;:::o;3209:46::-;;;;;;;;;;;;;;;:::o;2917:34::-;;;-1:-1:-1;;;;;2917:34:0;;:::o;5:130:-1:-;72:20;;97:33;72:20;97:33;;;57:78;;;;;142:241;;246:2;234:9;225:7;221:23;217:32;214:2;;;262:1;259;252:12;214:2;297:1;314:53;359:7;339:9;314:53;;;304:63;208:175;-1:-1;;;;208:175;390:113;473:24;491:5;473:24;;;468:3;461:37;455:48;;;510:104;587:21;602:5;587:21;;621:213;739:2;724:18;;753:71;728:9;797:6;753:71;;841:201;953:2;938:18;;967:65;942:9;1005:6;967:65;;1049:91;;1111:24;1129:5;1111:24;;1147:85;1213:13;1206:21;;1189:43;1239:72;1301:5;1284:27;1318:121;-1:-1;;;;;1380:54;;1363:76;1446:117;1515:24;1533:5;1515:24;;;1508:5;1505:35;1495:2;;1554:1;1551;1544:12;1495:2;1489:74;",
+    "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_direccion\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"name\":\"NuevoResultado\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"DireccionCetroSalud\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"DireccionContrato\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_idPersona\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"_resultadoCOVID\",\"type\":\"bool\"},{\"internalType\":\"string\",\"name\":\"_codigoIPFS\",\"type\":\"string\"}],\"name\":\"ResultadosPruebaCOVID\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Proyectos/Sistema-Gestion-CM-COVID19/COVID19.sol\":\"CentroSalud\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Proyectos/Sistema-Gestion-CM-COVID19/COVID19.sol\":{\"keccak256\":\"0x80fb693fa0762d3269cce1e7a93a7b2706072f23934daf1232b379a3d39dfc4d\",\"urls\":[\"bzz-raw://7f91223fa8125e88867b6d215b21af500fedf666f781f153c9769a7ac5d59b26\",\"dweb:/ipfs/QmRU7JkChNvb14YGdwe4myA1eZ4A7xAQxDo1Yhc4ik9szR\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506040516105e73803806105e783398101604081905261002f9161006e565b600080546001600160a01b039092166001600160a01b031992831617905560018054909116301790556100bc565b8051610068816100a5565b92915050565b60006020828403121561008057600080fd5b600061008c848461005d565b949350505050565b60006001600160a01b038216610068565b6100ae81610094565b81146100b957600080fd5b50565b61051c806100cb6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063630ea6e2146100465780637551cd6914610064578063edddfbea14610079575b600080fd5b61004e610081565b60405161005b91906103c1565b60405180910390f35b610077610072366004610286565b610090565b005b61004e610177565b6001546001600160a01b031681565b60005433906001600160a01b031681146100c55760405162461bcd60e51b81526004016100bc906103ef565b60405180910390fd5b6000846040516020016100d891906103ae565b60408051808303601f19018152828252805160209182012083830183528715158452818401878152600082815260028452939093208451815460ff191690151517815592518051919550610133926001850192910190610186565b509050507f052f38216c5a2d10ccccca46b32cb5bf76545ea4905dec7d2faf9064de0a922f83856040516101689291906103cf565b60405180910390a15050505050565b6000546001600160a01b031681565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101c757805160ff19168380011785556101f4565b828001600101855582156101f4579182015b828111156101f45782518255916020019190600101906101d9565b50610200929150610204565b5090565b61021e91905b80821115610200576000815560010161020a565b90565b803561022c816104c2565b92915050565b600082601f83011261024357600080fd5b813561025661025182610426565b6103ff565b9150808252602083016020830185838301111561027257600080fd5b61027d83828461047c565b50505092915050565b60008060006060848603121561029b57600080fd5b833567ffffffffffffffff8111156102b257600080fd5b6102be86828701610232565b93505060206102cf86828701610221565b925050604084013567ffffffffffffffff8111156102ec57600080fd5b6102f886828701610232565b9150509250925092565b61030b81610460565b82525050565b61030b8161046b565b60006103258261044e565b61032f8185610452565b935061033f818560208601610488565b610348816104b8565b9093019392505050565b600061035d8261044e565b610367818561045b565b9350610377818560208601610488565b9290920192915050565b600061038e601183610452565b704e6f207469656e6573207065726d69736f60781b815260200192915050565b60006103ba8284610352565b9392505050565b6020810161022c8284610302565b604080825281016103e0818561031a565b90506103ba6020830184610311565b6020808252810161022c81610381565b60405181810167ffffffffffffffff8111828210171561041e57600080fd5b604052919050565b600067ffffffffffffffff82111561043d57600080fd5b506020601f91909101601f19160190565b5190565b90815260200190565b919050565b600061022c82610470565b151590565b6001600160a01b031690565b82818337506000910152565b60005b838110156104a357818101518382015260200161048b565b838111156104b2576000848401525b50505050565b601f01601f191690565b6104cb8161046b565b81146104d657600080fd5b5056fea365627a7a72315820d0ca27b3ededae36a217f62e028a76adad77a4f144cf3283bfbc27cb9f421a326c6578706572696d656e74616cf564736f6c63430005100040",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063630ea6e2146100465780637551cd6914610064578063edddfbea14610079575b600080fd5b61004e610081565b60405161005b91906103c1565b60405180910390f35b610077610072366004610286565b610090565b005b61004e610177565b6001546001600160a01b031681565b60005433906001600160a01b031681146100c55760405162461bcd60e51b81526004016100bc906103ef565b60405180910390fd5b6000846040516020016100d891906103ae565b60408051808303601f19018152828252805160209182012083830183528715158452818401878152600082815260028452939093208451815460ff191690151517815592518051919550610133926001850192910190610186565b509050507f052f38216c5a2d10ccccca46b32cb5bf76545ea4905dec7d2faf9064de0a922f83856040516101689291906103cf565b60405180910390a15050505050565b6000546001600160a01b031681565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101c757805160ff19168380011785556101f4565b828001600101855582156101f4579182015b828111156101f45782518255916020019190600101906101d9565b50610200929150610204565b5090565b61021e91905b80821115610200576000815560010161020a565b90565b803561022c816104c2565b92915050565b600082601f83011261024357600080fd5b813561025661025182610426565b6103ff565b9150808252602083016020830185838301111561027257600080fd5b61027d83828461047c565b50505092915050565b60008060006060848603121561029b57600080fd5b833567ffffffffffffffff8111156102b257600080fd5b6102be86828701610232565b93505060206102cf86828701610221565b925050604084013567ffffffffffffffff8111156102ec57600080fd5b6102f886828701610232565b9150509250925092565b61030b81610460565b82525050565b61030b8161046b565b60006103258261044e565b61032f8185610452565b935061033f818560208601610488565b610348816104b8565b9093019392505050565b600061035d8261044e565b610367818561045b565b9350610377818560208601610488565b9290920192915050565b600061038e601183610452565b704e6f207469656e6573207065726d69736f60781b815260200192915050565b60006103ba8284610352565b9392505050565b6020810161022c8284610302565b604080825281016103e0818561031a565b90506103ba6020830184610311565b6020808252810161022c81610381565b60405181810167ffffffffffffffff8111828210171561041e57600080fd5b604052919050565b600067ffffffffffffffff82111561043d57600080fd5b506020601f91909101601f19160190565b5190565b90815260200190565b919050565b600061022c82610470565b151590565b6001600160a01b031690565b82818337506000910152565b60005b838110156104a357818101518382015260200161048b565b838111156104b2576000848401525b50505050565b601f01601f191690565b6104cb8161046b565b81146104d657600080fd5b5056fea365627a7a72315820d0ca27b3ededae36a217f62e028a76adad77a4f144cf3283bfbc27cb9f421a326c6578706572696d656e74616cf564736f6c63430005100040",
+    "sourceMap": "2862:1914:0:-;;;2996:131;8:9:-1;5:2;;;30:1;27;20:12;5:2;2996:131:0;;;;;;;;;;;;;;;;;;;;;3045:19;:32;;-1:-1:-1;;;;;3045:32:0;;;;-1:-1:-1;;;;;;3045:32:0;;;;;;-1:-1:-1;3087:33:0;;;;;3115:4;3087:33;;;2862:1914;;5:134:-1;83:13;;101:33;83:13;101:33;;;68:71;;;;;146:263;;261:2;249:9;240:7;236:23;232:32;229:2;;;277:1;274;267:12;229:2;312:1;329:64;385:7;365:9;329:64;;;319:74;223:186;-1:-1;;;;223:186;416:91;;-1:-1;;;;;576:54;;478:24;559:76;642:117;711:24;729:5;711:24;;;704:5;701:35;691:2;;750:1;747;740:12;691:2;685:74;;;2862:1914:0;;;;;;",
+    "deployedSourceMap": "2862:1914:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2862:1914:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2957:32;;;:::i;:::-;;;;;;;;;;;;;;;;4023:748;;;;;;;;;:::i;:::-;;2917:34;;;:::i;2957:32::-;;;-1:-1:-1;;;;;2957:32:0;;:::o;4023:748::-;3840:19;;4157:10;;-1:-1:-1;;;;;3840:19:0;3826:33;;3818:63;;;;-1:-1:-1;;;3818:63:0;;;;;;;;;;;;;;;;;4229:22;4281:10;4264:28;;;;;;;;;;;;;26:21:-1;;;-1:-1;;22:32;6:49;;4264:28:0;;;4254:39;;49:4:-1;4254:39:0;;;;4635:40;;;;;;;;;;;;;;;;-1:-1:-1;4601:31:0;;;:15;:31;;;;;;:74;;;;-1:-1:-1;;4601:74:0;;;;;;;;;;;4254:39;;-1:-1:-1;4601:74:0;;-1:-1:-1;4601:74:0;;;;;;;:::i;:::-;;;;;4718:45;4734:11;4747:15;4718:45;;;;;;;;;;;;;;;;3891:1;4023:748;;;;:::o;2917:34::-;;;-1:-1:-1;;;;;2917:34:0;;:::o;2862:1914::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;2862:1914:0;;;-1:-1:-1;2862:1914:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;5:124:-1:-;69:20;;94:30;69:20;94:30;;;54:75;;;;;137:442;;239:3;232:4;224:6;220:17;216:27;206:2;;257:1;254;247:12;206:2;294:6;281:20;316:65;331:49;373:6;331:49;;;316:65;;;307:74;;401:6;394:5;387:21;437:4;429:6;425:17;470:4;463:5;459:16;505:3;496:6;491:3;487:16;484:25;481:2;;;522:1;519;512:12;481:2;532:41;566:6;561:3;556;532:41;;;199:380;;;;;;;;587:697;;;;742:2;730:9;721:7;717:23;713:32;710:2;;;758:1;755;748:12;710:2;793:31;;844:18;833:30;;830:2;;;876:1;873;866:12;830:2;896:63;951:7;942:6;931:9;927:22;896:63;;;886:73;;772:193;996:2;1014:50;1056:7;1047:6;1036:9;1032:22;1014:50;;;1004:60;;975:95;1129:2;1118:9;1114:18;1101:32;1153:18;1145:6;1142:30;1139:2;;;1185:1;1182;1175:12;1139:2;1205:63;1260:7;1251:6;1240:9;1236:22;1205:63;;;1195:73;;1080:194;704:580;;;;;;1291:113;1374:24;1392:5;1374:24;;;1369:3;1362:37;1356:48;;;1411:104;1488:21;1503:5;1488:21;;1522:347;;1634:39;1667:5;1634:39;;;1685:71;1749:6;1744:3;1685:71;;;1678:78;;1761:52;1806:6;1801:3;1794:4;1787:5;1783:16;1761:52;;;1834:29;1856:6;1834:29;;;1825:39;;;;1614:255;-1:-1;;;1614:255;1876:360;;2006:39;2039:5;2006:39;;;2057:89;2139:6;2134:3;2057:89;;;2050:96;;2151:52;2196:6;2191:3;2184:4;2177:5;2173:16;2151:52;;;2215:16;;;;;1986:250;-1:-1;;1986:250;2244:317;;2404:67;2468:2;2463:3;2404:67;;;-1:-1;;;2484:40;;2552:2;2543:12;;;-1:-1;;2390:171;2569:266;;2715:95;2806:3;2797:6;2715:95;;;2708:102;2696:139;-1:-1;;;2696:139;2842:213;2960:2;2945:18;;2974:71;2949:9;3018:6;2974:71;;3062:400;3222:2;3236:47;;;3207:18;;3297:78;3207:18;3361:6;3297:78;;;3289:86;;3386:66;3448:2;3437:9;3433:18;3424:6;3386:66;;3469:407;3660:2;3674:47;;;3645:18;;3735:131;3645:18;3735:131;;3883:256;3945:2;3939:9;3971:17;;;4046:18;4031:34;;4067:22;;;4028:62;4025:2;;;4103:1;4100;4093:12;4025:2;4119;4112:22;3923:216;;-1:-1;3923:216;4146:322;;4290:18;4282:6;4279:30;4276:2;;;4322:1;4319;4312:12;4276:2;-1:-1;;;4389:4;4366:17;;;;4362:33;4453:4;4443:15;;4213:255;4475:122;4563:12;;4534:63;4605:163;4708:19;;;4757:4;4748:14;;4701:67;4777:145;4913:3;4891:31;-1:-1;4891:31;4930:91;;4992:24;5010:5;4992:24;;5028:85;5094:13;5087:21;;5070:43;5120:121;-1:-1;;;;;5182:54;;5165:76;5249:145;5330:6;5325:3;5320;5307:30;-1:-1;5386:1;5368:16;;5361:27;5300:94;5403:268;5468:1;5475:101;5489:6;5486:1;5483:13;5475:101;;;5556:11;;;5550:18;5537:11;;;5530:39;5511:2;5504:10;5475:101;;;5591:6;5588:1;5585:13;5582:2;;;5656:1;5647:6;5642:3;5638:16;5631:27;5582:2;5452:219;;;;;5679:97;5767:2;5747:14;-1:-1;;5743:28;;5727:49;5784:111;5850:21;5865:5;5850:21;;;5843:5;5840:32;5830:2;;5886:1;5883;5876:12;5830:2;5824:71;",
     "sourcePath": "/home/secondport/Documents/SmartContracts/Proyectos/Sistema-Gestion-CM-COVID19/COVID19.sol",
     "compiler": {
         "name": "solc",
@@ -98,13 +102,13 @@
         "absolutePath": "/home/secondport/Documents/SmartContracts/Proyectos/Sistema-Gestion-CM-COVID19/COVID19.sol",
         "exportedSymbols": {
             "CentroSalud": [
-                195
+                233
             ],
             "OMS_COVID19": [
                 147
             ]
         },
-        "id": 196,
+        "id": 234,
         "nodeType": "SourceUnit",
         "nodes": [
             {
@@ -130,7 +134,7 @@
             {
                 "baseContracts": [],
                 "contractDependencies": [
-                    195
+                    233
                 ],
                 "contractKind": "contract",
                 "documentation": null,
@@ -206,7 +210,7 @@
                                                 "name": "msg",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 210,
+                                                "referencedDeclaration": 248,
                                                 "src": "270:3:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_magic_message",
@@ -675,10 +679,10 @@
                                             "name": "require",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [
-                                                213,
-                                                214
+                                                251,
+                                                252
                                             ],
-                                            "referencedDeclaration": 214,
+                                            "referencedDeclaration": 252,
                                             "src": "1179:7:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -793,7 +797,7 @@
                                             "name": "msg",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 210,
+                                            "referencedDeclaration": 248,
                                             "src": "1375:3:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_magic_message",
@@ -909,7 +913,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 210,
+                                                    "referencedDeclaration": 248,
                                                     "src": "1569:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -995,7 +999,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 210,
+                                                    "referencedDeclaration": 248,
                                                     "src": "1640:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -1235,7 +1239,7 @@
                                             "name": "msg",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 210,
+                                            "referencedDeclaration": 248,
                                             "src": "1815:3:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_magic_message",
@@ -1368,7 +1372,7 @@
                                                             "name": "msg",
                                                             "nodeType": "Identifier",
                                                             "overloadedDeclarations": [],
-                                                            "referencedDeclaration": 210,
+                                                            "referencedDeclaration": 248,
                                                             "src": "2289:3:0",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_magic_message",
@@ -1460,10 +1464,10 @@
                                             "name": "require",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [
-                                                213,
-                                                214
+                                                251,
+                                                252
                                             ],
-                                            "referencedDeclaration": 214,
+                                            "referencedDeclaration": 252,
                                             "src": "2256:7:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1536,7 +1540,7 @@
                                                             "name": "msg",
                                                             "nodeType": "Identifier",
                                                             "overloadedDeclarations": [],
-                                                            "referencedDeclaration": 210,
+                                                            "referencedDeclaration": 248,
                                                             "src": "2454:3:0",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_magic_message",
@@ -1573,7 +1577,7 @@
                                                     "nodeType": "NewExpression",
                                                     "src": "2438:15:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_CentroSalud_$195_$",
+                                                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_CentroSalud_$233_$",
                                                         "typeString": "function (address) returns (contract CentroSalud)"
                                                     },
                                                     "typeName": {
@@ -1581,10 +1585,10 @@
                                                         "id": 119,
                                                         "name": "CentroSalud",
                                                         "nodeType": "UserDefinedTypeName",
-                                                        "referencedDeclaration": 195,
+                                                        "referencedDeclaration": 233,
                                                         "src": "2442:11:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_contract$_CentroSalud_$195",
+                                                            "typeIdentifier": "t_contract$_CentroSalud_$233",
                                                             "typeString": "contract CentroSalud"
                                                         }
                                                     }
@@ -1599,7 +1603,7 @@
                                                 "nodeType": "FunctionCall",
                                                 "src": "2438:27:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_contract$_CentroSalud_$195",
+                                                    "typeIdentifier": "t_contract$_CentroSalud_$233",
                                                     "typeString": "contract CentroSalud"
                                                 }
                                             }
@@ -1607,7 +1611,7 @@
                                         "expression": {
                                             "argumentTypes": [
                                                 {
-                                                    "typeIdentifier": "t_contract$_CentroSalud_$195",
+                                                    "typeIdentifier": "t_contract$_CentroSalud_$233",
                                                     "typeString": "contract CentroSalud"
                                                 }
                                             ],
@@ -1743,7 +1747,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 210,
+                                                    "referencedDeclaration": 248,
                                                     "src": "2677:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -1812,7 +1816,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 210,
+                                                    "referencedDeclaration": 248,
                                                     "src": "2767:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -1915,7 +1919,7 @@
                         "visibility": "public"
                     }
                 ],
-                "scope": 196,
+                "scope": 234,
                 "src": "93:2716:0"
             },
             {
@@ -1924,9 +1928,9 @@
                 "contractKind": "contract",
                 "documentation": null,
                 "fullyImplemented": true,
-                "id": 195,
+                "id": 233,
                 "linearizedBaseContracts": [
-                    195
+                    233
                 ],
                 "name": "CentroSalud",
                 "nodeType": "ContractDefinition",
@@ -1936,7 +1940,7 @@
                         "id": 149,
                         "name": "DireccionCetroSalud",
                         "nodeType": "VariableDeclaration",
-                        "scope": 195,
+                        "scope": 233,
                         "src": "2917:34:0",
                         "stateVariable": true,
                         "storageLocation": "default",
@@ -1963,7 +1967,7 @@
                         "id": 151,
                         "name": "DireccionContrato",
                         "nodeType": "VariableDeclaration",
-                        "scope": 195,
+                        "scope": 233,
                         "src": "2957:32:0",
                         "stateVariable": true,
                         "storageLocation": "default",
@@ -2069,10 +2073,10 @@
                                                     "name": "this",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 226,
+                                                    "referencedDeclaration": 264,
                                                     "src": "3115:4:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_contract$_CentroSalud_$195",
+                                                        "typeIdentifier": "t_contract$_CentroSalud_$233",
                                                         "typeString": "contract CentroSalud"
                                                     }
                                                 }
@@ -2080,7 +2084,7 @@
                                             "expression": {
                                                 "argumentTypes": [
                                                     {
-                                                        "typeIdentifier": "t_contract$_CentroSalud_$195",
+                                                        "typeIdentifier": "t_contract$_CentroSalud_$233",
                                                         "typeString": "contract CentroSalud"
                                                     }
                                                 ],
@@ -2170,7 +2174,7 @@
                             "parameters": [],
                             "src": "3035:0:0"
                         },
-                        "scope": 195,
+                        "scope": 233,
                         "src": "2996:131:0",
                         "stateMutability": "nonpayable",
                         "superFunction": null,
@@ -2179,15 +2183,15 @@
                     {
                         "constant": false,
                         "id": 171,
-                        "name": "ResultadoCOVID",
+                        "name": "ResultadosCOVID",
                         "nodeType": "VariableDeclaration",
-                        "scope": 195,
-                        "src": "3209:46:0",
+                        "scope": 233,
+                        "src": "3486:45:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
-                            "typeString": "mapping(bytes32 => bool)"
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Resultados_$176_storage_$",
+                            "typeString": "mapping(bytes32 => struct CentroSalud.Resultados)"
                         },
                         "typeName": {
                             "id": 170,
@@ -2195,71 +2199,28 @@
                                 "id": 168,
                                 "name": "bytes32",
                                 "nodeType": "ElementaryTypeName",
-                                "src": "3217:7:0",
+                                "src": "3494:7:0",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
                                     "typeString": "bytes32"
                                 }
                             },
                             "nodeType": "Mapping",
-                            "src": "3209:24:0",
+                            "src": "3486:30:0",
                             "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
-                                "typeString": "mapping(bytes32 => bool)"
+                                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Resultados_$176_storage_$",
+                                "typeString": "mapping(bytes32 => struct CentroSalud.Resultados)"
                             },
                             "valueType": {
+                                "contractScope": null,
                                 "id": 169,
-                                "name": "bool",
-                                "nodeType": "ElementaryTypeName",
-                                "src": "3228:4:0",
+                                "name": "Resultados",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 176,
+                                "src": "3505:10:0",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_bool",
-                                    "typeString": "bool"
-                                }
-                            }
-                        },
-                        "value": null,
-                        "visibility": "public"
-                    },
-                    {
-                        "constant": false,
-                        "id": 175,
-                        "name": "ResultadoCOVID_IPFS",
-                        "nodeType": "VariableDeclaration",
-                        "scope": 195,
-                        "src": "3332:46:0",
-                        "stateVariable": true,
-                        "storageLocation": "default",
-                        "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
-                            "typeString": "mapping(bytes32 => string)"
-                        },
-                        "typeName": {
-                            "id": 174,
-                            "keyType": {
-                                "id": 172,
-                                "name": "bytes32",
-                                "nodeType": "ElementaryTypeName",
-                                "src": "3340:7:0",
-                                "typeDescriptions": {
-                                    "typeIdentifier": "t_bytes32",
-                                    "typeString": "bytes32"
-                                }
-                            },
-                            "nodeType": "Mapping",
-                            "src": "3332:26:0",
-                            "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
-                                "typeString": "mapping(bytes32 => string)"
-                            },
-                            "valueType": {
-                                "id": 173,
-                                "name": "string",
-                                "nodeType": "ElementaryTypeName",
-                                "src": "3351:6:0",
-                                "typeDescriptions": {
-                                    "typeIdentifier": "t_string_storage_ptr",
-                                    "typeString": "string"
+                                    "typeIdentifier": "t_struct$_Resultados_$176_storage_ptr",
+                                    "typeString": "struct CentroSalud.Resultados"
                                 }
                             }
                         },
@@ -2267,23 +2228,86 @@
                         "visibility": "internal"
                     },
                     {
+                        "canonicalName": "CentroSalud.Resultados",
+                        "id": 176,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 173,
+                                "name": "Diagnosticos",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 176,
+                                "src": "3600:17:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 172,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "3600:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 175,
+                                "name": "IPFS",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 176,
+                                "src": "3627:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 174,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "3627:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Resultados",
+                        "nodeType": "StructDefinition",
+                        "scope": 233,
+                        "src": "3573:72:0",
+                        "visibility": "public"
+                    },
+                    {
                         "anonymous": false,
                         "documentation": null,
-                        "id": 181,
+                        "id": 182,
                         "name": "NuevoResultado",
                         "nodeType": "EventDefinition",
                         "parameters": {
-                            "id": 180,
+                            "id": 181,
                             "nodeType": "ParameterList",
                             "parameters": [
                                 {
                                     "constant": false,
-                                    "id": 177,
+                                    "id": 178,
                                     "indexed": false,
                                     "name": "",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 181,
-                                    "src": "3420:6:0",
+                                    "scope": 182,
+                                    "src": "3686:6:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -2291,10 +2315,10 @@
                                         "typeString": "string"
                                     },
                                     "typeName": {
-                                        "id": 176,
+                                        "id": 177,
                                         "name": "string",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "3420:6:0",
+                                        "src": "3686:6:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_string_storage_ptr",
                                             "typeString": "string"
@@ -2305,12 +2329,12 @@
                                 },
                                 {
                                     "constant": false,
-                                    "id": 179,
+                                    "id": 180,
                                     "indexed": false,
                                     "name": "",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 181,
-                                    "src": "3428:4:0",
+                                    "scope": 182,
+                                    "src": "3694:4:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -2318,10 +2342,10 @@
                                         "typeString": "bool"
                                     },
                                     "typeName": {
-                                        "id": 178,
+                                        "id": 179,
                                         "name": "bool",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "3428:4:0",
+                                        "src": "3694:4:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_bool",
                                             "typeString": "bool"
@@ -2331,15 +2355,15 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "3419:14:0"
+                            "src": "3685:14:0"
                         },
-                        "src": "3399:35:0"
+                        "src": "3665:35:0"
                     },
                     {
                         "body": {
-                            "id": 193,
+                            "id": 194,
                             "nodeType": "Block",
-                            "src": "3542:91:0",
+                            "src": "3808:91:0",
                             "statements": [
                                 {
                                     "expression": {
@@ -2351,19 +2375,19 @@
                                                     "typeIdentifier": "t_address",
                                                     "typeString": "address"
                                                 },
-                                                "id": 188,
+                                                "id": 189,
                                                 "isConstant": false,
                                                 "isLValue": false,
                                                 "isPure": false,
                                                 "lValueRequested": false,
                                                 "leftExpression": {
                                                     "argumentTypes": null,
-                                                    "id": 186,
+                                                    "id": 187,
                                                     "name": "_direccion",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 183,
-                                                    "src": "3560:10:0",
+                                                    "referencedDeclaration": 184,
+                                                    "src": "3826:10:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_address",
                                                         "typeString": "address"
@@ -2373,18 +2397,18 @@
                                                 "operator": "==",
                                                 "rightExpression": {
                                                     "argumentTypes": null,
-                                                    "id": 187,
+                                                    "id": 188,
                                                     "name": "DireccionCetroSalud",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
                                                     "referencedDeclaration": 149,
-                                                    "src": "3574:19:0",
+                                                    "src": "3840:19:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_address",
                                                         "typeString": "address"
                                                     }
                                                 },
-                                                "src": "3560:33:0",
+                                                "src": "3826:33:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_bool",
                                                     "typeString": "bool"
@@ -2393,14 +2417,14 @@
                                             {
                                                 "argumentTypes": null,
                                                 "hexValue": "4e6f207469656e6573207065726d69736f",
-                                                "id": 189,
+                                                "id": 190,
                                                 "isConstant": false,
                                                 "isLValue": false,
                                                 "isPure": true,
                                                 "kind": "string",
                                                 "lValueRequested": false,
                                                 "nodeType": "Literal",
-                                                "src": "3595:19:0",
+                                                "src": "3861:19:0",
                                                 "subdenomination": null,
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_stringliteral_a6bf784a663abc11a2848dd95e45da90e7788b084b92a0afa1e2a25f0d7fbb83",
@@ -2420,21 +2444,21 @@
                                                     "typeString": "literal_string \"No tienes permiso\""
                                                 }
                                             ],
-                                            "id": 185,
+                                            "id": 186,
                                             "name": "require",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [
-                                                213,
-                                                214
+                                                251,
+                                                252
                                             ],
-                                            "referencedDeclaration": 214,
-                                            "src": "3552:7:0",
+                                            "referencedDeclaration": 252,
+                                            "src": "3818:7:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                                                 "typeString": "function (bool,string memory) pure"
                                             }
                                         },
-                                        "id": 190,
+                                        "id": 191,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -2442,38 +2466,38 @@
                                         "lValueRequested": false,
                                         "names": [],
                                         "nodeType": "FunctionCall",
-                                        "src": "3552:63:0",
+                                        "src": "3818:63:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_tuple$__$",
                                             "typeString": "tuple()"
                                         }
                                     },
-                                    "id": 191,
+                                    "id": 192,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "3552:63:0"
+                                    "src": "3818:63:0"
                                 },
                                 {
-                                    "id": 192,
+                                    "id": 193,
                                     "nodeType": "PlaceholderStatement",
-                                    "src": "3625:1:0"
+                                    "src": "3891:1:0"
                                 }
                             ]
                         },
                         "documentation": null,
-                        "id": 194,
+                        "id": 195,
                         "name": "UnicamenteCentroSalud",
                         "nodeType": "ModifierDefinition",
                         "parameters": {
-                            "id": 184,
+                            "id": 185,
                             "nodeType": "ParameterList",
                             "parameters": [
                                 {
                                     "constant": false,
-                                    "id": 183,
+                                    "id": 184,
                                     "name": "_direccion",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 194,
-                                    "src": "3523:18:0",
+                                    "scope": 195,
+                                    "src": "3789:18:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -2481,10 +2505,10 @@
                                         "typeString": "address"
                                     },
                                     "typeName": {
-                                        "id": 182,
+                                        "id": 183,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "3523:7:0",
+                                        "src": "3789:7:0",
                                         "stateMutability": "nonpayable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
@@ -2495,33 +2519,529 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "3522:20:0"
+                            "src": "3788:20:0"
                         },
-                        "src": "3492:141:0",
+                        "src": "3758:141:0",
                         "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 231,
+                            "nodeType": "Block",
+                            "src": "4168:603:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        209
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 209,
+                                            "name": "hash_idPersona",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 231,
+                                            "src": "4229:22:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bytes32",
+                                                "typeString": "bytes32"
+                                            },
+                                            "typeName": {
+                                                "id": 208,
+                                                "name": "bytes32",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "4229:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 216,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "id": 213,
+                                                        "name": "_idPersona",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 197,
+                                                        "src": "4281:10:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_string_memory_ptr",
+                                                            "typeString": "string memory"
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 211,
+                                                        "name": "abi",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 235,
+                                                        "src": "4264:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_abi",
+                                                            "typeString": "abi"
+                                                        }
+                                                    },
+                                                    "id": 212,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "memberName": "encodePacked",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "4264:16:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                                        "typeString": "function () pure returns (bytes memory)"
+                                                    }
+                                                },
+                                                "id": 214,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "4264:28:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes_memory_ptr",
+                                                    "typeString": "bytes memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes_memory_ptr",
+                                                    "typeString": "bytes memory"
+                                                }
+                                            ],
+                                            "id": 210,
+                                            "name": "keccak256",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 242,
+                                            "src": "4254:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                                                "typeString": "function (bytes memory) pure returns (bytes32)"
+                                            }
+                                        },
+                                        "id": 215,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "4254:39:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "4229:64:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 224,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "baseExpression": {
+                                                "argumentTypes": null,
+                                                "id": 217,
+                                                "name": "ResultadosCOVID",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 171,
+                                                "src": "4601:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Resultados_$176_storage_$",
+                                                    "typeString": "mapping(bytes32 => struct CentroSalud.Resultados storage ref)"
+                                                }
+                                            },
+                                            "id": 219,
+                                            "indexExpression": {
+                                                "argumentTypes": null,
+                                                "id": 218,
+                                                "name": "hash_idPersona",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 209,
+                                                "src": "4617:14:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "4601:31:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Resultados_$176_storage",
+                                                "typeString": "struct CentroSalud.Resultados storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "arguments": [
+                                                {
+                                                    "argumentTypes": null,
+                                                    "id": 221,
+                                                    "name": "_resultadoCOVID",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 199,
+                                                    "src": "4646:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                {
+                                                    "argumentTypes": null,
+                                                    "id": 222,
+                                                    "name": "_codigoIPFS",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 201,
+                                                    "src": "4663:11:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                ],
+                                                "id": 220,
+                                                "name": "Resultados",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 176,
+                                                "src": "4635:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_struct$_Resultados_$176_storage_ptr_$",
+                                                    "typeString": "type(struct CentroSalud.Resultados storage pointer)"
+                                                }
+                                            },
+                                            "id": 223,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "structConstructorCall",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "4635:40:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Resultados_$176_memory",
+                                                "typeString": "struct CentroSalud.Resultados memory"
+                                            }
+                                        },
+                                        "src": "4601:74:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Resultados_$176_storage",
+                                            "typeString": "struct CentroSalud.Resultados storage ref"
+                                        }
+                                    },
+                                    "id": 225,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "4601:74:0"
+                                },
+                                {
+                                    "eventCall": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 227,
+                                                "name": "_codigoIPFS",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 201,
+                                                "src": "4734:11:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 228,
+                                                "name": "_resultadoCOVID",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 199,
+                                                "src": "4747:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 226,
+                                            "name": "NuevoResultado",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 182,
+                                            "src": "4718:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bool_$returns$__$",
+                                                "typeString": "function (string memory,bool)"
+                                            }
+                                        },
+                                        "id": 229,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "4718:45:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 230,
+                                    "nodeType": "EmitStatement",
+                                    "src": "4713:50:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 232,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "arguments": [
+                                    {
+                                        "argumentTypes": null,
+                                        "expression": {
+                                            "argumentTypes": null,
+                                            "id": 204,
+                                            "name": "msg",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 248,
+                                            "src": "4157:3:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_magic_message",
+                                                "typeString": "msg"
+                                            }
+                                        },
+                                        "id": 205,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "sender",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": null,
+                                        "src": "4157:10:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address_payable",
+                                            "typeString": "address payable"
+                                        }
+                                    }
+                                ],
+                                "id": 206,
+                                "modifierName": {
+                                    "argumentTypes": null,
+                                    "id": 203,
+                                    "name": "UnicamenteCentroSalud",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 195,
+                                    "src": "4135:21:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_modifier$_t_address_$",
+                                        "typeString": "modifier (address)"
+                                    }
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "4135:33:0"
+                            }
+                        ],
+                        "name": "ResultadosPruebaCOVID",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 202,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 197,
+                                    "name": "_idPersona",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 232,
+                                    "src": "4054:24:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 196,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "4054:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 199,
+                                    "name": "_resultadoCOVID",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 232,
+                                    "src": "4080:20:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 198,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "4080:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 201,
+                                    "name": "_codigoIPFS",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 232,
+                                    "src": "4102:25:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 200,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "4102:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "4053:75:0"
+                        },
+                        "returnParameters": {
+                            "id": 207,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "4168:0:0"
+                        },
+                        "scope": 233,
+                        "src": "4023:748:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
                     }
                 ],
-                "scope": 196,
-                "src": "2862:773:0"
+                "scope": 234,
+                "src": "2862:1914:0"
             }
         ],
-        "src": "32:3603:0"
+        "src": "32:4744:0"
     },
     "functionHashes": {
         "DireccionCetroSalud()": "edddfbea",
         "DireccionContrato()": "630ea6e2",
-        "ResultadoCOVID(bytes32)": "e4f837d2"
+        "ResultadosPruebaCOVID(string,bool,string)": "7551cd69"
     },
     "gasEstimates": {
         "creation": {
-            "codeDepositCost": "83800",
+            "codeDepositCost": "261600",
             "executionCost": "infinite",
             "totalCost": "infinite"
         },
         "external": {
             "DireccionCetroSalud()": "infinite",
             "DireccionContrato()": "infinite",
-            "ResultadoCOVID(bytes32)": "infinite"
+            "ResultadosPruebaCOVID(string,bool,string)": "infinite"
         }
     }
 }
