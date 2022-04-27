@@ -38,5 +38,24 @@ contract OMS_COVID19 {
         emit NuevoCentroValidado(_centroSalud);
     }
 
+    //funcion para crear un contrato inteligente de un centro de salud
+    function FactoryCentroSalud()public {
+        //filtrado para que unicamente los centros de salud validados sean capaces de ejectuar esta funcuion
+        require (Validacion_CentrosSalud[msg.sender] == true, "No tienes permiso");
+        //generar un smartcontract -> generar su direccion
+        address contrato_CentroSalud = address(new CentroSalud(msg.sender));
+        //almacenar la dire del smartcontract en el array
+        direcciones_contratos_salud.push(contrato_CentroSalud);
+        //emitir un evento
+        emit NuevoContrato(msg.sender, contrato_CentroSalud);
+    }
+}
 
+contract CentroSalud{
+
+    address public DireccionContrato;
+
+    constructor (address _direccion) public{
+        Direccion_Contrato = _direccion;
+    }
 }
