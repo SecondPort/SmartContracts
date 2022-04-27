@@ -25,7 +25,13 @@ contract OMS_COVID19 {
     event NuevoContrato(address, address);
 
     //modificador que permita unicamente que la oms ejecute la funcion
+        modifier UnicamenteOMS(address _direccion){
+        require(_direccion == OMS, "No tienes permiso");
+        _;
+    }
+
     //funcion para validar centros de salud que puedan autogestionarse --> Unicamente
+    
     //factory que permita crear un contrato inteligente
 
 
