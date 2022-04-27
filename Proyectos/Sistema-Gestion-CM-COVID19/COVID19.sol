@@ -15,6 +15,9 @@ contract OMS_COVID19 {
     //mapping para relacionar los centros de salud(direccion/address) con la validez del sistema de gestion
     mapping(address=>bool) public Validacion_CentrosSalud;
 
+    //mapping para relacionar una address de un centro de salud con su contrato
+    mapping(address=>address) public CentroSalud_Contrato;
+
     //ejemplo1, 0x4423423gemfvkdnwk342 -> true, tiene permisos y false, no tiene permisos
 
     //array de direcciones que almacene los contratos de los centros de salud validados
@@ -47,7 +50,7 @@ contract OMS_COVID19 {
     }
 
     //funcion para validar centros de salud que puedan autogestionarse --> Unicamente
-    function CentroSalud(address _centroSalud) public UnicamenteOMS(msg.sender){
+    function CentrosSalud(address _centroSalud) public UnicamenteOMS(msg.sender){
         //aignacion del estado de validacion del centro de salud
         Validacion_CentrosSalud[_centroSalud] = true;
         //emitir evento
@@ -62,16 +65,25 @@ contract OMS_COVID19 {
         address contrato_CentroSalud = address(new CentroSalud(msg.sender));
         //almacenar la dire del smartcontract en el array
         direcciones_contratos_salud.push(contrato_CentroSalud);
+        //relacion entre el centro de salud y su contrato
+        CentroSalud_Contrato[msg.sender] = contrato_CentroSalud;
         //emitir un evento
         emit NuevoContrato(msg.sender, contrato_CentroSalud);
     }
 }
 
+
+//contrato autogestionable por el centro de salud
 contract CentroSalud{
 
+    //direcciones iniciales
+    address public DireccionCetroSalud;
     address public DireccionContrato;
 
     constructor (address _direccion) public{
-        Direccion_Contrato = _direccion;
+        DireccionCetroSalud = _direccion;
+        DireccionContrato = address(this);
     }
+
+
 }
