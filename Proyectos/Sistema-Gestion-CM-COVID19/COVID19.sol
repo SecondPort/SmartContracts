@@ -86,10 +86,19 @@ contract CentroSalud{
     }
 
     //mapping que relaciona una ID con un resultado con una prueba de COVID
-    mapping(bytes32 => bool) public ResultadoCOVID;
+    //mapping(bytes32 => bool) public ResultadoCOVID;
 
     //mapping para relacionar el hash de la prueba con el codigo IPFS
-    mapping(bytes32 => string) ResultadoCOVID_IPFS;
+    //mapping(bytes32 => string) ResultadoCOVID_IPFS;
+
+    //mapping para relacionar el hash de la persona con los resultados(diagnoticos, codigo ipfs)
+    mapping(bytes32 => Resultados)ResultadosCOVID;
+
+    //estrcutura de los resultados
+    struct Resultados{
+        bool Diagnosticos;
+        string IPFS;
+    }
 
     //eventos
     event NuevoResultado(string, bool);
@@ -99,4 +108,25 @@ contract CentroSalud{
         require(_direccion == DireccionCetroSalud, "No tienes permiso");
         _;
     }
+
+    //funcion para emitir el resultado de COVID
+    // 1234 || true || Qmd7j9eQnztK8T7zQ8TGzKsgg6RDzkuUCfa2WTEM9ty1dT
+    function ResultadosPruebaCOVID(string memory _idPersona, bool _resultadoCOVID, string memory _codigoIPFS)public UnicamenteCentroSalud(msg.sender){
+        //?hash de la identificacion de la persona
+        bytes32 hash_idPersona = keccak256(abi.encodePacked(_idPersona));
+
+        //relacion entre el hash de la persona y el resultado
+        //ResultadoCOVID[hash_idPersona] = _resultadoCOVID;
+        //relacion con el codigo IPFS
+        //ResultadoCOVID_IPFS[hash_idPersona] = _codigoIPFS;
+
+        //?relacion del hash de la persona con la estrcutura de resultados
+        ResultadosCOVID[hash_idPersona] = Resultados(_resultadoCOVID, _codigoIPFS);
+        //?emitir un evento
+        emit NuevoResultado (_codigoIPFS, _resultadoCOVID);
+
+    }
+
+
+
 }
