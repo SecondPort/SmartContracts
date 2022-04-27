@@ -31,8 +31,12 @@ contract OMS_COVID19 {
     }
 
     //funcion para validar centros de salud que puedan autogestionarse --> Unicamente
-    
-    //factory que permita crear un contrato inteligente
+    function CentroSalud(address _centroSalud) public UnicamenteOMS(msg.sender){
+        //aignacion del estado de validacion del centro de salud
+        Validacion_CentrosSalud[_centroSalud] = true;
+        //emitir evento
+        emit NuevoCentroValidado(_centroSalud);
+    }
 
 
 }
