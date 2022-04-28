@@ -92,23 +92,68 @@ contract InsuranceFactory is OperacionesBasicas{
         direccionesLabs.push(msg.sender);
         //creamos una instancia del contrato de laboratorio
         address _direccionLab = address(new Laboratorio(msg.sender, Insurance));
-        //introducimos los datos en la estuctura de los labs
-        lab memory _laboratorio = lab(_direccionLab, true);
         //relacionamos la direccion que crea el laboratorio con el contrato de laboratorio
-        MappingLabs[msg.sender] = _laboratorio;
+        MappingLabs[msg.sender] = lab(_direccionLab, true);
         //emit evento de laboratorio creado
         emit LaboratorioCreado(msg.sender, _direccionLab);
+    }
+
+    function creacionContratoAsegurado()public {
+        //guarda la direccion del asegurado en un array
+        direccionClientes.push(msg.sender);
+        //generacion de un contrato para el asegurado
+        address _direccionAsegurado = address(new InsuranceHealthRecord(msg.sender, token, Insurance, Aseguradora));
+        //almacenamiento de la informacion del asegurado en la estrcutura de datos
+        MappingClientes[msg.sender] = cliente(msg.sender, true, _direccionAsegurado);
+        //emit evento de asegurado creado
+        emit AseguradoCreado(msg.sender, _direccionAsegurado);
+    }
+
+    //funcion que devuelve el array de las direcciones de los labs
+    function getDireccionesLabs()public view UnicamenteAseguradora(msg.sender) returns(address[] memory){
+        return direccionesLabs;
+    }
+
+    //funcion que devuelve el array de las direcciones de los clientes
+    function getDireccionesClientes()public view UnicamenteAseguradora(msg.sender) returns(address[] memory){
+        return direccionClientes;
+    }
+}
+
+contract InsuranceHealthRecord{
+
+    enum Estado { ALTA, BAJA }
+    struct Owner{
+        address direccionPropietario;
+        uint saldoPropietario;
+        Estado estado;
+        IERC20 tokens;
+        address insurance;
+        address payable aseguradora;
 
     }
 
+    Owner propietario;
+
+    constructor(address _owner, ERC20Basic _token, address _insurance, address payable _aseguradora) public{
+        propietario.direccionPropietario = _owner;
+        propietario.saldoPropietario = 0;
+        propietario.estado = Estado.ALTA;
+        propietario.tokens = _token;
+        propietario.insurance = _insurance;
+        propietario.aseguradora = _aseguradora;
+    }
 }
+
 
 contract Laboratorio is OperacionesBasicas{
 
+    //direccion de la persona que creo que laboratorio
     address public DireccionLab;
-    address ContratoAseguradora;
+    //direcion del contrato de la aseguradora
+    address contratoAseguradora;
     constructor (address _owner, address _direccionContratosAseguradora) public{
         DireccionLab = _owner;
-        ContratoAseguradora = _direccionContratosAseguradora;
+        contratoAseguradora = _direccionContratosAseguradora;
     }
 }
