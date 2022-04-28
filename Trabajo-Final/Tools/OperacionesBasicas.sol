@@ -15,7 +15,7 @@ contract OperacionesBasicas{
     }
 
     function getBalance() public view returns(uint ethers){
-        return payable(address(this)).balance;
+        return (address(this)).balance;
     }
 
     // Funcion para pasar de uint a string
