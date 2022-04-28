@@ -48,22 +48,26 @@ contract InsuranceFactory is OperacionesBasicas{
     address[] private direccionesLabs;
 
     function FuncionUnicamenteAsegurados(address _direccioAsegurado)public view{
+        //restriccion para que solo se pueda acceder a la funcion si el usuario es asegurado
         require(MappingClientes[_direccioAsegurado].Autorizacion == true, "No esta autorizado para realizar esta operacion");
     }
 
     //modificadores y restricciones sobres los clientes
     modifier UnicamenteAsegurados(address _direccionAsegurado){
+        //restriccion para que solo se pueda acceder a la funcion si el usuario es asegurado
         FuncionUnicamenteAsegurados(_direccionAsegurado);
         _;
     }
 
     modifier UnicamenteAseguradora(address _direccionAseguradora){
+        //solo la aseguradora puede realizar esta accion
         require(Aseguradora == _direccionAseguradora,
         "No esta autorizado para realizar esta operacion solo personal de la aseguradora");
         _;
     }
 
     modifier UnicamenteAseguradoraYCliente(address _direccionAseguradora, address _direccionCliente){
+        //restriccion para que solo el cliente o la aseguradora ejecuten la funcion
         require(Aseguradora == _direccionAseguradora, "No esta autorizado para realizar esta operacion solo clientes");
         FuncionUnicamenteAsegurados(_direccionCliente);
         _;
@@ -79,9 +83,32 @@ contract InsuranceFactory is OperacionesBasicas{
     event EventoServicioProporcionado(address, string[], uint256);
     event LaboratorioCreado(address, address);
     event AseguradoCreado(address, address);
-    event BajaCliente(address);
+    event BajaAsegurado(address);
     event ServicioCreado(string, uint256);
     event BajaServicio(string);
 
+    function creacionLab()public{
+        //introducimos en el array la direccion que crea el laboratorio
+        direccionesLabs.push(msg.sender);
+        //creamos una instancia del contrato de laboratorio
+        address _direccionLab = address(new Laboratorio(msg.sender, Insurance));
+        //introducimos los datos en la estuctura de los labs
+        lab memory _laboratorio = lab(_direccionLab, true);
+        //relacionamos la direccion que crea el laboratorio con el contrato de laboratorio
+        MappingLabs[msg.sender] = _laboratorio;
+        //emit evento de laboratorio creado
+        emit LaboratorioCreado(msg.sender, _direccionLab);
 
+    }
+
+}
+
+contract Laboratorio is OperacionesBasicas{
+
+    address public DireccionLab;
+    address ContratoAseguradora;
+    constructor (address _owner, address _direccionContratosAseguradora) public{
+        DireccionLab = _owner;
+        ContratoAseguradora = _direccionContratosAseguradora;
+    }
 }
