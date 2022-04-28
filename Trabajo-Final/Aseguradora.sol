@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >0.4.0;
 pragma experimental ABIEncoderV2;
-import "./OperacionesBasicas.sol";
-import "./ERC20.sol";
+import "../Trabajo-Final/Tools/OperacionesBasicas.sol";
+import "../Trabajo-Final/Tools/ERC20.sol";
 
 //contrato para la compañia de seguro
 contract InsuranceFactory is OperacionesBasicas{
