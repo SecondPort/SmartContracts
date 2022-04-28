@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"address","name":"_owner","type":"address"},{"internalType":"contract ERC20Basic","name":"_token","type":"address"},{"internalType":"address","name":"_insurance","type":"address"},{"internalType":"address payable","name":"_aseguradora","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
