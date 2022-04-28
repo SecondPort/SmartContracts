@@ -1,0 +1,2433 @@
+{
+    "contractName": "InsuranceFactory",
+    "abi": [
+        {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "AseguradoCreado",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "BajaCliente",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "name": "BajaServicio",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "EventoComprado",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string[]",
+                    "name": "",
+                    "type": "string[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "EventoServicioProporcionado",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "LaboratorioCreado",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ServicioCreado",
+            "type": "event"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "Aseguradora",
+            "outputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_direccioAsegurado",
+                    "type": "address"
+                }
+            ],
+            "name": "FuncionUnicamenteAsegurados",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "MappingClientes",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "DireccionCliente",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "Autorizacion",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "address",
+                    "name": "DireccionContrato",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "MappingLabs",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "direccionContratoLab",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "ValidacionLab",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "name": "MappingServicios",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "nombreServicio",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "precioTokens",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "EstadoServicio",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getBalance",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "ethers",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"AseguradoCreado\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"BajaCliente\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"BajaServicio\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"EventoComprado\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"EventoServicioProporcionado\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"LaboratorioCreado\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"ServicioCreado\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"Aseguradora\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_direccioAsegurado\",\"type\":\"address\"}],\"name\":\"FuncionUnicamenteAsegurados\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"MappingClientes\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"DireccionCliente\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"Autorizacion\",\"type\":\"bool\"},{\"internalType\":\"address\",\"name\":\"DireccionContrato\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"MappingLabs\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"direccionContratoLab\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"ValidacionLab\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"MappingServicios\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"nombreServicio\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"precioTokens\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"EstadoServicio\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ethers\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol\":\"InsuranceFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol\":{\"keccak256\":\"0x3a2f6c4752f1644302e2bcc5109ed92a27a4dd7b98a7fef2138124ccf5a43797\",\"urls\":[\"bzz-raw://42a84fe55c955a22aa6ec55995dd73dd9bff6f9bbd32eb925566b867ccb0b19e\",\"dweb:/ipfs/QmbwNU9BJPPPKaRLZCrsRrCjwqHc1hJm5YafS8B9uSj7jp\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/ERC20.sol\":{\"keccak256\":\"0x77927b9d99bbc195568631e045e52534eea624b4857ce258402ce00cc7391aa6\",\"urls\":[\"bzz-raw://c5e48ce33fe82b0895bddba091637a03644f00c02a1bf933ba7d641b47811bb0\",\"dweb:/ipfs/QmfSMzcSFtScksqv9K9kVPP1SzoWxsbcEU3XUw845UBpkV\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/OperacionesBasicas.sol\":{\"keccak256\":\"0x5f30390f638e84c5030e7d22c1efb160f84f60f5362885e0803f572a9d923bbd\",\"urls\":[\"bzz-raw://b68699f6c6fd0ac1edf094d2d848088e9db3ec90984d3acec243c7e0583f23cf\",\"dweb:/ipfs/QmdXAYVzKLAAdWAFUd6VihCDUncMnG2pKCnZnsWDejLdgU\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/SafeMath.sol\":{\"keccak256\":\"0x1da4562c557a593185358c7411fa647c3183781b37f423030d98a3c01d0bdedb\",\"urls\":[\"bzz-raw://82d8a0ad5b3a5be9d9cef48c800ccfe771ef55f22b9f2c169391991e2d1e1adc\",\"dweb:/ipfs/QmVbyn34mpyTWFgstExvaN7SsmFYZdKSEGEHfPPfWEHejC\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50606460405161001f9061007f565b610029919061009b565b604051809103906000f080158015610045573d6000803e3d6000fd5b50600080546001600160a01b03929092166001600160a01b03199283161790556001805482163017905560028054909116331790556100bd565b6107fd8061067e83390190565b610095816100b2565b82525050565b602081016100a9828461008c565b92915050565b90565b60006100a9826100af565b6105b2806100cc6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806312065fe0146100675780631a6f0d8c1461008557806386120ece1461009a578063990d400b146100af578063ca48d363146100d1578063d89ac531146100f3575b600080fd5b61006f610114565b60405161007c919061048c565b60405180910390f35b61008d610119565b60405161007c91906103f7565b6100ad6100a83660046102f2565b610128565b005b6100c26100bd3660046102f2565b610178565b60405161007c93929190610427565b6100e46100df366004610318565b6101a9565b60405161007c9392919061044f565b6101066101013660046102f2565b610266565b60405161007c929190610405565b303190565b6002546001600160a01b031681565b6001600160a01b038116600090815260036020526040902054600160a01b900460ff1615156001146101755760405162461bcd60e51b815260040161016c9061047c565b60405180910390fd5b50565b600360205260009081526040902080546001909101546001600160a01b0380831692600160a01b900460ff16911683565b805160208183018101805160048252928201938201939093209190925280546040805160026001841615610100026000190190931692909204601f810185900485028301850190915280825291929091839183018282801561024c5780601f106102215761010080835404028352916020019161024c565b820191906000526020600020905b81548152906001019060200180831161022f57829003601f168201915b50505050600183015460029093015491929160ff16905083565b6005602052600090815260409020546001600160a01b03811690600160a01b900460ff1682565b80356102988161055b565b92915050565b600082601f8301126102af57600080fd5b81356102c26102bd826104c1565b61049a565b915080825260208301602083018583830111156102de57600080fd5b6102e9838284610515565b50505092915050565b60006020828403121561030457600080fd5b6000610310848461028d565b949350505050565b60006020828403121561032a57600080fd5b813567ffffffffffffffff81111561034157600080fd5b6103108482850161029e565b610356816104f6565b82525050565b61035681610501565b6000610370826104e9565b61037a81856104ed565b935061038a818560208601610521565b61039381610551565b9093019392505050565b60006103aa602f836104ed565b7f4e6f2065737461206175746f72697a61646f2070617261207265616c697a617281526e1032b9ba309037b832b930b1b4b7b760891b602082015260400192915050565b61035681610512565b60208101610298828461034d565b60408101610413828561034d565b610420602083018461035c565b9392505050565b60608101610435828661034d565b610442602083018561035c565b610310604083018461034d565b606080825281016104608186610365565b905061046f60208301856103ee565b610310604083018461035c565b602080825281016102988161039d565b6020810161029882846103ee565b60405181810167ffffffffffffffff811182821017156104b957600080fd5b604052919050565b600067ffffffffffffffff8211156104d857600080fd5b506020601f91909101601f19160190565b5190565b90815260200190565b600061029882610506565b151590565b6001600160a01b031690565b90565b82818337506000910152565b60005b8381101561053c578181015183820152602001610524565b8381111561054b576000848401525b50505050565b601f01601f191690565b610564816104f6565b811461017557600080fdfea365627a7a72315820f8fb37ba19a395de5ec5da316eac26a06acaec83a8514f96da9eeba3ea060f666c6578706572696d656e74616cf564736f6c63430005100040608060405234801561001057600080fd5b506040516107fd3803806107fd83398101604081905261002f9161005a565b60028190553360009081526020819052604090205561009a565b805161005481610083565b92915050565b60006020828403121561006c57600080fd5b60006100788484610049565b949350505050565b90565b61008c81610080565b811461009757600080fd5b50565b610754806100a96000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c80634ee22adf116100665780634ee22adf1461011e57806370a082311461013357806395d89b4114610146578063a9059cbb1461014e578063dd62ed3e146101615761009e565b806306fdde03146100a3578063095ea7b3146100c157806318160ddd146100e157806323b872dd146100f6578063313ce56714610109575b600080fd5b6100ab610174565b6040516100b89190610658565b60405180910390f35b6100d46100cf3660046105a3565b61019a565b6040516100b8919061064a565b6100e9610205565b6040516100b89190610669565b6100d4610104366004610556565b61020b565b61011161036b565b6040516100b89190610677565b61013161012c3660046105d3565b610370565b005b6100e96101413660046104f6565b610390565b6100ab6103ab565b6100d461015c3660046105a3565b6103d0565b6100e961016f36600461051c565b61048d565b6040518060400160405280600a8152602001694552433230426173696360b01b81525081565b3360008181526001602090815260408083206001600160a01b038716808552925280832085905551919290917f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925906101f3908690610669565b60405180910390a35060015b92915050565b60025490565b6001600160a01b03831660009081526020819052604081205482111561023057600080fd5b6001600160a01b038416600090815260016020908152604080832033845290915290205482111561026057600080fd5b6001600160a01b038416600090815260208190526040902054610289908363ffffffff6104b816565b6001600160a01b0385166000908152602081815260408083209390935560018152828220338352905220546102c4908363ffffffff6104b816565b6001600160a01b0380861660009081526001602090815260408083203384528252808320949094559186168152908190522054610307908363ffffffff6104ca16565b6001600160a01b0380851660008181526020819052604090819020939093559151908616907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef90610359908690610669565b60405180910390a35060019392505050565b600281565b600280548201905533600090815260208190526040902080549091019055565b6001600160a01b031660009081526020819052604090205490565b6040518060400160405280600981526020016825212516aa27a5a2a760b91b81525081565b336000908152602081905260408120548211156103ec57600080fd5b3360009081526020819052604090205461040c908363ffffffff6104b816565b33600090815260208190526040808220929092556001600160a01b0385168152205461043e908363ffffffff6104ca16565b6001600160a01b0384166000818152602081905260409081902092909255905133907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906101f3908690610669565b6001600160a01b03918216600090815260016020908152604080832093909416825291909152205490565b6000828211156104c457fe5b50900390565b6000828201838110156104d957fe5b9392505050565b80356101ff816106f1565b80356101ff81610708565b60006020828403121561050857600080fd5b600061051484846104e0565b949350505050565b6000806040838503121561052f57600080fd5b600061053b85856104e0565b925050602061054c858286016104e0565b9150509250929050565b60008060006060848603121561056b57600080fd5b600061057786866104e0565b9350506020610588868287016104e0565b9250506040610599868287016104eb565b9150509250925092565b600080604083850312156105b657600080fd5b60006105c285856104e0565b925050602061054c858286016104eb565b6000602082840312156105e557600080fd5b600061051484846104eb565b6105fa8161069d565b82525050565b600061060b82610685565b6106158185610689565b93506106258185602086016106b7565b61062e816106e7565b9093019392505050565b6105fa816106ae565b6105fa816106b1565b602081016101ff82846105f1565b602080825281016104d98184610600565b602081016101ff8284610638565b602081016101ff8284610641565b5190565b90815260200190565b60006101ff826106a2565b151590565b6001600160a01b031690565b90565b60ff1690565b60005b838110156106d25781810151838201526020016106ba565b838111156106e1576000848401525b50505050565b601f01601f191690565b6106fa81610692565b811461070557600080fd5b50565b6106fa816106ae56fea365627a7a7231582066b80bb5a1f81df3c917eee2b9e09bd7edade8e7d505c333cd2050203580768d6c6578706572696d656e74616cf564736f6c63430005100040",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100625760003560e01c806312065fe0146100675780631a6f0d8c1461008557806386120ece1461009a578063990d400b146100af578063ca48d363146100d1578063d89ac531146100f3575b600080fd5b61006f610114565b60405161007c919061048c565b60405180910390f35b61008d610119565b60405161007c91906103f7565b6100ad6100a83660046102f2565b610128565b005b6100c26100bd3660046102f2565b610178565b60405161007c93929190610427565b6100e46100df366004610318565b6101a9565b60405161007c9392919061044f565b6101066101013660046102f2565b610266565b60405161007c929190610405565b303190565b6002546001600160a01b031681565b6001600160a01b038116600090815260036020526040902054600160a01b900460ff1615156001146101755760405162461bcd60e51b815260040161016c9061047c565b60405180910390fd5b50565b600360205260009081526040902080546001909101546001600160a01b0380831692600160a01b900460ff16911683565b805160208183018101805160048252928201938201939093209190925280546040805160026001841615610100026000190190931692909204601f810185900485028301850190915280825291929091839183018282801561024c5780601f106102215761010080835404028352916020019161024c565b820191906000526020600020905b81548152906001019060200180831161022f57829003601f168201915b50505050600183015460029093015491929160ff16905083565b6005602052600090815260409020546001600160a01b03811690600160a01b900460ff1682565b80356102988161055b565b92915050565b600082601f8301126102af57600080fd5b81356102c26102bd826104c1565b61049a565b915080825260208301602083018583830111156102de57600080fd5b6102e9838284610515565b50505092915050565b60006020828403121561030457600080fd5b6000610310848461028d565b949350505050565b60006020828403121561032a57600080fd5b813567ffffffffffffffff81111561034157600080fd5b6103108482850161029e565b610356816104f6565b82525050565b61035681610501565b6000610370826104e9565b61037a81856104ed565b935061038a818560208601610521565b61039381610551565b9093019392505050565b60006103aa602f836104ed565b7f4e6f2065737461206175746f72697a61646f2070617261207265616c697a617281526e1032b9ba309037b832b930b1b4b7b760891b602082015260400192915050565b61035681610512565b60208101610298828461034d565b60408101610413828561034d565b610420602083018461035c565b9392505050565b60608101610435828661034d565b610442602083018561035c565b610310604083018461034d565b606080825281016104608186610365565b905061046f60208301856103ee565b610310604083018461035c565b602080825281016102988161039d565b6020810161029882846103ee565b60405181810167ffffffffffffffff811182821017156104b957600080fd5b604052919050565b600067ffffffffffffffff8211156104d857600080fd5b506020601f91909101601f19160190565b5190565b90815260200190565b600061029882610506565b151590565b6001600160a01b031690565b90565b82818337506000910152565b60005b8381101561053c578181015183820152602001610524565b8381111561054b576000848401525b50505050565b601f01601f191690565b610564816104f6565b811461017557600080fdfea365627a7a72315820f8fb37ba19a395de5ec5da316eac26a06acaec83a8514f96da9eeba3ea060f666c6578706572696d656e74616cf564736f6c63430005100040",
+    "sourceMap": "229:2666:0:-;;;283:133;8:9:-1;5:2;;;30:1;27;20:12;5:2;283:133:0;336:3;321:19;;;;;:::i;:::-;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;313:5:0;:27;;-1:-1:-1;;;;;313:27:0;;;;-1:-1:-1;;;;;;313:27:0;;;;;;;350:25;;;;370:4;350:25;;;385:11;:24;;;;;399:10;385:24;;;229:2666;;;;;;;;;;:::o;5:146:-1:-;98:47;139:5;98:47;;;93:3;86:60;80:71;;;158:233;286:2;271:18;;300:81;275:9;354:6;300:81;;;257:134;;;;;398:72;460:5;443:27;477:118;;566:24;584:5;566:24;;547:48;229:2666:0;;;;;;",
+    "deployedSourceMap": "229:2666:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;229:2666:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;374:101:2;;;:::i;:::-;;;;;;;;;;;;;;;;898:34:0;;;:::i;:::-;;;;;;;;1319:208;;;;;;;;;:::i;:::-;;995:48;;;;;;;;;:::i;:::-;;;;;;;;;;1049:49;;;;;;;;;:::i;:::-;;;;;;;;;;1104:40;;;;;;;;;:::i;:::-;;;;;;;;;374:101:2;454:4;445:23;374:101;:::o;898:34:0:-;;;-1:-1:-1;;;;;898:34:0;;:::o;1319:208::-;-1:-1:-1;;;;;1412:35:0;;;;;;:15;:35;;;;;:48;-1:-1:-1;;;1412:48:0;;;;:56;;1464:4;1412:56;1404:116;;;;-1:-1:-1;;;1404:116:0;;;;;;;;;;;;;;;;;1319:208;:::o;995:48::-;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;995:48:0;;;;-1:-1:-1;;;995:48:0;;;;;;;:::o;1049:49::-;22:14:-1;;169:4;143:32;;;;;198:20;;1049:49:0;224:31:-1;;156:18;;;283;;;273:49;;;;328:32;;;;1049:49:0;;;;;;;;;;;;-1:-1:-1;;1049:49:0;;;;;;;;;;;;;;;;;;;;;;;;;;273::-1;;1049::0;;273::-1;;1049::0;;273::-1;1049::0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;1049:49:0;;;;;;;;;;;;;;;-1:-1:-1;1049:49:0;:::o;1104:40::-;;;;;;;;;;;;-1:-1:-1;;;;;1104:40:0;;;-1:-1:-1;;;1104:40:0;;;;;:::o;5:130:-1:-;72:20;;97:33;72:20;97:33;;;57:78;;;;;143:434;;241:3;234:4;226:6;222:17;218:27;208:2;;259:1;256;249:12;208:2;296:6;283:20;318:61;333:45;371:6;333:45;;;318:61;;;309:70;;399:6;392:5;385:21;435:4;427:6;423:17;468:4;461:5;457:16;503:3;494:6;489:3;485:16;482:25;479:2;;;520:1;517;510:12;479:2;530:41;564:6;559:3;554;530:41;;;201:376;;;;;;;;585:241;;689:2;677:9;668:7;664:23;660:32;657:2;;;705:1;702;695:12;657:2;740:1;757:53;802:7;782:9;757:53;;;747:63;651:175;-1:-1;;;;651:175;833:339;;943:2;931:9;922:7;918:23;914:32;911:2;;;959:1;956;949:12;911:2;994:31;;1045:18;1034:30;;1031:2;;;1077:1;1074;1067:12;1031:2;1097:59;1148:7;1139:6;1128:9;1124:22;1097:59;;1179:137;1278:32;1304:5;1278:32;;;1273:3;1266:45;1260:56;;;1443:104;1520:21;1535:5;1520:21;;1554:339;;1662:35;1691:5;1662:35;;;1709:71;1773:6;1768:3;1709:71;;;1702:78;;1785:52;1830:6;1825:3;1818:4;1811:5;1807:16;1785:52;;;1858:29;1880:6;1858:29;;;1849:39;;;;1642:251;-1:-1;;;1642:251;1901:384;;2061:67;2125:2;2120:3;2061:67;;;2161:34;2141:55;;-1:-1;;;2225:2;2216:12;;2209:39;2276:2;2267:12;;2047:238;-1:-1;;2047:238;2293:113;2376:24;2394:5;2376:24;;2413:245;2547:2;2532:18;;2561:87;2536:9;2621:6;2561:87;;2665:312;2805:2;2790:18;;2819:71;2794:9;2863:6;2819:71;;;2901:66;2963:2;2952:9;2948:18;2939:6;2901:66;;;2776:201;;;;;;2984:423;3152:2;3137:18;;3166:71;3141:9;3210:6;3166:71;;;3248:66;3310:2;3299:9;3295:18;3286:6;3248:66;;;3325:72;3393:2;3382:9;3378:18;3369:6;3325:72;;3414:503;3598:2;3612:47;;;3583:18;;3673:74;3583:18;3733:6;3673:74;;;3665:82;;3758:72;3826:2;3815:9;3811:18;3802:6;3758:72;;;3841:66;3903:2;3892:9;3888:18;3879:6;3841:66;;3924:407;4115:2;4129:47;;;4100:18;;4190:131;4100:18;4190:131;;4338:213;4456:2;4441:18;;4470:71;4445:9;4514:6;4470:71;;4558:256;4620:2;4614:9;4646:17;;;4721:18;4706:34;;4742:22;;;4703:62;4700:2;;;4778:1;4775;4768:12;4700:2;4794;4787:22;4598:216;;-1:-1;4598:216;4821:318;;4961:18;4953:6;4950:30;4947:2;;;4993:1;4990;4983:12;4947:2;-1:-1;5124:4;5060;5037:17;;;;-1:-1;;5033:33;5114:15;;4884:255;5146:118;5230:12;;5201:63;5272:163;5375:19;;;5424:4;5415:14;;5368:67;5443:91;;5505:24;5523:5;5505:24;;5647:85;5713:13;5706:21;;5689:43;5739:121;-1:-1;;;;;5801:54;;5784:76;5867:72;5929:5;5912:27;5947:145;6028:6;6023:3;6018;6005:30;-1:-1;6084:1;6066:16;;6059:27;5998:94;6101:268;6166:1;6173:101;6187:6;6184:1;6181:13;6173:101;;;6254:11;;;6248:18;6235:11;;;6228:39;6209:2;6202:10;6173:101;;;6289:6;6286:1;6283:13;6280:2;;;6354:1;6345:6;6340:3;6336:16;6329:27;6280:2;6150:219;;;;;6377:97;6465:2;6445:14;-1:-1;;6441:28;;6425:49;6482:117;6551:24;6569:5;6551:24;;;6544:5;6541:35;6531:2;;6590:1;6587;6580:12",
+    "sourcePath": "/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.5.16+commit.9c3226ce"
+    },
+    "ast": {
+        "absolutePath": "/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol",
+        "exportedSymbols": {
+            "InsuranceFactory": [
+                172
+            ]
+        },
+        "id": 173,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    ">",
+                    "0.4",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:23:0"
+            },
+            {
+                "id": 2,
+                "literals": [
+                    "experimental",
+                    "ABIEncoderV2"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "56:33:0"
+            },
+            {
+                "absolutePath": "/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/OperacionesBasicas.sol",
+                "file": "../Trabajo-Final/Tools/OperacionesBasicas.sol",
+                "id": 3,
+                "nodeType": "ImportDirective",
+                "scope": 173,
+                "sourceUnit": 627,
+                "src": "90:55:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/ERC20.sol",
+                "file": "../Trabajo-Final/Tools/ERC20.sol",
+                "id": 4,
+                "nodeType": "ImportDirective",
+                "scope": 173,
+                "sourceUnit": 515,
+                "src": "146:42:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "baseContracts": [
+                    {
+                        "arguments": null,
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 5,
+                            "name": "OperacionesBasicas",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 626,
+                            "src": "258:18:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_OperacionesBasicas_$626",
+                                "typeString": "contract OperacionesBasicas"
+                            }
+                        },
+                        "id": 6,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "258:18:0"
+                    }
+                ],
+                "contractDependencies": [
+                    514,
+                    626
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 172,
+                "linearizedBaseContracts": [
+                    172,
+                    626
+                ],
+                "name": "InsuranceFactory",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 27,
+                            "nodeType": "Block",
+                            "src": "303:113:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 14,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 9,
+                                            "name": "token",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 49,
+                                            "src": "313:5:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_ERC20Basic_$514",
+                                                "typeString": "contract ERC20Basic"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "arguments": [
+                                                {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "313030",
+                                                    "id": 12,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "336:3:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_100_by_1",
+                                                        "typeString": "int_const 100"
+                                                    },
+                                                    "value": "100"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_rational_100_by_1",
+                                                        "typeString": "int_const 100"
+                                                    }
+                                                ],
+                                                "id": 11,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "NewExpression",
+                                                "src": "321:14:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_function_creation_nonpayable$_t_uint256_$returns$_t_contract$_ERC20Basic_$514_$",
+                                                    "typeString": "function (uint256) returns (contract ERC20Basic)"
+                                                },
+                                                "typeName": {
+                                                    "contractScope": null,
+                                                    "id": 10,
+                                                    "name": "ERC20Basic",
+                                                    "nodeType": "UserDefinedTypeName",
+                                                    "referencedDeclaration": 514,
+                                                    "src": "325:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_contract$_ERC20Basic_$514",
+                                                        "typeString": "contract ERC20Basic"
+                                                    }
+                                                }
+                                            },
+                                            "id": 13,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "functionCall",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "321:19:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_ERC20Basic_$514",
+                                                "typeString": "contract ERC20Basic"
+                                            }
+                                        },
+                                        "src": "313:27:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_ERC20Basic_$514",
+                                            "typeString": "contract ERC20Basic"
+                                        }
+                                    },
+                                    "id": 15,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "313:27:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 20,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 16,
+                                            "name": "Insurance",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 51,
+                                            "src": "350:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "arguments": [
+                                                {
+                                                    "argumentTypes": null,
+                                                    "id": 18,
+                                                    "name": "this",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 745,
+                                                    "src": "370:4:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_contract$_InsuranceFactory_$172",
+                                                        "typeString": "contract InsuranceFactory"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_contract$_InsuranceFactory_$172",
+                                                        "typeString": "contract InsuranceFactory"
+                                                    }
+                                                ],
+                                                "id": 17,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "lValueRequested": false,
+                                                "nodeType": "ElementaryTypeNameExpression",
+                                                "src": "362:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_address_$",
+                                                    "typeString": "type(address)"
+                                                },
+                                                "typeName": "address"
+                                            },
+                                            "id": 19,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "typeConversion",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "362:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "src": "350:25:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "id": 21,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "350:25:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 25,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 22,
+                                            "name": "Aseguradora",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 53,
+                                            "src": "385:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address_payable",
+                                                "typeString": "address payable"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 23,
+                                                "name": "msg",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 723,
+                                                "src": "399:3:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_magic_message",
+                                                    "typeString": "msg"
+                                                }
+                                            },
+                                            "id": 24,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "sender",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "399:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address_payable",
+                                                "typeString": "address payable"
+                                            }
+                                        },
+                                        "src": "385:24:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address_payable",
+                                            "typeString": "address payable"
+                                        }
+                                    },
+                                    "id": 26,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "385:24:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 28,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 7,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "294:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 8,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "303:0:0"
+                        },
+                        "scope": 172,
+                        "src": "283:133:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "InsuranceFactory.cliente",
+                        "id": 35,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 30,
+                                "name": "DireccionCliente",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35,
+                                "src": "446:24:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 29,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "446:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 32,
+                                "name": "Autorizacion",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35,
+                                "src": "480:17:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 31,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "480:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 34,
+                                "name": "DireccionContrato",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35,
+                                "src": "507:25:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 33,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "507:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "cliente",
+                        "nodeType": "StructDefinition",
+                        "scope": 172,
+                        "src": "422:117:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "InsuranceFactory.servicio",
+                        "id": 42,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 37,
+                                "name": "nombreServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 42,
+                                "src": "570:21:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 36,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "570:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 39,
+                                "name": "precioTokens",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 42,
+                                "src": "601:17:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 38,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "601:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 41,
+                                "name": "EstadoServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 42,
+                                "src": "628:19:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 40,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "628:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "servicio",
+                        "nodeType": "StructDefinition",
+                        "scope": 172,
+                        "src": "545:109:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "InsuranceFactory.lab",
+                        "id": 47,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 44,
+                                "name": "direccionContratoLab",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 47,
+                                "src": "680:28:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 43,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "680:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 46,
+                                "name": "ValidacionLab",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 47,
+                                "src": "718:18:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 45,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "718:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "lab",
+                        "nodeType": "StructDefinition",
+                        "scope": 172,
+                        "src": "660:83:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 49,
+                        "name": "token",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "782:24:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_ERC20Basic_$514",
+                            "typeString": "contract ERC20Basic"
+                        },
+                        "typeName": {
+                            "contractScope": null,
+                            "id": 48,
+                            "name": "ERC20Basic",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 514,
+                            "src": "782:10:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_ERC20Basic_$514",
+                                "typeString": "contract ERC20Basic"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "private"
+                    },
+                    {
+                        "constant": false,
+                        "id": 51,
+                        "name": "Insurance",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "850:17:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                        },
+                        "typeName": {
+                            "id": 50,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "850:7:0",
+                            "stateMutability": "nonpayable",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 53,
+                        "name": "Aseguradora",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "898:34:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                        },
+                        "typeName": {
+                            "id": 52,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "898:15:0",
+                            "stateMutability": "payable",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 57,
+                        "name": "MappingClientes",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "995:48:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_cliente_$35_storage_$",
+                            "typeString": "mapping(address => struct InsuranceFactory.cliente)"
+                        },
+                        "typeName": {
+                            "id": 56,
+                            "keyType": {
+                                "id": 54,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1003:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "995:25:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_cliente_$35_storage_$",
+                                "typeString": "mapping(address => struct InsuranceFactory.cliente)"
+                            },
+                            "valueType": {
+                                "contractScope": null,
+                                "id": 55,
+                                "name": "cliente",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 35,
+                                "src": "1012:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_cliente_$35_storage_ptr",
+                                    "typeString": "struct InsuranceFactory.cliente"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 61,
+                        "name": "MappingServicios",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "1049:49:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_servicio_$42_storage_$",
+                            "typeString": "mapping(string => struct InsuranceFactory.servicio)"
+                        },
+                        "typeName": {
+                            "id": 60,
+                            "keyType": {
+                                "id": 58,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1057:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "1049:25:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_servicio_$42_storage_$",
+                                "typeString": "mapping(string => struct InsuranceFactory.servicio)"
+                            },
+                            "valueType": {
+                                "contractScope": null,
+                                "id": 59,
+                                "name": "servicio",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 42,
+                                "src": "1065:8:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_servicio_$42_storage_ptr",
+                                    "typeString": "struct InsuranceFactory.servicio"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 65,
+                        "name": "MappingLabs",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "1104:40:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_lab_$47_storage_$",
+                            "typeString": "mapping(address => struct InsuranceFactory.lab)"
+                        },
+                        "typeName": {
+                            "id": 64,
+                            "keyType": {
+                                "id": 62,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1112:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "1104:21:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_lab_$47_storage_$",
+                                "typeString": "mapping(address => struct InsuranceFactory.lab)"
+                            },
+                            "valueType": {
+                                "contractScope": null,
+                                "id": 63,
+                                "name": "lab",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 47,
+                                "src": "1121:3:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_lab_$47_storage_ptr",
+                                    "typeString": "struct InsuranceFactory.lab"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 68,
+                        "name": "direccionClientes",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "1212:27:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                            "typeString": "address[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "id": 66,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1212:7:0",
+                                "stateMutability": "nonpayable",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "id": 67,
+                            "length": null,
+                            "nodeType": "ArrayTypeName",
+                            "src": "1212:9:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                                "typeString": "address[]"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 71,
+                        "name": "nomServicio",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "1245:28:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                            "typeString": "string[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "id": 69,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1245:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "id": 70,
+                            "length": null,
+                            "nodeType": "ArrayTypeName",
+                            "src": "1245:8:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                                "typeString": "string[]"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "private"
+                    },
+                    {
+                        "constant": false,
+                        "id": 74,
+                        "name": "direccionesLabs",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 172,
+                        "src": "1279:33:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                            "typeString": "address[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "id": 72,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "1279:7:0",
+                                "stateMutability": "nonpayable",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "id": 73,
+                            "length": null,
+                            "nodeType": "ArrayTypeName",
+                            "src": "1279:9:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                                "typeString": "address[]"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "private"
+                    },
+                    {
+                        "body": {
+                            "id": 89,
+                            "nodeType": "Block",
+                            "src": "1394:133:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                "id": 85,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "baseExpression": {
+                                                            "argumentTypes": null,
+                                                            "id": 80,
+                                                            "name": "MappingClientes",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 57,
+                                                            "src": "1412:15:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_cliente_$35_storage_$",
+                                                                "typeString": "mapping(address => struct InsuranceFactory.cliente storage ref)"
+                                                            }
+                                                        },
+                                                        "id": 82,
+                                                        "indexExpression": {
+                                                            "argumentTypes": null,
+                                                            "id": 81,
+                                                            "name": "_direccioAsegurado",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 76,
+                                                            "src": "1428:18:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_address",
+                                                                "typeString": "address"
+                                                            }
+                                                        },
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "nodeType": "IndexAccess",
+                                                        "src": "1412:35:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_cliente_$35_storage",
+                                                            "typeString": "struct InsuranceFactory.cliente storage ref"
+                                                        }
+                                                    },
+                                                    "id": 83,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "Autorizacion",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 32,
+                                                    "src": "1412:48:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "74727565",
+                                                    "id": 84,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "bool",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "1464:4:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    },
+                                                    "value": "true"
+                                                },
+                                                "src": "1412:56:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "hexValue": "4e6f2065737461206175746f72697a61646f2070617261207265616c697a61722065737461206f7065726163696f6e",
+                                                "id": 86,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "1470:49:0",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_48a40ec61a482fcf39e26684a491cb42a546c66d2accc21e6c03bd50799706fa",
+                                                    "typeString": "literal_string \"No esta autorizado para realizar esta operacion\""
+                                                },
+                                                "value": "No esta autorizado para realizar esta operacion"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_48a40ec61a482fcf39e26684a491cb42a546c66d2accc21e6c03bd50799706fa",
+                                                    "typeString": "literal_string \"No esta autorizado para realizar esta operacion\""
+                                                }
+                                            ],
+                                            "id": 79,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                726,
+                                                727
+                                            ],
+                                            "referencedDeclaration": 727,
+                                            "src": "1404:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (bool,string memory) pure"
+                                            }
+                                        },
+                                        "id": 87,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1404:116:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 88,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1404:116:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 90,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "FuncionUnicamenteAsegurados",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 77,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 76,
+                                    "name": "_direccioAsegurado",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 90,
+                                    "src": "1356:26:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 75,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1356:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1355:28:0"
+                        },
+                        "returnParameters": {
+                            "id": 78,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1394:0:0"
+                        },
+                        "scope": 172,
+                        "src": "1319:208:0",
+                        "stateMutability": "view",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 99,
+                            "nodeType": "Block",
+                            "src": "1647:76:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 95,
+                                                "name": "_direccionAsegurado",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 92,
+                                                "src": "1685:19:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 94,
+                                            "name": "FuncionUnicamenteAsegurados",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 90,
+                                            "src": "1657:27:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_address_$returns$__$",
+                                                "typeString": "function (address) view"
+                                            }
+                                        },
+                                        "id": 96,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1657:48:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 97,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1657:48:0"
+                                },
+                                {
+                                    "id": 98,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "1715:1:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 100,
+                        "name": "UnicamenteAsegurados",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 93,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 92,
+                                    "name": "_direccionAsegurado",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 100,
+                                    "src": "1619:27:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 91,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1619:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1618:29:0"
+                        },
+                        "src": "1589:134:0",
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 112,
+                            "nodeType": "Block",
+                            "src": "1790:164:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                "id": 107,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 105,
+                                                    "name": "Aseguradora",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 53,
+                                                    "src": "1808:11:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address_payable",
+                                                        "typeString": "address payable"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 106,
+                                                    "name": "_direccionAseguradora",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 102,
+                                                    "src": "1823:21:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "src": "1808:36:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "hexValue": "4e6f2065737461206175746f72697a61646f2070617261207265616c697a61722065737461206f7065726163696f6e20736f6c6f20706572736f6e616c206465206c612061736567757261646f7261",
+                                                "id": 108,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "1854:81:0",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_8bfaeb77f0e9d8547e2dec40b3b9fae6d4413c37bee659e08a33454b48fb4c78",
+                                                    "typeString": "literal_string \"No esta autorizado para realizar esta operacion solo personal de la aseguradora\""
+                                                },
+                                                "value": "No esta autorizado para realizar esta operacion solo personal de la aseguradora"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_8bfaeb77f0e9d8547e2dec40b3b9fae6d4413c37bee659e08a33454b48fb4c78",
+                                                    "typeString": "literal_string \"No esta autorizado para realizar esta operacion solo personal de la aseguradora\""
+                                                }
+                                            ],
+                                            "id": 104,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                726,
+                                                727
+                                            ],
+                                            "referencedDeclaration": 727,
+                                            "src": "1800:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (bool,string memory) pure"
+                                            }
+                                        },
+                                        "id": 109,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1800:136:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 110,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1800:136:0"
+                                },
+                                {
+                                    "id": 111,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "1946:1:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 113,
+                        "name": "UnicamenteAseguradora",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 103,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 102,
+                                    "name": "_direccionAseguradora",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 113,
+                                    "src": "1760:29:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 101,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1760:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1759:31:0"
+                        },
+                        "src": "1729:225:0",
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 131,
+                            "nodeType": "Block",
+                            "src": "2056:194:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                "id": 122,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 120,
+                                                    "name": "Aseguradora",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 53,
+                                                    "src": "2074:11:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address_payable",
+                                                        "typeString": "address payable"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 121,
+                                                    "name": "_direccionAseguradora",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 115,
+                                                    "src": "2089:21:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "src": "2074:36:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "hexValue": "4e6f2065737461206175746f72697a61646f2070617261207265616c697a61722065737461206f7065726163696f6e20736f6c6f20636c69656e746573",
+                                                "id": 123,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "2112:63:0",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_b231ea4de00e1aedf0132d5ac4619c979940f9082ada4ed67d2c0db640a7a5da",
+                                                    "typeString": "literal_string \"No esta autorizado para realizar esta operacion solo clientes\""
+                                                },
+                                                "value": "No esta autorizado para realizar esta operacion solo clientes"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_b231ea4de00e1aedf0132d5ac4619c979940f9082ada4ed67d2c0db640a7a5da",
+                                                    "typeString": "literal_string \"No esta autorizado para realizar esta operacion solo clientes\""
+                                                }
+                                            ],
+                                            "id": 119,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                726,
+                                                727
+                                            ],
+                                            "referencedDeclaration": 727,
+                                            "src": "2066:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (bool,string memory) pure"
+                                            }
+                                        },
+                                        "id": 124,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "2066:110:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 125,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "2066:110:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 127,
+                                                "name": "_direccionCliente",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 117,
+                                                "src": "2214:17:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 126,
+                                            "name": "FuncionUnicamenteAsegurados",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 90,
+                                            "src": "2186:27:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_address_$returns$__$",
+                                                "typeString": "function (address) view"
+                                            }
+                                        },
+                                        "id": 128,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "2186:46:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 129,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "2186:46:0"
+                                },
+                                {
+                                    "id": 130,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "2242:1:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 132,
+                        "name": "UnicamenteAseguradoraYCliente",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 118,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 115,
+                                    "name": "_direccionAseguradora",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 132,
+                                    "src": "1999:29:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 114,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1999:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 117,
+                                    "name": "_direccionCliente",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 132,
+                                    "src": "2030:25:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 116,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2030:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1998:58:0"
+                        },
+                        "src": "1960:290:0",
+                        "visibility": "internal"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 136,
+                        "name": "EventoComprado",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 135,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 134,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 136,
+                                    "src": "2616:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 133,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2616:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2615:9:0"
+                        },
+                        "src": "2595:30:0"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 145,
+                        "name": "EventoServicioProporcionado",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 144,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 138,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 145,
+                                    "src": "2664:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 137,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2664:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 141,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 145,
+                                    "src": "2673:8:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_array$_t_string_memory_$dyn_memory_ptr",
+                                        "typeString": "string[]"
+                                    },
+                                    "typeName": {
+                                        "baseType": {
+                                            "id": 139,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "2673:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "id": 140,
+                                        "length": null,
+                                        "nodeType": "ArrayTypeName",
+                                        "src": "2673:8:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                                            "typeString": "string[]"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 143,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 145,
+                                    "src": "2683:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 142,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2683:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2663:28:0"
+                        },
+                        "src": "2630:62:0"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 151,
+                        "name": "LaboratorioCreado",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 150,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 147,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 151,
+                                    "src": "2721:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 146,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2721:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 149,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 151,
+                                    "src": "2730:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 148,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2730:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2720:18:0"
+                        },
+                        "src": "2697:42:0"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 157,
+                        "name": "AseguradoCreado",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 156,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 153,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 157,
+                                    "src": "2766:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 152,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2766:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 155,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 157,
+                                    "src": "2775:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 154,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2775:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2765:18:0"
+                        },
+                        "src": "2744:40:0"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 161,
+                        "name": "BajaCliente",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 160,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 159,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 161,
+                                    "src": "2807:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 158,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2807:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2806:9:0"
+                        },
+                        "src": "2789:27:0"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 167,
+                        "name": "ServicioCreado",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 166,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 163,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 167,
+                                    "src": "2842:6:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 162,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2842:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 165,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 167,
+                                    "src": "2850:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 164,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2850:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2841:17:0"
+                        },
+                        "src": "2821:38:0"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 171,
+                        "name": "BajaServicio",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 170,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 169,
+                                    "indexed": false,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 171,
+                                    "src": "2883:6:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 168,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "2883:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "2882:8:0"
+                        },
+                        "src": "2864:27:0"
+                    }
+                ],
+                "scope": 173,
+                "src": "229:2666:0"
+            }
+        ],
+        "src": "32:2863:0"
+    },
+    "functionHashes": {
+        "Aseguradora()": "1a6f0d8c",
+        "FuncionUnicamenteAsegurados(address)": "86120ece",
+        "MappingClientes(address)": "990d400b",
+        "MappingLabs(address)": "d89ac531",
+        "MappingServicios(string)": "ca48d363",
+        "getBalance()": "12065fe0"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "291600",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "Aseguradora()": "infinite",
+            "FuncionUnicamenteAsegurados(address)": "infinite",
+            "MappingClientes(address)": "infinite",
+            "MappingLabs(address)": "infinite",
+            "MappingServicios(string)": "infinite",
+            "getBalance()": "976"
+        }
+    }
+}
