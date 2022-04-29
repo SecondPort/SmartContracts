@@ -136,7 +136,6 @@ contract InsuranceFactory is OperacionesBasicas{
                 historial = string(abi.encodePacked(historial, "(", _nomServicio, ",", uint2str(precioServicio), ")-----"));
             }
         }
-
         return historial;
     }
 
