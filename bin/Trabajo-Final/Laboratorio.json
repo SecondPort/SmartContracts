@@ -49,11 +49,11 @@
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_direccionContratosAseguradora\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"DireccionLab\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ethers\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol\":\"Laboratorio\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol\":{\"keccak256\":\"0xf904c656b1df3d3012cab65d82a8763b2d84f5dfa2aabc2c12a7c2f3e6f33c2a\",\"urls\":[\"bzz-raw://9f34626322fec15d5faa2701d7559396784a0788271bf714ebbd99c06339e024\",\"dweb:/ipfs/QmSXHZouZD5oPQKN8pp8ukKPBXrVd3ygnzPc2UrDW3r5wy\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/ERC20.sol\":{\"keccak256\":\"0x77927b9d99bbc195568631e045e52534eea624b4857ce258402ce00cc7391aa6\",\"urls\":[\"bzz-raw://c5e48ce33fe82b0895bddba091637a03644f00c02a1bf933ba7d641b47811bb0\",\"dweb:/ipfs/QmfSMzcSFtScksqv9K9kVPP1SzoWxsbcEU3XUw845UBpkV\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/OperacionesBasicas.sol\":{\"keccak256\":\"0x5f30390f638e84c5030e7d22c1efb160f84f60f5362885e0803f572a9d923bbd\",\"urls\":[\"bzz-raw://b68699f6c6fd0ac1edf094d2d848088e9db3ec90984d3acec243c7e0583f23cf\",\"dweb:/ipfs/QmdXAYVzKLAAdWAFUd6VihCDUncMnG2pKCnZnsWDejLdgU\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/SafeMath.sol\":{\"keccak256\":\"0x1da4562c557a593185358c7411fa647c3183781b37f423030d98a3c01d0bdedb\",\"urls\":[\"bzz-raw://82d8a0ad5b3a5be9d9cef48c800ccfe771ef55f22b9f2c169391991e2d1e1adc\",\"dweb:/ipfs/QmVbyn34mpyTWFgstExvaN7SsmFYZdKSEGEHfPPfWEHejC\"]}},\"version\":1}",
-    "bytecode": "608060405234801561001057600080fd5b506040516101df3803806101df83398101604081905261002f91610071565b600080546001600160a01b039384166001600160a01b031991821617909155600180549290931691161790556100d3565b805161006b816100bc565b92915050565b6000806040838503121561008457600080fd5b60006100908585610060565b92505060206100a185828601610060565b9150509250929050565b60006001600160a01b03821661006b565b6100c5816100ab565b81146100d057600080fd5b50565b60fe806100e16000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806312065fe0146037578063df02634f146051575b600080fd5b603d6062565b60405160489190609c565b60405180910390f35b60576067565b60405160489190608a565b303190565b6000546001600160a01b031681565b607d8160a8565b82525050565b607d8160b8565b60208101609682846076565b92915050565b60208101609682846083565b60006001600160a01b0382166096565b9056fea365627a7a72315820ea01c807a6d712fddfca7cec0e415066d54cba36df38cd4cd5e8721ba37fb0536c6578706572696d656e74616cf564736f6c63430005100040",
-    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060325760003560e01c806312065fe0146037578063df02634f146051575b600080fd5b603d6062565b60405160489190609c565b60405180910390f35b60576067565b60405160489190608a565b303190565b6000546001600160a01b031681565b607d8160a8565b82525050565b607d8160b8565b60208101609682846076565b92915050565b60208101609682846083565b60006001600160a01b0382166096565b9056fea365627a7a72315820ea01c807a6d712fddfca7cec0e415066d54cba36df38cd4cd5e8721ba37fb0536c6578706572696d656e74616cf564736f6c63430005100040",
-    "sourceMap": "5485:393:0:-;;;5701:175;8:9:-1;5:2;;;30:1;27;20:12;5:2;5701:175:0;;;;;;;;;;;;;;;;;;;;;5786:12;:21;;-1:-1:-1;;;;;5786:21:0;;;-1:-1:-1;;;;;;5786:21:0;;;;;;;-1:-1:-1;5817:52:0;;;;;;;;;;;5485:393;;5:134:-1;83:13;;101:33;83:13;101:33;;;68:71;;;;;146:399;;;278:2;266:9;257:7;253:23;249:32;246:2;;;294:1;291;284:12;246:2;329:1;346:64;402:7;382:9;346:64;;;336:74;;308:108;447:2;465:64;521:7;512:6;501:9;497:22;465:64;;;455:74;;426:109;240:305;;;;;;552:91;;-1:-1;;;;;712:54;;614:24;695:76;778:117;847:24;865:5;847:24;;;840:5;837:35;827:2;;886:1;883;876:12;827:2;821:74;;;5485:393:0;;;;;;",
-    "deployedSourceMap": "5485:393:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;5485:393:0;;;;;;;;;;;;;;;;;;;;;;;;374:101:2;;;:::i;:::-;;;;;;;;;;;;;;;;5589:27:0;;;:::i;:::-;;;;;;;;374:101:2;454:4;445:23;374:101;:::o;5589:27:0:-;;;-1:-1:-1;;;;;5589:27:0;;:::o;5:113:-1:-;88:24;106:5;88:24;;;83:3;76:37;70:48;;;125:113;208:24;226:5;208:24;;245:213;363:2;348:18;;377:71;352:9;421:6;377:71;;;334:124;;;;;465:213;583:2;568:18;;597:71;572:9;641:6;597:71;;685:91;;-1:-1;;;;;845:54;;747:24;828:76;911:72;973:5;956:27",
+    "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_direccionContratosAseguradora\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"DireccionLab\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ethers\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol\":\"Laboratorio\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol\":{\"keccak256\":\"0xf3d11ed3636305aa760b703d282b56da5dc52c1ce2d2dc8f894d8c94e6a1d8c3\",\"urls\":[\"bzz-raw://24b431f7ea5dfebac95dc885b376fbf6e7c1cdea68788ef234513989ad98a507\",\"dweb:/ipfs/QmSroRqwqodmteQad4tSgku1VYcrM9KYzwZewBagyBmoXF\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/ERC20.sol\":{\"keccak256\":\"0x77927b9d99bbc195568631e045e52534eea624b4857ce258402ce00cc7391aa6\",\"urls\":[\"bzz-raw://c5e48ce33fe82b0895bddba091637a03644f00c02a1bf933ba7d641b47811bb0\",\"dweb:/ipfs/QmfSMzcSFtScksqv9K9kVPP1SzoWxsbcEU3XUw845UBpkV\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/OperacionesBasicas.sol\":{\"keccak256\":\"0x5f30390f638e84c5030e7d22c1efb160f84f60f5362885e0803f572a9d923bbd\",\"urls\":[\"bzz-raw://b68699f6c6fd0ac1edf094d2d848088e9db3ec90984d3acec243c7e0583f23cf\",\"dweb:/ipfs/QmdXAYVzKLAAdWAFUd6VihCDUncMnG2pKCnZnsWDejLdgU\"]},\"/home/secondport/Documents/SmartContracts/Trabajo-Final/Tools/SafeMath.sol\":{\"keccak256\":\"0x1da4562c557a593185358c7411fa647c3183781b37f423030d98a3c01d0bdedb\",\"urls\":[\"bzz-raw://82d8a0ad5b3a5be9d9cef48c800ccfe771ef55f22b9f2c169391991e2d1e1adc\",\"dweb:/ipfs/QmVbyn34mpyTWFgstExvaN7SsmFYZdKSEGEHfPPfWEHejC\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506040516101df3803806101df83398101604081905261002f91610071565b600080546001600160a01b039384166001600160a01b031991821617909155600180549290931691161790556100d3565b805161006b816100bc565b92915050565b6000806040838503121561008457600080fd5b60006100908585610060565b92505060206100a185828601610060565b9150509250929050565b60006001600160a01b03821661006b565b6100c5816100ab565b81146100d057600080fd5b50565b60fe806100e16000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806312065fe0146037578063df02634f146051575b600080fd5b603d6062565b60405160489190609c565b60405180910390f35b60576067565b60405160489190608a565b303190565b6000546001600160a01b031681565b607d8160a8565b82525050565b607d8160b8565b60208101609682846076565b92915050565b60208101609682846083565b60006001600160a01b0382166096565b9056fea365627a7a723158205b9e8e85e57b331d3e69fb1cedf1f7605b773b4adc08cbf3a42d9362ab80b03a6c6578706572696d656e74616cf564736f6c63430005100040",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060325760003560e01c806312065fe0146037578063df02634f146051575b600080fd5b603d6062565b60405160489190609c565b60405180910390f35b60576067565b60405160489190608a565b303190565b6000546001600160a01b031681565b607d8160a8565b82525050565b607d8160b8565b60208101609682846076565b92915050565b60208101609682846083565b60006001600160a01b0382166096565b9056fea365627a7a723158205b9e8e85e57b331d3e69fb1cedf1f7605b773b4adc08cbf3a42d9362ab80b03a6c6578706572696d656e74616cf564736f6c63430005100040",
+    "sourceMap": "6053:393:0:-;;;6269:175;8:9:-1;5:2;;;30:1;27;20:12;5:2;6269:175:0;;;;;;;;;;;;;;;;;;;;;6354:12;:21;;-1:-1:-1;;;;;6354:21:0;;;-1:-1:-1;;;;;;6354:21:0;;;;;;;-1:-1:-1;6385:52:0;;;;;;;;;;;6053:393;;5:134:-1;83:13;;101:33;83:13;101:33;;;68:71;;;;;146:399;;;278:2;266:9;257:7;253:23;249:32;246:2;;;294:1;291;284:12;246:2;329:1;346:64;402:7;382:9;346:64;;;336:74;;308:108;447:2;465:64;521:7;512:6;501:9;497:22;465:64;;;455:74;;426:109;240:305;;;;;;552:91;;-1:-1;;;;;712:54;;614:24;695:76;778:117;847:24;865:5;847:24;;;840:5;837:35;827:2;;886:1;883;876:12;827:2;821:74;;;6053:393:0;;;;;;",
+    "deployedSourceMap": "6053:393:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;6053:393:0;;;;;;;;;;;;;;;;;;;;;;;;374:101:2;;;:::i;:::-;;;;;;;;;;;;;;;;6157:27:0;;;:::i;:::-;;;;;;;;374:101:2;454:4;445:23;374:101;:::o;6157:27:0:-;;;-1:-1:-1;;;;;6157:27:0;;:::o;5:113:-1:-;88:24;106:5;88:24;;;83:3;76:37;70:48;;;125:113;208:24;226:5;208:24;;245:213;363:2;348:18;;377:71;352:9;421:6;377:71;;;334:124;;;;;465:213;583:2;568:18;;597:71;572:9;641:6;597:71;;685:91;;-1:-1;;;;;845:54;;747:24;828:76;911:72;973:5;956:27",
     "sourcePath": "/home/secondport/Documents/SmartContracts/Trabajo-Final/Aseguradora.sol",
     "compiler": {
         "name": "solc",
@@ -66,13 +66,13 @@
                 278
             ],
             "InsuranceHealthRecord": [
-                346
+                378
             ],
             "Laboratorio": [
-                369
+                401
             ]
         },
-        "id": 370,
+        "id": 402,
         "nodeType": "SourceUnit",
         "nodes": [
             {
@@ -100,8 +100,8 @@
                 "file": "../Trabajo-Final/Tools/OperacionesBasicas.sol",
                 "id": 3,
                 "nodeType": "ImportDirective",
-                "scope": 370,
-                "sourceUnit": 824,
+                "scope": 402,
+                "sourceUnit": 856,
                 "src": "90:55:0",
                 "symbolAliases": [],
                 "unitAlias": ""
@@ -111,8 +111,8 @@
                 "file": "../Trabajo-Final/Tools/ERC20.sol",
                 "id": 4,
                 "nodeType": "ImportDirective",
-                "scope": 370,
-                "sourceUnit": 712,
+                "scope": 402,
+                "sourceUnit": 744,
                 "src": "146:42:0",
                 "symbolAliases": [],
                 "unitAlias": ""
@@ -126,10 +126,10 @@
                             "id": 5,
                             "name": "OperacionesBasicas",
                             "nodeType": "UserDefinedTypeName",
-                            "referencedDeclaration": 823,
+                            "referencedDeclaration": 855,
                             "src": "258:18:0",
                             "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_OperacionesBasicas_$823",
+                                "typeIdentifier": "t_contract$_OperacionesBasicas_$855",
                                 "typeString": "contract OperacionesBasicas"
                             }
                         },
@@ -139,10 +139,10 @@
                     }
                 ],
                 "contractDependencies": [
-                    346,
-                    369,
-                    711,
-                    823
+                    378,
+                    401,
+                    743,
+                    855
                 ],
                 "contractKind": "contract",
                 "documentation": null,
@@ -150,7 +150,7 @@
                 "id": 278,
                 "linearizedBaseContracts": [
                     278,
-                    823
+                    855
                 ],
                 "name": "InsuranceFactory",
                 "nodeType": "ContractDefinition",
@@ -178,7 +178,7 @@
                                             "referencedDeclaration": 49,
                                             "src": "313:5:0",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                                "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                                 "typeString": "contract ERC20Basic"
                                             }
                                         },
@@ -221,7 +221,7 @@
                                                 "nodeType": "NewExpression",
                                                 "src": "321:14:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_function_creation_nonpayable$_t_uint256_$returns$_t_contract$_ERC20Basic_$711_$",
+                                                    "typeIdentifier": "t_function_creation_nonpayable$_t_uint256_$returns$_t_contract$_ERC20Basic_$743_$",
                                                     "typeString": "function (uint256) returns (contract ERC20Basic)"
                                                 },
                                                 "typeName": {
@@ -229,10 +229,10 @@
                                                     "id": 10,
                                                     "name": "ERC20Basic",
                                                     "nodeType": "UserDefinedTypeName",
-                                                    "referencedDeclaration": 711,
+                                                    "referencedDeclaration": 743,
                                                     "src": "325:10:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                                        "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                                         "typeString": "contract ERC20Basic"
                                                     }
                                                 }
@@ -247,13 +247,13 @@
                                             "nodeType": "FunctionCall",
                                             "src": "321:19:0",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                                "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                                 "typeString": "contract ERC20Basic"
                                             }
                                         },
                                         "src": "313:27:0",
                                         "typeDescriptions": {
-                                            "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                            "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                             "typeString": "contract ERC20Basic"
                                         }
                                     },
@@ -293,7 +293,7 @@
                                                     "name": "this",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 942,
+                                                    "referencedDeclaration": 974,
                                                     "src": "370:4:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_contract$_InsuranceFactory_$278",
@@ -376,7 +376,7 @@
                                                 "name": "msg",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 920,
+                                                "referencedDeclaration": 952,
                                                 "src": "399:3:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_magic_message",
@@ -688,7 +688,7 @@
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                            "typeIdentifier": "t_contract$_ERC20Basic_$743",
                             "typeString": "contract ERC20Basic"
                         },
                         "typeName": {
@@ -696,10 +696,10 @@
                             "id": 48,
                             "name": "ERC20Basic",
                             "nodeType": "UserDefinedTypeName",
-                            "referencedDeclaration": 711,
+                            "referencedDeclaration": 743,
                             "src": "782:10:0",
                             "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                 "typeString": "contract ERC20Basic"
                             }
                         },
@@ -1148,10 +1148,10 @@
                                             "name": "require",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [
-                                                923,
-                                                924
+                                                955,
+                                                956
                                             ],
-                                            "referencedDeclaration": 924,
+                                            "referencedDeclaration": 956,
                                             "src": "1497:7:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1428,10 +1428,10 @@
                                             "name": "require",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [
-                                                923,
-                                                924
+                                                955,
+                                                956
                                             ],
-                                            "referencedDeclaration": 924,
+                                            "referencedDeclaration": 956,
                                             "src": "2043:7:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1593,10 +1593,10 @@
                                             "name": "require",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [
-                                                923,
-                                                924
+                                                955,
+                                                956
                                             ],
-                                            "referencedDeclaration": 924,
+                                            "referencedDeclaration": 956,
                                             "src": "2393:7:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2213,7 +2213,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 920,
+                                                    "referencedDeclaration": 952,
                                                     "src": "3357:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -2335,7 +2335,7 @@
                                                             "name": "msg",
                                                             "nodeType": "Identifier",
                                                             "overloadedDeclarations": [],
-                                                            "referencedDeclaration": 920,
+                                                            "referencedDeclaration": 952,
                                                             "src": "3486:3:0",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_magic_message",
@@ -2389,7 +2389,7 @@
                                                     "nodeType": "NewExpression",
                                                     "src": "3470:15:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_Laboratorio_$369_$",
+                                                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_Laboratorio_$401_$",
                                                         "typeString": "function (address,address) returns (contract Laboratorio)"
                                                     },
                                                     "typeName": {
@@ -2397,10 +2397,10 @@
                                                         "id": 184,
                                                         "name": "Laboratorio",
                                                         "nodeType": "UserDefinedTypeName",
-                                                        "referencedDeclaration": 369,
+                                                        "referencedDeclaration": 401,
                                                         "src": "3474:11:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_contract$_Laboratorio_$369",
+                                                            "typeIdentifier": "t_contract$_Laboratorio_$401",
                                                             "typeString": "contract Laboratorio"
                                                         }
                                                     }
@@ -2415,7 +2415,7 @@
                                                 "nodeType": "FunctionCall",
                                                 "src": "3470:38:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_contract$_Laboratorio_$369",
+                                                    "typeIdentifier": "t_contract$_Laboratorio_$401",
                                                     "typeString": "contract Laboratorio"
                                                 }
                                             }
@@ -2423,7 +2423,7 @@
                                         "expression": {
                                             "argumentTypes": [
                                                 {
-                                                    "typeIdentifier": "t_contract$_Laboratorio_$369",
+                                                    "typeIdentifier": "t_contract$_Laboratorio_$401",
                                                     "typeString": "contract Laboratorio"
                                                 }
                                             ],
@@ -2489,7 +2489,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 920,
+                                                    "referencedDeclaration": 952,
                                                     "src": "3622:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -2616,7 +2616,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 920,
+                                                    "referencedDeclaration": 952,
                                                     "src": "3737:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -2736,7 +2736,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 920,
+                                                    "referencedDeclaration": 952,
                                                     "src": "3908:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -2858,7 +2858,7 @@
                                                             "name": "msg",
                                                             "nodeType": "Identifier",
                                                             "overloadedDeclarations": [],
-                                                            "referencedDeclaration": 920,
+                                                            "referencedDeclaration": 952,
                                                             "src": "4047:3:0",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_magic_message",
@@ -2888,7 +2888,7 @@
                                                         "referencedDeclaration": 49,
                                                         "src": "4059:5:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                                            "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                                             "typeString": "contract ERC20Basic"
                                                         }
                                                     },
@@ -2926,7 +2926,7 @@
                                                             "typeString": "address payable"
                                                         },
                                                         {
-                                                            "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                                            "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                                             "typeString": "contract ERC20Basic"
                                                         },
                                                         {
@@ -2946,7 +2946,7 @@
                                                     "nodeType": "NewExpression",
                                                     "src": "4021:25:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_contract$_ERC20Basic_$711_$_t_address_$_t_address_payable_$returns$_t_contract$_InsuranceHealthRecord_$346_$",
+                                                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_contract$_ERC20Basic_$743_$_t_address_$_t_address_payable_$returns$_t_contract$_InsuranceHealthRecord_$378_$",
                                                         "typeString": "function (address,contract ERC20Basic,address,address payable) returns (contract InsuranceHealthRecord)"
                                                     },
                                                     "typeName": {
@@ -2954,10 +2954,10 @@
                                                         "id": 222,
                                                         "name": "InsuranceHealthRecord",
                                                         "nodeType": "UserDefinedTypeName",
-                                                        "referencedDeclaration": 346,
+                                                        "referencedDeclaration": 378,
                                                         "src": "4025:21:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_contract$_InsuranceHealthRecord_$346",
+                                                            "typeIdentifier": "t_contract$_InsuranceHealthRecord_$378",
                                                             "typeString": "contract InsuranceHealthRecord"
                                                         }
                                                     }
@@ -2972,7 +2972,7 @@
                                                 "nodeType": "FunctionCall",
                                                 "src": "4021:68:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_contract$_InsuranceHealthRecord_$346",
+                                                    "typeIdentifier": "t_contract$_InsuranceHealthRecord_$378",
                                                     "typeString": "contract InsuranceHealthRecord"
                                                 }
                                             }
@@ -2980,7 +2980,7 @@
                                         "expression": {
                                             "argumentTypes": [
                                                 {
-                                                    "typeIdentifier": "t_contract$_InsuranceHealthRecord_$346",
+                                                    "typeIdentifier": "t_contract$_InsuranceHealthRecord_$378",
                                                     "typeString": "contract InsuranceHealthRecord"
                                                 }
                                             ],
@@ -3046,7 +3046,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 920,
+                                                    "referencedDeclaration": 952,
                                                     "src": "4199:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -3091,7 +3091,7 @@
                                                         "name": "msg",
                                                         "nodeType": "Identifier",
                                                         "overloadedDeclarations": [],
-                                                        "referencedDeclaration": 920,
+                                                        "referencedDeclaration": 952,
                                                         "src": "4221:3:0",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_magic_message",
@@ -3206,7 +3206,7 @@
                                                     "name": "msg",
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
-                                                    "referencedDeclaration": 920,
+                                                    "referencedDeclaration": 952,
                                                     "src": "4332:3:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_magic_message",
@@ -3350,7 +3350,7 @@
                                             "name": "msg",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 920,
+                                            "referencedDeclaration": 952,
                                             "src": "4507:3:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_magic_message",
@@ -3490,7 +3490,7 @@
                                             "name": "msg",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 920,
+                                            "referencedDeclaration": 952,
                                             "src": "4727:3:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_magic_message",
@@ -3589,54 +3589,76 @@
                         "visibility": "public"
                     }
                 ],
-                "scope": 370,
+                "scope": 402,
                 "src": "229:4578:0"
             },
             {
-                "baseContracts": [],
-                "contractDependencies": [],
+                "baseContracts": [
+                    {
+                        "arguments": null,
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 279,
+                            "name": "OperacionesBasicas",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 855,
+                            "src": "4843:18:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_OperacionesBasicas_$855",
+                                "typeString": "contract OperacionesBasicas"
+                            }
+                        },
+                        "id": 280,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "4843:18:0"
+                    }
+                ],
+                "contractDependencies": [
+                    855
+                ],
                 "contractKind": "contract",
                 "documentation": null,
                 "fullyImplemented": true,
-                "id": 346,
+                "id": 378,
                 "linearizedBaseContracts": [
-                    346
+                    378,
+                    855
                 ],
                 "name": "InsuranceHealthRecord",
                 "nodeType": "ContractDefinition",
                 "nodes": [
                     {
                         "canonicalName": "InsuranceHealthRecord.Estado",
-                        "id": 281,
+                        "id": 283,
                         "members": [
                             {
-                                "id": 279,
+                                "id": 281,
                                 "name": "ALTA",
                                 "nodeType": "EnumValue",
-                                "src": "4860:4:0"
+                                "src": "4882:4:0"
                             },
                             {
-                                "id": 280,
+                                "id": 282,
                                 "name": "BAJA",
                                 "nodeType": "EnumValue",
-                                "src": "4866:4:0"
+                                "src": "4888:4:0"
                             }
                         ],
                         "name": "Estado",
                         "nodeType": "EnumDefinition",
-                        "src": "4846:26:0"
+                        "src": "4868:26:0"
                     },
                     {
                         "canonicalName": "InsuranceHealthRecord.Owner",
-                        "id": 294,
+                        "id": 296,
                         "members": [
                             {
                                 "constant": false,
-                                "id": 283,
+                                "id": 285,
                                 "name": "direccionPropietario",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 294,
-                                "src": "4899:28:0",
+                                "scope": 296,
+                                "src": "4921:28:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -3644,10 +3666,10 @@
                                     "typeString": "address"
                                 },
                                 "typeName": {
-                                    "id": 282,
+                                    "id": 284,
                                     "name": "address",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "4899:7:0",
+                                    "src": "4921:7:0",
                                     "stateMutability": "nonpayable",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_address",
@@ -3659,11 +3681,11 @@
                             },
                             {
                                 "constant": false,
-                                "id": 285,
+                                "id": 287,
                                 "name": "saldoPropietario",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 294,
-                                "src": "4937:21:0",
+                                "scope": 296,
+                                "src": "4959:21:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -3671,10 +3693,10 @@
                                     "typeString": "uint256"
                                 },
                                 "typeName": {
-                                    "id": 284,
+                                    "id": 286,
                                     "name": "uint",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "4937:4:0",
+                                    "src": "4959:4:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -3685,26 +3707,26 @@
                             },
                             {
                                 "constant": false,
-                                "id": 287,
+                                "id": 289,
                                 "name": "estado",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 294,
-                                "src": "4968:13:0",
+                                "scope": 296,
+                                "src": "4990:13:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_enum$_Estado_$281",
+                                    "typeIdentifier": "t_enum$_Estado_$283",
                                     "typeString": "enum InsuranceHealthRecord.Estado"
                                 },
                                 "typeName": {
                                     "contractScope": null,
-                                    "id": 286,
+                                    "id": 288,
                                     "name": "Estado",
                                     "nodeType": "UserDefinedTypeName",
-                                    "referencedDeclaration": 281,
-                                    "src": "4968:6:0",
+                                    "referencedDeclaration": 283,
+                                    "src": "4990:6:0",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_enum$_Estado_$281",
+                                        "typeIdentifier": "t_enum$_Estado_$283",
                                         "typeString": "enum InsuranceHealthRecord.Estado"
                                     }
                                 },
@@ -3713,26 +3735,26 @@
                             },
                             {
                                 "constant": false,
-                                "id": 289,
+                                "id": 291,
                                 "name": "tokens",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 294,
-                                "src": "4991:13:0",
+                                "scope": 296,
+                                "src": "5013:13:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_IERC20_$440",
+                                    "typeIdentifier": "t_contract$_IERC20_$472",
                                     "typeString": "contract IERC20"
                                 },
                                 "typeName": {
                                     "contractScope": null,
-                                    "id": 288,
+                                    "id": 290,
                                     "name": "IERC20",
                                     "nodeType": "UserDefinedTypeName",
-                                    "referencedDeclaration": 440,
-                                    "src": "4991:6:0",
+                                    "referencedDeclaration": 472,
+                                    "src": "5013:6:0",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_IERC20_$440",
+                                        "typeIdentifier": "t_contract$_IERC20_$472",
                                         "typeString": "contract IERC20"
                                     }
                                 },
@@ -3741,11 +3763,11 @@
                             },
                             {
                                 "constant": false,
-                                "id": 291,
+                                "id": 293,
                                 "name": "insurance",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 294,
-                                "src": "5014:17:0",
+                                "scope": 296,
+                                "src": "5036:17:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -3753,10 +3775,10 @@
                                     "typeString": "address"
                                 },
                                 "typeName": {
-                                    "id": 290,
+                                    "id": 292,
                                     "name": "address",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "5014:7:0",
+                                    "src": "5036:7:0",
                                     "stateMutability": "nonpayable",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_address",
@@ -3768,11 +3790,11 @@
                             },
                             {
                                 "constant": false,
-                                "id": 293,
+                                "id": 295,
                                 "name": "aseguradora",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 294,
-                                "src": "5041:27:0",
+                                "scope": 296,
+                                "src": "5063:27:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -3780,10 +3802,10 @@
                                     "typeString": "address payable"
                                 },
                                 "typeName": {
-                                    "id": 292,
+                                    "id": 294,
                                     "name": "address",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "5041:15:0",
+                                    "src": "5063:15:0",
                                     "stateMutability": "payable",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_address_payable",
@@ -3796,32 +3818,32 @@
                         ],
                         "name": "Owner",
                         "nodeType": "StructDefinition",
-                        "scope": 346,
-                        "src": "4877:199:0",
+                        "scope": 378,
+                        "src": "4899:199:0",
                         "visibility": "public"
                     },
                     {
                         "constant": false,
-                        "id": 296,
+                        "id": 298,
                         "name": "propietario",
                         "nodeType": "VariableDeclaration",
-                        "scope": 346,
-                        "src": "5082:17:0",
+                        "scope": 378,
+                        "src": "5104:17:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Owner_$294_storage",
+                            "typeIdentifier": "t_struct$_Owner_$296_storage",
                             "typeString": "struct InsuranceHealthRecord.Owner"
                         },
                         "typeName": {
                             "contractScope": null,
-                            "id": 295,
+                            "id": 297,
                             "name": "Owner",
                             "nodeType": "UserDefinedTypeName",
-                            "referencedDeclaration": 294,
-                            "src": "5082:5:0",
+                            "referencedDeclaration": 296,
+                            "src": "5104:5:0",
                             "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Owner_$294_storage_ptr",
+                                "typeIdentifier": "t_struct$_Owner_$296_storage_ptr",
                                 "typeString": "struct InsuranceHealthRecord.Owner"
                             }
                         },
@@ -3830,14 +3852,14 @@
                     },
                     {
                         "body": {
-                            "id": 344,
+                            "id": 346,
                             "nodeType": "Block",
-                            "src": "5209:271:0",
+                            "src": "5231:271:0",
                             "statements": [
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 311,
+                                        "id": 313,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -3846,26 +3868,26 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 307,
+                                                "id": 309,
                                                 "name": "propietario",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 296,
-                                                "src": "5219:11:0",
+                                                "referencedDeclaration": 298,
+                                                "src": "5241:11:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Owner_$294_storage",
+                                                    "typeIdentifier": "t_struct$_Owner_$296_storage",
                                                     "typeString": "struct InsuranceHealthRecord.Owner storage ref"
                                                 }
                                             },
-                                            "id": 309,
+                                            "id": 311,
                                             "isConstant": false,
                                             "isLValue": true,
                                             "isPure": false,
                                             "lValueRequested": true,
                                             "memberName": "direccionPropietario",
                                             "nodeType": "MemberAccess",
-                                            "referencedDeclaration": 283,
-                                            "src": "5219:32:0",
+                                            "referencedDeclaration": 285,
+                                            "src": "5241:32:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
@@ -3875,31 +3897,31 @@
                                         "operator": "=",
                                         "rightHandSide": {
                                             "argumentTypes": null,
-                                            "id": 310,
+                                            "id": 312,
                                             "name": "_owner",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 298,
-                                            "src": "5254:6:0",
+                                            "referencedDeclaration": 300,
+                                            "src": "5276:6:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
                                             }
                                         },
-                                        "src": "5219:41:0",
+                                        "src": "5241:41:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
                                             "typeString": "address"
                                         }
                                     },
-                                    "id": 312,
+                                    "id": 314,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5219:41:0"
+                                    "src": "5241:41:0"
                                 },
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 317,
+                                        "id": 319,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -3908,26 +3930,26 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 313,
+                                                "id": 315,
                                                 "name": "propietario",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 296,
-                                                "src": "5270:11:0",
+                                                "referencedDeclaration": 298,
+                                                "src": "5292:11:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Owner_$294_storage",
+                                                    "typeIdentifier": "t_struct$_Owner_$296_storage",
                                                     "typeString": "struct InsuranceHealthRecord.Owner storage ref"
                                                 }
                                             },
-                                            "id": 315,
+                                            "id": 317,
                                             "isConstant": false,
                                             "isLValue": true,
                                             "isPure": false,
                                             "lValueRequested": true,
                                             "memberName": "saldoPropietario",
                                             "nodeType": "MemberAccess",
-                                            "referencedDeclaration": 285,
-                                            "src": "5270:28:0",
+                                            "referencedDeclaration": 287,
+                                            "src": "5292:28:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_uint256",
                                                 "typeString": "uint256"
@@ -3938,14 +3960,14 @@
                                         "rightHandSide": {
                                             "argumentTypes": null,
                                             "hexValue": "30",
-                                            "id": 316,
+                                            "id": 318,
                                             "isConstant": false,
                                             "isLValue": false,
                                             "isPure": true,
                                             "kind": "number",
                                             "lValueRequested": false,
                                             "nodeType": "Literal",
-                                            "src": "5301:1:0",
+                                            "src": "5323:1:0",
                                             "subdenomination": null,
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_rational_0_by_1",
@@ -3953,20 +3975,20 @@
                                             },
                                             "value": "0"
                                         },
-                                        "src": "5270:32:0",
+                                        "src": "5292:32:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint256",
                                             "typeString": "uint256"
                                         }
                                     },
-                                    "id": 318,
+                                    "id": 320,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5270:32:0"
+                                    "src": "5292:32:0"
                                 },
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 324,
+                                        "id": 326,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -3975,28 +3997,28 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 319,
+                                                "id": 321,
                                                 "name": "propietario",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 296,
-                                                "src": "5312:11:0",
+                                                "referencedDeclaration": 298,
+                                                "src": "5334:11:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Owner_$294_storage",
+                                                    "typeIdentifier": "t_struct$_Owner_$296_storage",
                                                     "typeString": "struct InsuranceHealthRecord.Owner storage ref"
                                                 }
                                             },
-                                            "id": 321,
+                                            "id": 323,
                                             "isConstant": false,
                                             "isLValue": true,
                                             "isPure": false,
                                             "lValueRequested": true,
                                             "memberName": "estado",
                                             "nodeType": "MemberAccess",
-                                            "referencedDeclaration": 287,
-                                            "src": "5312:18:0",
+                                            "referencedDeclaration": 289,
+                                            "src": "5334:18:0",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_enum$_Estado_$281",
+                                                "typeIdentifier": "t_enum$_Estado_$283",
                                                 "typeString": "enum InsuranceHealthRecord.Estado"
                                             }
                                         },
@@ -4006,18 +4028,18 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 322,
+                                                "id": 324,
                                                 "name": "Estado",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 281,
-                                                "src": "5333:6:0",
+                                                "referencedDeclaration": 283,
+                                                "src": "5355:6:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_type$_t_enum$_Estado_$281_$",
+                                                    "typeIdentifier": "t_type$_t_enum$_Estado_$283_$",
                                                     "typeString": "type(enum InsuranceHealthRecord.Estado)"
                                                 }
                                             },
-                                            "id": 323,
+                                            "id": 325,
                                             "isConstant": false,
                                             "isLValue": false,
                                             "isPure": true,
@@ -4025,26 +4047,26 @@
                                             "memberName": "ALTA",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": null,
-                                            "src": "5333:11:0",
+                                            "src": "5355:11:0",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_enum$_Estado_$281",
+                                                "typeIdentifier": "t_enum$_Estado_$283",
                                                 "typeString": "enum InsuranceHealthRecord.Estado"
                                             }
                                         },
-                                        "src": "5312:32:0",
+                                        "src": "5334:32:0",
                                         "typeDescriptions": {
-                                            "typeIdentifier": "t_enum$_Estado_$281",
+                                            "typeIdentifier": "t_enum$_Estado_$283",
                                             "typeString": "enum InsuranceHealthRecord.Estado"
                                         }
                                     },
-                                    "id": 325,
+                                    "id": 327,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5312:32:0"
+                                    "src": "5334:32:0"
                                 },
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 330,
+                                        "id": 332,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -4053,28 +4075,28 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 326,
+                                                "id": 328,
                                                 "name": "propietario",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 296,
-                                                "src": "5354:11:0",
+                                                "referencedDeclaration": 298,
+                                                "src": "5376:11:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Owner_$294_storage",
+                                                    "typeIdentifier": "t_struct$_Owner_$296_storage",
                                                     "typeString": "struct InsuranceHealthRecord.Owner storage ref"
                                                 }
                                             },
-                                            "id": 328,
+                                            "id": 330,
                                             "isConstant": false,
                                             "isLValue": true,
                                             "isPure": false,
                                             "lValueRequested": true,
                                             "memberName": "tokens",
                                             "nodeType": "MemberAccess",
-                                            "referencedDeclaration": 289,
-                                            "src": "5354:18:0",
+                                            "referencedDeclaration": 291,
+                                            "src": "5376:18:0",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_contract$_IERC20_$440",
+                                                "typeIdentifier": "t_contract$_IERC20_$472",
                                                 "typeString": "contract IERC20"
                                             }
                                         },
@@ -4082,31 +4104,31 @@
                                         "operator": "=",
                                         "rightHandSide": {
                                             "argumentTypes": null,
-                                            "id": 329,
+                                            "id": 331,
                                             "name": "_token",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 300,
-                                            "src": "5375:6:0",
+                                            "referencedDeclaration": 302,
+                                            "src": "5397:6:0",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_contract$_ERC20Basic_$711",
+                                                "typeIdentifier": "t_contract$_ERC20Basic_$743",
                                                 "typeString": "contract ERC20Basic"
                                             }
                                         },
-                                        "src": "5354:27:0",
+                                        "src": "5376:27:0",
                                         "typeDescriptions": {
-                                            "typeIdentifier": "t_contract$_IERC20_$440",
+                                            "typeIdentifier": "t_contract$_IERC20_$472",
                                             "typeString": "contract IERC20"
                                         }
                                     },
-                                    "id": 331,
+                                    "id": 333,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5354:27:0"
+                                    "src": "5376:27:0"
                                 },
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 336,
+                                        "id": 338,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -4115,26 +4137,26 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 332,
+                                                "id": 334,
                                                 "name": "propietario",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 296,
-                                                "src": "5391:11:0",
+                                                "referencedDeclaration": 298,
+                                                "src": "5413:11:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Owner_$294_storage",
+                                                    "typeIdentifier": "t_struct$_Owner_$296_storage",
                                                     "typeString": "struct InsuranceHealthRecord.Owner storage ref"
                                                 }
                                             },
-                                            "id": 334,
+                                            "id": 336,
                                             "isConstant": false,
                                             "isLValue": true,
                                             "isPure": false,
                                             "lValueRequested": true,
                                             "memberName": "insurance",
                                             "nodeType": "MemberAccess",
-                                            "referencedDeclaration": 291,
-                                            "src": "5391:21:0",
+                                            "referencedDeclaration": 293,
+                                            "src": "5413:21:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
@@ -4144,31 +4166,31 @@
                                         "operator": "=",
                                         "rightHandSide": {
                                             "argumentTypes": null,
-                                            "id": 335,
+                                            "id": 337,
                                             "name": "_insurance",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 302,
-                                            "src": "5415:10:0",
+                                            "referencedDeclaration": 304,
+                                            "src": "5437:10:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
                                             }
                                         },
-                                        "src": "5391:34:0",
+                                        "src": "5413:34:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
                                             "typeString": "address"
                                         }
                                     },
-                                    "id": 337,
+                                    "id": 339,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5391:34:0"
+                                    "src": "5413:34:0"
                                 },
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 342,
+                                        "id": 344,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -4177,26 +4199,26 @@
                                             "argumentTypes": null,
                                             "expression": {
                                                 "argumentTypes": null,
-                                                "id": 338,
+                                                "id": 340,
                                                 "name": "propietario",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 296,
-                                                "src": "5435:11:0",
+                                                "referencedDeclaration": 298,
+                                                "src": "5457:11:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Owner_$294_storage",
+                                                    "typeIdentifier": "t_struct$_Owner_$296_storage",
                                                     "typeString": "struct InsuranceHealthRecord.Owner storage ref"
                                                 }
                                             },
-                                            "id": 340,
+                                            "id": 342,
                                             "isConstant": false,
                                             "isLValue": true,
                                             "isPure": false,
                                             "lValueRequested": true,
                                             "memberName": "aseguradora",
                                             "nodeType": "MemberAccess",
-                                            "referencedDeclaration": 293,
-                                            "src": "5435:23:0",
+                                            "referencedDeclaration": 295,
+                                            "src": "5457:23:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address_payable",
                                                 "typeString": "address payable"
@@ -4206,47 +4228,47 @@
                                         "operator": "=",
                                         "rightHandSide": {
                                             "argumentTypes": null,
-                                            "id": 341,
+                                            "id": 343,
                                             "name": "_aseguradora",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 304,
-                                            "src": "5461:12:0",
+                                            "referencedDeclaration": 306,
+                                            "src": "5483:12:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address_payable",
                                                 "typeString": "address payable"
                                             }
                                         },
-                                        "src": "5435:38:0",
+                                        "src": "5457:38:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address_payable",
                                             "typeString": "address payable"
                                         }
                                     },
-                                    "id": 343,
+                                    "id": 345,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5435:38:0"
+                                    "src": "5457:38:0"
                                 }
                             ]
                         },
                         "documentation": null,
-                        "id": 345,
+                        "id": 347,
                         "implemented": true,
                         "kind": "constructor",
                         "modifiers": [],
                         "name": "",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
-                            "id": 305,
+                            "id": 307,
                             "nodeType": "ParameterList",
                             "parameters": [
                                 {
                                     "constant": false,
-                                    "id": 298,
+                                    "id": 300,
                                     "name": "_owner",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 345,
-                                    "src": "5118:14:0",
+                                    "scope": 347,
+                                    "src": "5140:14:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -4254,42 +4276,14 @@
                                         "typeString": "address"
                                     },
                                     "typeName": {
-                                        "id": 297,
+                                        "id": 299,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "5118:7:0",
+                                        "src": "5140:7:0",
                                         "stateMutability": "nonpayable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
                                             "typeString": "address"
-                                        }
-                                    },
-                                    "value": null,
-                                    "visibility": "internal"
-                                },
-                                {
-                                    "constant": false,
-                                    "id": 300,
-                                    "name": "_token",
-                                    "nodeType": "VariableDeclaration",
-                                    "scope": 345,
-                                    "src": "5134:17:0",
-                                    "stateVariable": false,
-                                    "storageLocation": "default",
-                                    "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_ERC20Basic_$711",
-                                        "typeString": "contract ERC20Basic"
-                                    },
-                                    "typeName": {
-                                        "contractScope": null,
-                                        "id": 299,
-                                        "name": "ERC20Basic",
-                                        "nodeType": "UserDefinedTypeName",
-                                        "referencedDeclaration": 711,
-                                        "src": "5134:10:0",
-                                        "typeDescriptions": {
-                                            "typeIdentifier": "t_contract$_ERC20Basic_$711",
-                                            "typeString": "contract ERC20Basic"
                                         }
                                     },
                                     "value": null,
@@ -4298,10 +4292,38 @@
                                 {
                                     "constant": false,
                                     "id": 302,
+                                    "name": "_token",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 347,
+                                    "src": "5156:17:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_ERC20Basic_$743",
+                                        "typeString": "contract ERC20Basic"
+                                    },
+                                    "typeName": {
+                                        "contractScope": null,
+                                        "id": 301,
+                                        "name": "ERC20Basic",
+                                        "nodeType": "UserDefinedTypeName",
+                                        "referencedDeclaration": 743,
+                                        "src": "5156:10:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_ERC20Basic_$743",
+                                            "typeString": "contract ERC20Basic"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 304,
                                     "name": "_insurance",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 345,
-                                    "src": "5153:18:0",
+                                    "scope": 347,
+                                    "src": "5175:18:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -4309,10 +4331,10 @@
                                         "typeString": "address"
                                     },
                                     "typeName": {
-                                        "id": 301,
+                                        "id": 303,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "5153:7:0",
+                                        "src": "5175:7:0",
                                         "stateMutability": "nonpayable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
@@ -4324,11 +4346,11 @@
                                 },
                                 {
                                     "constant": false,
-                                    "id": 304,
+                                    "id": 306,
                                     "name": "_aseguradora",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 345,
-                                    "src": "5173:28:0",
+                                    "scope": 347,
+                                    "src": "5195:28:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -4336,10 +4358,10 @@
                                         "typeString": "address payable"
                                     },
                                     "typeName": {
-                                        "id": 303,
+                                        "id": 305,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "5173:15:0",
+                                        "src": "5195:15:0",
                                         "stateMutability": "payable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address_payable",
@@ -4350,23 +4372,378 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "5117:85:0"
+                            "src": "5139:85:0"
                         },
                         "returnParameters": {
-                            "id": 306,
+                            "id": 308,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "5209:0:0"
+                            "src": "5231:0:0"
                         },
-                        "scope": 346,
-                        "src": "5106:374:0",
+                        "scope": 378,
+                        "src": "5128:374:0",
                         "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "InsuranceHealthRecord.ServciosSolicitados",
+                        "id": 354,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 349,
+                                "name": "nombreServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 354,
+                                "src": "5544:21:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 348,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "5544:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 351,
+                                "name": "precioServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 354,
+                                "src": "5575:22:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 350,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "5575:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 353,
+                                "name": "estadoServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 354,
+                                "src": "5607:19:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 352,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "5607:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "ServciosSolicitados",
+                        "nodeType": "StructDefinition",
+                        "scope": 378,
+                        "src": "5508:125:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "InsuranceHealthRecord.ServiciosSolicitadosLab",
+                        "id": 361,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 356,
+                                "name": "nombreServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 361,
+                                "src": "5679:21:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 355,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "5679:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 358,
+                                "name": "precioServicio",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 361,
+                                "src": "5710:22:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 357,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "5710:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 360,
+                                "name": "direccionLab",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 361,
+                                "src": "5742:20:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 359,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "5742:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "ServiciosSolicitadosLab",
+                        "nodeType": "StructDefinition",
+                        "scope": 378,
+                        "src": "5639:130:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 365,
+                        "name": "HistorialAsegurado",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 378,
+                        "src": "5775:57:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_ServciosSolicitados_$354_storage_$",
+                            "typeString": "mapping(string => struct InsuranceHealthRecord.ServciosSolicitados)"
+                        },
+                        "typeName": {
+                            "id": 364,
+                            "keyType": {
+                                "id": 362,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "5783:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "5775:38:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_ServciosSolicitados_$354_storage_$",
+                                "typeString": "mapping(string => struct InsuranceHealthRecord.ServciosSolicitados)"
+                            },
+                            "valueType": {
+                                "contractScope": null,
+                                "id": 363,
+                                "name": "ServciosSolicitados",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 354,
+                                "src": "5793:19:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_ServciosSolicitados_$354_storage_ptr",
+                                    "typeString": "struct InsuranceHealthRecord.ServciosSolicitados"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 368,
+                        "name": "historialAseguradoLaboratorio",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 378,
+                        "src": "5838:55:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_ServiciosSolicitadosLab_$361_storage_$dyn_storage",
+                            "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "contractScope": null,
+                                "id": 366,
+                                "name": "ServiciosSolicitadosLab",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 361,
+                                "src": "5838:23:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_ServiciosSolicitadosLab_$361_storage_ptr",
+                                    "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab"
+                                }
+                            },
+                            "id": 367,
+                            "length": null,
+                            "nodeType": "ArrayTypeName",
+                            "src": "5838:25:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_struct$_ServiciosSolicitadosLab_$361_storage_$dyn_storage_ptr",
+                                "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab[]"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 376,
+                            "nodeType": "Block",
+                            "src": "5995:53:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 374,
+                                        "name": "historialAseguradoLaboratorio",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 368,
+                                        "src": "6012:29:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_array$_t_struct$_ServiciosSolicitadosLab_$361_storage_$dyn_storage",
+                                            "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab storage ref[] storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 373,
+                                    "id": 375,
+                                    "nodeType": "Return",
+                                    "src": "6005:36:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 377,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "HistorialAseguradoLaboratorio",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 369,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "5938:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 373,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 372,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 377,
+                                    "src": "5962:32:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_array$_t_struct$_ServiciosSolicitadosLab_$361_memory_$dyn_memory_ptr",
+                                        "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab[]"
+                                    },
+                                    "typeName": {
+                                        "baseType": {
+                                            "contractScope": null,
+                                            "id": 370,
+                                            "name": "ServiciosSolicitadosLab",
+                                            "nodeType": "UserDefinedTypeName",
+                                            "referencedDeclaration": 361,
+                                            "src": "5962:23:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_ServiciosSolicitadosLab_$361_storage_ptr",
+                                                "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab"
+                                            }
+                                        },
+                                        "id": 371,
+                                        "length": null,
+                                        "nodeType": "ArrayTypeName",
+                                        "src": "5962:25:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_array$_t_struct$_ServiciosSolicitadosLab_$361_storage_$dyn_storage_ptr",
+                                            "typeString": "struct InsuranceHealthRecord.ServiciosSolicitadosLab[]"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "5961:34:0"
+                        },
+                        "scope": 378,
+                        "src": "5900:148:0",
+                        "stateMutability": "view",
                         "superFunction": null,
                         "visibility": "public"
                     }
                 ],
-                "scope": 370,
-                "src": "4809:673:0"
+                "scope": 402,
+                "src": "4809:1241:0"
             },
             {
                 "baseContracts": [
@@ -4374,42 +4751,42 @@
                         "arguments": null,
                         "baseName": {
                             "contractScope": null,
-                            "id": 347,
+                            "id": 379,
                             "name": "OperacionesBasicas",
                             "nodeType": "UserDefinedTypeName",
-                            "referencedDeclaration": 823,
-                            "src": "5509:18:0",
+                            "referencedDeclaration": 855,
+                            "src": "6077:18:0",
                             "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_OperacionesBasicas_$823",
+                                "typeIdentifier": "t_contract$_OperacionesBasicas_$855",
                                 "typeString": "contract OperacionesBasicas"
                             }
                         },
-                        "id": 348,
+                        "id": 380,
                         "nodeType": "InheritanceSpecifier",
-                        "src": "5509:18:0"
+                        "src": "6077:18:0"
                     }
                 ],
                 "contractDependencies": [
-                    823
+                    855
                 ],
                 "contractKind": "contract",
                 "documentation": null,
                 "fullyImplemented": true,
-                "id": 369,
+                "id": 401,
                 "linearizedBaseContracts": [
-                    369,
-                    823
+                    401,
+                    855
                 ],
                 "name": "Laboratorio",
                 "nodeType": "ContractDefinition",
                 "nodes": [
                     {
                         "constant": false,
-                        "id": 350,
+                        "id": 382,
                         "name": "DireccionLab",
                         "nodeType": "VariableDeclaration",
-                        "scope": 369,
-                        "src": "5589:27:0",
+                        "scope": 401,
+                        "src": "6157:27:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -4417,10 +4794,10 @@
                             "typeString": "address"
                         },
                         "typeName": {
-                            "id": 349,
+                            "id": 381,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "5589:7:0",
+                            "src": "6157:7:0",
                             "stateMutability": "nonpayable",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -4432,11 +4809,11 @@
                     },
                     {
                         "constant": false,
-                        "id": 352,
+                        "id": 384,
                         "name": "contratoAseguradora",
                         "nodeType": "VariableDeclaration",
-                        "scope": 369,
-                        "src": "5668:27:0",
+                        "scope": 401,
+                        "src": "6236:27:0",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -4444,10 +4821,10 @@
                             "typeString": "address"
                         },
                         "typeName": {
-                            "id": 351,
+                            "id": 383,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "5668:7:0",
+                            "src": "6236:7:0",
                             "stateMutability": "nonpayable",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -4459,26 +4836,26 @@
                     },
                     {
                         "body": {
-                            "id": 367,
+                            "id": 399,
                             "nodeType": "Block",
-                            "src": "5776:100:0",
+                            "src": "6344:100:0",
                             "statements": [
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 361,
+                                        "id": 393,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
                                         "lValueRequested": false,
                                         "leftHandSide": {
                                             "argumentTypes": null,
-                                            "id": 359,
+                                            "id": 391,
                                             "name": "DireccionLab",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 350,
-                                            "src": "5786:12:0",
+                                            "referencedDeclaration": 382,
+                                            "src": "6354:12:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
@@ -4488,43 +4865,43 @@
                                         "operator": "=",
                                         "rightHandSide": {
                                             "argumentTypes": null,
-                                            "id": 360,
+                                            "id": 392,
                                             "name": "_owner",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 354,
-                                            "src": "5801:6:0",
+                                            "referencedDeclaration": 386,
+                                            "src": "6369:6:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
                                             }
                                         },
-                                        "src": "5786:21:0",
+                                        "src": "6354:21:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
                                             "typeString": "address"
                                         }
                                     },
-                                    "id": 362,
+                                    "id": 394,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5786:21:0"
+                                    "src": "6354:21:0"
                                 },
                                 {
                                     "expression": {
                                         "argumentTypes": null,
-                                        "id": 365,
+                                        "id": 397,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
                                         "lValueRequested": false,
                                         "leftHandSide": {
                                             "argumentTypes": null,
-                                            "id": 363,
+                                            "id": 395,
                                             "name": "contratoAseguradora",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 352,
-                                            "src": "5817:19:0",
+                                            "referencedDeclaration": 384,
+                                            "src": "6385:19:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
@@ -4534,47 +4911,47 @@
                                         "operator": "=",
                                         "rightHandSide": {
                                             "argumentTypes": null,
-                                            "id": 364,
+                                            "id": 396,
                                             "name": "_direccionContratosAseguradora",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 356,
-                                            "src": "5839:30:0",
+                                            "referencedDeclaration": 388,
+                                            "src": "6407:30:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_address",
                                                 "typeString": "address"
                                             }
                                         },
-                                        "src": "5817:52:0",
+                                        "src": "6385:52:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
                                             "typeString": "address"
                                         }
                                     },
-                                    "id": 366,
+                                    "id": 398,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "5817:52:0"
+                                    "src": "6385:52:0"
                                 }
                             ]
                         },
                         "documentation": null,
-                        "id": 368,
+                        "id": 400,
                         "implemented": true,
                         "kind": "constructor",
                         "modifiers": [],
                         "name": "",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
-                            "id": 357,
+                            "id": 389,
                             "nodeType": "ParameterList",
                             "parameters": [
                                 {
                                     "constant": false,
-                                    "id": 354,
+                                    "id": 386,
                                     "name": "_owner",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 368,
-                                    "src": "5714:14:0",
+                                    "scope": 400,
+                                    "src": "6282:14:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -4582,10 +4959,10 @@
                                         "typeString": "address"
                                     },
                                     "typeName": {
-                                        "id": 353,
+                                        "id": 385,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "5714:7:0",
+                                        "src": "6282:7:0",
                                         "stateMutability": "nonpayable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
@@ -4597,11 +4974,11 @@
                                 },
                                 {
                                     "constant": false,
-                                    "id": 356,
+                                    "id": 388,
                                     "name": "_direccionContratosAseguradora",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 368,
-                                    "src": "5730:38:0",
+                                    "scope": 400,
+                                    "src": "6298:38:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -4609,10 +4986,10 @@
                                         "typeString": "address"
                                     },
                                     "typeName": {
-                                        "id": 355,
+                                        "id": 387,
                                         "name": "address",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "5730:7:0",
+                                        "src": "6298:7:0",
                                         "stateMutability": "nonpayable",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_address",
@@ -4623,26 +5000,26 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "5713:56:0"
+                            "src": "6281:56:0"
                         },
                         "returnParameters": {
-                            "id": 358,
+                            "id": 390,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "5776:0:0"
+                            "src": "6344:0:0"
                         },
-                        "scope": 369,
-                        "src": "5701:175:0",
+                        "scope": 401,
+                        "src": "6269:175:0",
                         "stateMutability": "nonpayable",
                         "superFunction": null,
                         "visibility": "public"
                     }
                 ],
-                "scope": 370,
-                "src": "5485:393:0"
+                "scope": 402,
+                "src": "6053:393:0"
             }
         ],
-        "src": "32:5846:0"
+        "src": "32:6414:0"
     },
     "functionHashes": {
         "DireccionLab()": "df02634f",
