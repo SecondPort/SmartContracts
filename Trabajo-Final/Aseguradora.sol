@@ -120,7 +120,7 @@ contract InsuranceFactory is OperacionesBasicas{
     }
 }
 
-contract InsuranceHealthRecord{
+contract InsuranceHealthRecord is OperacionesBasicas{
 
     enum Estado { ALTA, BAJA }
     struct Owner{
@@ -142,6 +142,25 @@ contract InsuranceHealthRecord{
         propietario.tokens = _token;
         propietario.insurance = _insurance;
         propietario.aseguradora = _aseguradora;
+    }
+
+    struct ServciosSolicitados{
+        string nombreServicio;
+        uint256 precioServicio;
+        bool estadoServicio;
+    }
+
+    struct ServiciosSolicitadosLab{
+        string nombreServicio;
+        uint256 precioServicio;
+        address direccionLab;
+    }
+
+    mapping(string => ServciosSolicitados) HistorialAsegurado;
+    ServiciosSolicitadosLab[] historialAseguradoLaboratorio;
+
+    function HistorialAseguradoLaboratorio() public view returns (ServiciosSolicitadosLab[] memory){
+        return historialAseguradoLaboratorio;
     }
 }
 
