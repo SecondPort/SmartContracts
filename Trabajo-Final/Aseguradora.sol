@@ -118,6 +118,29 @@ contract InsuranceFactory is OperacionesBasicas{
     function getDireccionesClientes()public view UnicamenteAseguradora(msg.sender) returns(address[] memory){
         return direccionClientes;
     }
+
+    //funcion para ver el historial de un asegurado
+    function consultarHistorialAsegurado(address _direccionAsegurado, address _direccionConsultor)public view
+    UnicamenteAseguradoraYCliente(_direccionAsegurado, _direccionConsultor)returns(string memory){
+        string memory historial = "";// variable para almacenar el historial
+        address direccionContratoAsegurado = MappingClientes[_direccionAsegurado].DireccionContrato;// direccion del contrato del asegurado
+
+        // recorremos el array de servicios
+        for(uint i = 0; i < nomServicio.length; i++) {
+            // si el servicio esta activo
+            if(MappingServicios[nomServicio[i]].EstadoServicio &&
+            InsuranceHealthRecord(direccionContratoAsegurado).ServicioEstadoAsegurado(nomServicio[i]) == true){// y el servicio esta activo en el asegurado
+                // obtenemos el nombre del servicio y su precio
+                (string memory _nomServicio, uint precioServicio) = InsuranceHealthRecord(direccionContratoAsegurado).HistorialCliente(nomServicio[i]);
+                // almacenamos y concatenamos el nombre del servicio y su precio al historial
+                historial = string(abi.encodePacked(historial, "(", _nomServicio, ",", uint2str(precioServicio), ")-----"));
+            }
+        }
+
+        return historial;
+    }
+
+
 }
 
 contract InsuranceHealthRecord is OperacionesBasicas{
@@ -156,11 +179,19 @@ contract InsuranceHealthRecord is OperacionesBasicas{
         address direccionLab;
     }
 
-    mapping(string => ServciosSolicitados) HistorialAsegurado;
+    mapping(string => ServciosSolicitados)HistorialAsegurado;
     ServiciosSolicitadosLab[] historialAseguradoLaboratorio;
 
     function HistorialAseguradoLaboratorio() public view returns (ServiciosSolicitadosLab[] memory){
         return historialAseguradoLaboratorio;
+    }
+
+    function HistorialCliente(string memory _servicio)public view returns(string memory nombreServico, uint256 precioServicio){
+        return (HistorialAsegurado[_servicio].nombreServicio, HistorialAsegurado[_servicio].precioServicio);
+    }
+
+    function ServicioEstadoAsegurado(string memory _servicio)public view returns(bool){
+        return HistorialAsegurado[_servicio].estadoServicio;
     }
 }
 
