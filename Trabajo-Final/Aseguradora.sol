@@ -61,7 +61,7 @@ contract InsuranceFactory is OperacionesBasicas{
 
     modifier UnicamenteAseguradora(address _direccionAseguradora){
         //solo la aseguradora puede realizar esta accion
-        require(Aseguradora == _direccionAseguradora,
+        require(Aseguradora ==_direccionAseguradora,
         "No esta autorizado para realizar esta operacion solo personal de la aseguradora");
         _;
     }
@@ -145,6 +145,17 @@ contract InsuranceFactory is OperacionesBasicas{
         emit BajaAsegurado(_direccionAsegurado);
     }
 
+    function nuevoServicio(string memory _nombreServicio, uint256 _precioServicio)public UnicamenteAseguradora(msg.sender){
+        MappingServicios[_nombreServicio] = servicio(_nombreServicio, _precioServicio, true);
+        nomServicio.push(_nombreServicio);
+        emit ServicioCreado(_nombreServicio, _precioServicio);
+    }
+
+    function darBajaServicio(string memory _nombreServicio)public UnicamenteAseguradora(msg.sender){
+        require(MappingServicios[_nombreServicio].EstadoServicio == true, "El servicio no esta activo");
+        MappingServicios[_nombreServicio].EstadoServicio = false;
+        emit BajaServicio(_nombreServicio);
+    }
 }
 
 contract InsuranceHealthRecord is OperacionesBasicas{
