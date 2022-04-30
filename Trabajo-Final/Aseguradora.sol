@@ -72,7 +72,7 @@ contract InsuranceFactory is OperacionesBasicas{
         _;
     }
 
-/*     modifier Asegurado_o_Aseguradora(addres _direccionAsegurado, address _direccionEntrante){
+    /*     modifier Asegurado_o_Aseguradora(addres _direccionAsegurado, address _direccionEntrante){
         require((MappingClientes[_direccionEntrante].Autorizacion == true)|| (Aseguradora == _direccionEntrante),
         "No esta autorizado para realizar esta operacion, solo clientes o personal de la aseguradora");
     } */
@@ -314,6 +314,34 @@ contract Laboratorio is OperacionesBasicas{
         DireccionLab = _owner;
         contratoAseguradora = _direccionContratosAseguradora;
     }
+
+    mapping(address=>string)public ServicioSolicitado;
+    mapping(address=> ResultadoServicio) ResultadosServiciosLab;
+    mapping(string=>ServicioLab)public serviciosLab;
+
+    string[] nombreServiciosLab;
+    address[] public PetecionesServicios;//personas que solicitan servicios
+
+    struct ResultadoServicio{
+        string diagnostico_servicio;
+        string codigo_ipfs;
+    }
+
+    struct ServicioLab{
+        string nombreServicio;
+        uint256 precioServicio;
+        bool enFuncionamiento;
+    }
+
+    event EventoServicioFuncionando(string, uint);
+    event EventoDarServicio(address, string);
+
+    modifier UnicamenteLab(address _direccion){
+        require(_direccion == DireccionLab, "No esta autorizado para realizar esta operacion");
+        _;
+    }
+
+
 
     function ConsultarPrecioServicios(string memory _servicio)public view returns(uint){
         return 0;
