@@ -156,6 +156,17 @@ contract InsuranceFactory is OperacionesBasicas{
         MappingServicios[_nombreServicio].EstadoServicio = false;
         emit BajaServicio(_nombreServicio);
     }
+
+    function ConsultarServicioActivos()public view returns(string[] memory){
+        string[] memory serviciosActivos = new string[](nomServicio.length);
+        uint i = 0;
+        for(i = 0; i < nomServicio.length; i++){
+            if(MappingServicios[nomServicio[i]].EstadoServicio == true){
+                serviciosActivos[i] = nomServicio[i];
+            }
+        }
+        return serviciosActivos;
+    }
 }
 
 contract InsuranceHealthRecord is OperacionesBasicas{
