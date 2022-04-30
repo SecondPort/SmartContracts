@@ -139,6 +139,11 @@ contract InsuranceFactory is OperacionesBasicas{
         return historial;
     }
 
+    function darBajaCliente(address _direccionAsegurado)public UnicamenteAseguradora(msg.sender){
+        MappingClientes[_direccionAsegurado].Autorizacion = false;
+        InsuranceHealthRecord(MappingClientes[_direccionAsegurado].DireccionContrato).darBaja();
+        emit BajaAsegurado(_direccionAsegurado);
+    }
 
 }
 
@@ -181,6 +186,13 @@ contract InsuranceHealthRecord is OperacionesBasicas{
     mapping(string => ServciosSolicitados)HistorialAsegurado;
     ServiciosSolicitadosLab[] historialAseguradoLaboratorio;
 
+    event EventoSelfDestruct(address);
+
+    modifier Unicamente(address _direccion){
+        require(_direccion == propietario.direccionPropietario, "No esta autorizado para realizar esta operacion, solo aseguradora");
+        _;
+    }
+
     function HistorialAseguradoLaboratorio() public view returns (ServiciosSolicitadosLab[] memory){
         return historialAseguradoLaboratorio;
     }
@@ -191,6 +203,11 @@ contract InsuranceHealthRecord is OperacionesBasicas{
 
     function ServicioEstadoAsegurado(string memory _servicio)public view returns(bool){
         return HistorialAsegurado[_servicio].estadoServicio;
+    }
+
+    function darBaja()public Unicamente(msg.sender){
+        emit EventoSelfDestruct(msg.sender);
+        selfdestruct(msg.sender);
     }
 }
 
