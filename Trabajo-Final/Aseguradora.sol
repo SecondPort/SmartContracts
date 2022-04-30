@@ -61,8 +61,7 @@ contract InsuranceFactory is OperacionesBasicas{
 
     modifier UnicamenteAseguradora(address _direccionAseguradora){
         //solo la aseguradora puede realizar esta accion
-        require(Aseguradora ==_direccionAseguradora,
-        "No esta autorizado para realizar esta operacion solo personal de la aseguradora");
+        require(Aseguradora == _direccionAseguradora, "No esta autorizado para realizar esta operacion");
         _;
     }
 
