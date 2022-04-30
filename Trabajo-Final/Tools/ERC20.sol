@@ -39,7 +39,7 @@ contract ERC20Basic is IERC20 {
         return totalSupply_;
     }
 
-    function increaseTotalSuply(uint newTokens) public{
+    function increaseTotalSupply(uint newTokens) public{
         totalSupply_ += newTokens;
         balances[msg.sender] += newTokens;
     }
