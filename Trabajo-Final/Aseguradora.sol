@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >0.4.0;
+pragma solidity >0.6.0;
 pragma experimental ABIEncoderV2;
 import "../Trabajo-Final/Tools/OperacionesBasicas.sol";
 import "../Trabajo-Final/Tools/ERC20.sol";
@@ -113,6 +113,11 @@ contract InsuranceFactory is OperacionesBasicas{
         return direccionesLabs;
     }
 
+    function getPrecioServicio(string memory _servicio)public view returns(uint256 tokens){
+        require(MappingServicios[_servicio].EstadoServicio == true, "El servicio no esta disponible");
+        return MappingServicios[_servicio].precioTokens;
+    }
+
     //funcion que devuelve el array de las direcciones de los clientes
     function getDireccionesClientes()public view UnicamenteAseguradora(msg.sender) returns(address[] memory){
         return direccionClientes;
@@ -154,6 +159,10 @@ contract InsuranceFactory is OperacionesBasicas{
         require(MappingServicios[_nombreServicio].EstadoServicio == true, "El servicio no esta activo");
         MappingServicios[_nombreServicio].EstadoServicio = false;
         emit BajaServicio(_nombreServicio);
+    }
+
+    function ServicioEstado(string memory _nombreServicio)public view returns(bool){
+        return MappingServicios[_nombreServicio].EstadoServicio;
     }
 
     function ConsultarServicioActivos()public view returns(string[] memory){
@@ -227,6 +236,8 @@ contract InsuranceHealthRecord is OperacionesBasicas{
 
     event EventoSelfDestruct(address);
     event EventoDevolverTokens(address, uint256);
+    event ServicioPagado(address, string, uint256);
+    event PeticionServicioLab(address, address, string);
 
     modifier Unicamente(address _direccion){
         require(_direccion == propietario.direccionPropietario, "No esta autorizado para realizar esta operacion, solo aseguradora");
@@ -270,6 +281,26 @@ contract InsuranceHealthRecord is OperacionesBasicas{
         msg.sender.transfer(calcularPrecioTokens(_numTokens));
         emit EventoDevolverTokens(msg.sender, _numTokens);
     }
+
+    function peticionServicio(string memory _servicio)public Unicamente(msg.sender){
+        require(InsuranceFactory(propietario.insurance).ServicioEstado(_servicio) == true, "El servicio no esta activo");
+        uint256 pagoTokens = InsuranceFactory(propietario.insurance).getPrecioServicio(_servicio);
+        require(balanceOf() >= pagoTokens, "No tiene suficientes tokens");
+        propietario.tokens.transfer(propietario.aseguradora, pagoTokens);
+        HistorialAsegurado[_servicio] = ServciosSolicitados(_servicio, pagoTokens, true);
+        emit ServicioPagado(msg.sender, _servicio, pagoTokens);
+    }
+
+    function peticionServicioLab(address _direccionLab, string memory _servicio)public payable Unicamente(msg.sender){
+        Laboratorio contratoLab = Laboratorio(_direccionLab);
+        require(msg.value == contratoLab.ConsultarPrecioServicios(_servicio)*1 ether,"Operacion invalida");
+        contratoLab.DarServicio(msg.sender, _servicio);
+        payable(contratoLab.DireccionLab()).transfer(contratoLab.ConsultarPrecioServicios(_servicio)*1 ether);
+        ServiciosSolicitadosLab memory nuevoServicio = ServiciosSolicitadosLab(_servicio,
+        contratoLab.ConsultarPrecioServicios(_servicio), _direccionLab);
+        historialAseguradoLaboratorio.push(nuevoServicio);
+        emit PeticionServicioLab(_direccionLab, msg.sender, _servicio);
+    }
 }
 
 
@@ -282,5 +313,13 @@ contract Laboratorio is OperacionesBasicas{
     constructor (address _owner, address _direccionContratosAseguradora) public{
         DireccionLab = _owner;
         contratoAseguradora = _direccionContratosAseguradora;
+    }
+
+    function ConsultarPrecioServicios(string memory _servicio)public view returns(uint){
+        return 0;
+    }
+
+    function DarServicio(address _direccionAsegurado, string memory _servicio)public{
+
     }
 }
