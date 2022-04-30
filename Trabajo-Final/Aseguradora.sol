@@ -226,6 +226,7 @@ contract InsuranceHealthRecord is OperacionesBasicas{
     ServiciosSolicitadosLab[] historialAseguradoLaboratorio;
 
     event EventoSelfDestruct(address);
+    event EventoDevolverTokens(address, uint256);
 
     modifier Unicamente(address _direccion){
         require(_direccion == propietario.direccionPropietario, "No esta autorizado para realizar esta operacion, solo aseguradora");
@@ -247,6 +248,27 @@ contract InsuranceHealthRecord is OperacionesBasicas{
     function darBaja()public Unicamente(msg.sender){
         emit EventoSelfDestruct(msg.sender);
         selfdestruct(msg.sender);
+    }
+
+    function CompraTokens(uint _numTokens)public payable Unicamente(msg.sender){
+        require(_numTokens > 0, "Compra mas tokens");
+        uint coste = calcularPrecioTokens(_numTokens);
+        require(msg.value >= coste, "No tiene suficientes tokens");
+        uint returnValue = msg.value - coste;
+        msg.sender.transfer(returnValue);
+        InsuranceFactory(propietario.insurance).compraTokens(msg.sender, _numTokens);
+    }
+
+    function balanceOf()public view Unicamente(msg.sender)returns(uint256 _balance){
+        return (propietario.tokens.balanceOf(address(this)));
+    }
+
+    function devolverTokens(uint _numTokens)public payable Unicamente(msg.sender){
+        require(_numTokens > 0, "Devolver mas tokens");
+        require(_numTokens <= balanceOf(), "Insufiicientes tokens para devolver");
+        propietario.tokens.transfer(propietario.aseguradora, _numTokens);
+        msg.sender.transfer(calcularPrecioTokens(_numTokens));
+        emit EventoDevolverTokens(msg.sender, _numTokens);
     }
 }
 
