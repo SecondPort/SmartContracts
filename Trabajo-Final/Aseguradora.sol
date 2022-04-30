@@ -341,13 +341,20 @@ contract Laboratorio is OperacionesBasicas{
         _;
     }
 
-
+    function ConsultarServicios()public view returns(string[] memory){
+        return nombreServiciosLab;
+    }
 
     function ConsultarPrecioServicios(string memory _servicio)public view returns(uint){
-        return 0;
+        return serviciosLab[_servicio].precioServicio;
     }
 
     function DarServicio(address _direccionAsegurado, string memory _servicio)public{
-
+        InsuranceFactory IF = InsuranceFactory(contratoAseguradora);
+        IF.FuncionUnicamenteAsegurados(_direccionAsegurado);
+        require(serviciosLab[_servicio].enFuncionamiento == true, "El servicio no esta activo");
+        ServicioSolicitado[_direccionAsegurado] = _servicio;
+        PetecionesServicios.push(_direccionAsegurado);
+        emit EventoDarServicio(_direccionAsegurado, _servicio);
     }
 }
