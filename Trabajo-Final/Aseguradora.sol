@@ -166,6 +166,24 @@ contract InsuranceFactory is OperacionesBasicas{
         }
         return serviciosActivos;
     }
+
+    function compraTokens(address _asegurado, uint _numTokens)public payable UnicamenteAsegurados(_asegurado){
+        uint256 Balance = balanceOf();
+
+        require(_numTokens <= Balance, "Compra menos tokens");
+        require(_numTokens > 0, "Compra mas tokens");
+
+        token.transfer(msg.sender, _numTokens);
+        emit EventoComprado(_numTokens);
+    }
+
+    function balanceOf()public view returns(uint256){
+        return (token.balanceOf(Insurance));
+    }
+
+    function generarTokens(uint _numTokens)public UnicamenteAseguradora(msg.sender){
+        token.increaseTotalSupply(_numTokens);
+    }
 }
 
 contract InsuranceHealthRecord is OperacionesBasicas{
