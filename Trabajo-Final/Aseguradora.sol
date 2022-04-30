@@ -363,4 +363,13 @@ contract Laboratorio is OperacionesBasicas{
         PetecionesServicios.push(_direccionAsegurado);
         emit EventoDarServicio(_direccionAsegurado, _servicio);
     }
+
+    function DarResultados(address _direccionAsegurado, string memory _diagnostico, string memory codigoIPFS)public UnicamenteLab(msg.sender){
+        ResultadosServiciosLab[_direccionAsegurado] = ResultadoServicio(_diagnostico, codigoIPFS);
+    }
+
+    function VisualizarResultados(address _direccionAsegurado)public view returns(string memory _diagnostico, string memory _codigoIPFS){
+        _diagnostico = ResultadosServiciosLab[_direccionAsegurado].diagnostico_servicio;
+        _codigoIPFS = ResultadosServiciosLab[_direccionAsegurado].codigo_ipfs;
+    }
 }
