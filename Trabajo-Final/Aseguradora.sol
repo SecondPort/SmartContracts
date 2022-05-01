@@ -10,8 +10,7 @@ contract InsuranceFactory is OperacionesBasicas {
     constructor() public {
         token = new ERC20Basic(100);
         Insurance = address(this);
-        Aseguradora = msg.senimport "../Trabajo-Final/Tools/OperacionesBasicas.sol";
-import "../Trabajo-Final/Tools/ERC20.sol";
+        Aseguradora = msg.sender;
 
 //contrato para la compañia de seguro
 contract InsuranceFactory is OperacionesBasicas{
