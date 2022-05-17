@@ -11,7 +11,8 @@ contract InsuranceFactory is OperacionesBasicas {
         token = new ERC20Basic(100);
         Insurance = address(this);
         Aseguradora = msg.sender;
-
+    }
+}
 //contrato para la compañia de seguro
 contract InsuranceFactory is OperacionesBasicas{
 
@@ -380,7 +381,7 @@ contract Laboratorio is OperacionesBasicas{
         _diagnostico = ResultadosServiciosLab[_direccionAsegurado].diagnostico_servicio;
         _codigoIPFS = ResultadosServiciosLab[_direccionAsegurado].codigo_ipfs;
     }
-}der;
+
     }
 
     /* Una de las estructuras de datos para IF son los clientes donde se guarda su direccion, y
