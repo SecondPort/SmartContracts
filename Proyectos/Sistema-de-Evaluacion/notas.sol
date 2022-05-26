@@ -18,11 +18,9 @@ contract notas{
     //mapping para relacionar el mapping de notas con el de materias
     mapping(bytes32 => mapping(bytes32 => uint)) notas_materias;
 
-    //array de los alumnos que pidan revision de examen
-    string[] revisiones;
+    //mapping de los alumnos que pida revisiones de examen para una materia
+    mapping(string=> string[]) revisiones;
 
-    //array para las materias que quieran revision
-    string[] materias;
 
     //eventos
     event alumno_evaluado(bytes32, uint);
@@ -60,16 +58,15 @@ contract notas{
     function Revision(string memory _idAlumno, string memory _materia)public{
         require(msg.sender != profesor,"Solo los alumnos pueden tener revision");
         //almacenamiento de la identidad del alumno en un array
-        revisiones.push(_idAlumno);
-        materias.push(_materia);
+        revisiones[_materia].push(_idAlumno);
         //emitir el evento
         emit evento_revision(_idAlumno, _materia);
 
     }
 
     //funcion para ver revisiones de examen
-    function VerRevisiones()public view UnicamenteProfesor(msg.sender) returns(string[] memory, string[] memory){
+    function VerRevisiones(string memory _materia)public view UnicamenteProfesor(msg.sender) returns(string[] memory){
         //devolver las identidades de los alumnos que han pedido revision
-        return (revisiones, materias);
+        return revisiones[_materia];
     }
 }
